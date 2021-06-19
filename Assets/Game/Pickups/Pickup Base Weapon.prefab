@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5792785081733569881}
   - component: {fileID: 2178046459099661306}
-  - component: {fileID: 5811473788200526884}
+  - component: {fileID: 2226998511936140034}
+  - component: {fileID: 8940100900461602235}
   m_Layer: 0
-  m_Name: Pickup Base
+  m_Name: Pickup Base Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +47,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.9
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5811473788200526884
+--- !u!114 &2226998511936140034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,12 +56,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 8965290249873372113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec5c32922ce73b148b551d7549e6f7bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 91f208ba0dbe65d478b628ca24b59c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 11400000, guid: 4cde8ffc33424cd4ea9a8e4b6ef7a2ca, type: 2}
-  healthToRestore: 0
-  respawnTime: 5
+--- !u!114 &8940100900461602235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965290249873372113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 465a2a33b57802641b35556176c41edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9146240832720309272
 GameObject:
   m_ObjectHideFlags: 0

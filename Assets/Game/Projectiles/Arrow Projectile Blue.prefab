@@ -30,12 +30,7 @@ PrefabInstance:
     - target: {fileID: 3975961344138889332, guid: f88341ed81b600d4fb4780e8d87520ad,
         type: 3}
       propertyPath: m_Name
-      value: ArrowProjectile Blue
-      objectReference: {fileID: 0}
-    - target: {fileID: 6257387258174836135, guid: f88341ed81b600d4fb4780e8d87520ad,
-        type: 3}
-      propertyPath: speed
-      value: 10
+      value: Arrow Projectile Blue
       objectReference: {fileID: 0}
     - target: {fileID: 8083595520444291479, guid: f88341ed81b600d4fb4780e8d87520ad,
         type: 3}
