@@ -70,7 +70,7 @@ namespace RPG.Stats
 
         private float GetBaseStat(Stat stat)
         {
-            return progression.GetStat(stat, characterClass, GetLevel()) + GetAdditiveModifier(stat);
+            return progression.GetStat(stat, characterClass, GetLevel());
         }        
 
         private float GetAdditiveModifier(Stat stat)
@@ -82,7 +82,7 @@ namespace RPG.Stats
             {
                 foreach (float modifier in provider.GetAdditiveModifiers(stat))
                 {
-                    total += modifier;
+                    total += modifier;                    
                 }
             }
             return total;

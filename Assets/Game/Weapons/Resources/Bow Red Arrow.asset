@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61625bc20df9ba746b8f57539966637f, type: 3}
   m_Name: Bow Red Arrow
   m_EditorClassIdentifier: 
+  itemID: 5b1ba2da-8c92-48dd-b651-34a6b3cf8653
+  displayName: Homing Bow
+  description: 
+  icon: {fileID: 21300000, guid: 63e63df8f987de54eb2396a0d0d0e81f, type: 3}
+  pickup: {fileID: 4604097103382733173, guid: 27aab6de2e6d98946866c65acb60ef2b, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: 921435fbdf9586a44b015cdd51d23256, type: 2}
   equippedPrefab: {fileID: 114161697804787444, guid: 39ad54ff082192a4db6d45b1b60978ec,
     type: 3}
