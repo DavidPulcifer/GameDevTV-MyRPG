@@ -44,6 +44,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experiencePoints: 0
+--- !u!114 &2111250316295138724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939921017035819185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a896506bce53eee4fb0c0a3d875c3d2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5934973280760693741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySize: 16
---- !u!114 &2111250316295138724
+--- !u!114 &5986662106799905993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,9 +90,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3939921017035819185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a896506bce53eee4fb0c0a3d875c3d2b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2154b366818f8de45bd9358d13d781d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scatterDistance: 2
 --- !u!1001 &1912468002040411351
 PrefabInstance:
   m_ObjectHideFlags: 0
