@@ -10,55 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: New Dialog
+  m_Name: New Dialog 3
   m_EditorClassIdentifier: 
   nodes:
-  - uniqueID: a
-    text: Hello Bob!
-    children:
-    - b
-    - c
-    - d
-    rect:
-      serializedVersion: 2
-      x: 22
-      y: 76
-      width: 200
-      height: 200
-  - uniqueID: b
-    text: This
+  - uniqueID: dc4718e0-56c4-4ff0-9787-aa7b7d969b83
+    text: 
     children: []
     rect:
       serializedVersion: 2
-      x: 609
-      y: 297
+      x: 0
+      y: 0
       width: 200
       height: 100
-  - uniqueID: c
-    text: is
-    children:
-    - e
-    rect:
-      serializedVersion: 2
-      x: 395
-      y: 73
-      width: 200
-      height: 100
-  - uniqueID: d
-    text: a
+  - uniqueID: 382c9f38-fd7b-4e0b-a93b-5bb5ff7d43c0
+    text: 
     children: []
     rect:
       serializedVersion: 2
-      x: 283
-      y: 319
+      x: 0
+      y: 0
       width: 200
       height: 100
-  - uniqueID: e
-    text: test
+  - uniqueID: 8f2a3a98-7b88-480a-aaa4-14030a713d79
+    text: 
     children: []
     rect:
       serializedVersion: 2
-      x: 661
-      y: 153
+      x: 333
+      y: 114
       width: 200
       height: 100
