@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: fff0a12ef0141cf46b7cd233c979c9ee
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Linux Biolinum Slanted
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: fb3867f626aa15c479a0eddeb74895f6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

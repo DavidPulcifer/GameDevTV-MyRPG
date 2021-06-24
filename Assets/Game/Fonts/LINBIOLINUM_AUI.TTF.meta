@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 82f257acfaf2ac7459cd0ff1ec39296d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Linux Biolinum Outline
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 025fae833a7b62f458b4d3632f235735, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

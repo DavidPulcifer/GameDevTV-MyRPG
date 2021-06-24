@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 5a9166c27ab462e4389e11203d86a172
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Linux Biolinum Shadow
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 03b908773f35f714f842cd9631974945, type: 3}
+  - {fileID: 12800000, guid: 2633de335ed404546b481a075710f9b0, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
