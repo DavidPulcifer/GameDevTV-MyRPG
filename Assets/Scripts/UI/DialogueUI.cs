@@ -15,23 +15,27 @@ namespace RPG.UI
         [SerializeField] GameObject AIResponse;
         [SerializeField] Transform choiceRoot;
         [SerializeField] GameObject choicePrefab;
+        [SerializeField] Button quitButton;
+        [SerializeField] TextMeshProUGUI conversantName;
         
         void Start()
         {
             playerConversant = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
-            nextButton.onClick.AddListener(Next);
+            playerConversant.onConversationUpdated += UpdateUI;
+            nextButton.onClick.AddListener(() => playerConversant.Next());
+            quitButton.onClick.AddListener(() => playerConversant.Quit());
 
-            UpdateUI();
-        }        
-
-        void Next()
-        {
-            playerConversant.Next();
             UpdateUI();
         }
-
+        
         private void UpdateUI()
         {
+            gameObject.SetActive(playerConversant.IsActive());
+            if (!playerConversant.IsActive())
+            {
+                return;
+            }
+            conversantName.text = playerConversant.GetCurrentConversantName();
             AIResponse.SetActive(!playerConversant.IsChoosing());
             choiceRoot.gameObject.SetActive(playerConversant.IsChoosing());
             if (playerConversant.IsChoosing())
@@ -61,7 +65,6 @@ namespace RPG.UI
                 button.onClick.AddListener(() =>
                 {
                     playerConversant.SelectChoice(choice);
-                    UpdateUI();
                 });
             }
         }
