@@ -23,6 +23,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &-7059451543109803138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,6 +49,8 @@ MonoBehaviour:
   onEnterAction: []
   onExitAction:
   - Attack
+  condition:
+    and: []
 --- !u!114 &-4696653969046877673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +75,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &-4540916228922131865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,6 +101,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +153,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &1805163505305319353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +178,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &3518707774676684481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +205,8 @@ MonoBehaviour:
   onEnterAction:
   - Test Selection
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &5472445648537207116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +231,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &6071022165162348367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,6 +259,8 @@ MonoBehaviour:
   onEnterAction: []
   onExitAction:
   - Test AI Exit Action
+  condition:
+    and: []
 --- !u!114 &6369183420114305989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +284,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &8118340480110926009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +312,8 @@ MonoBehaviour:
   onEnterAction:
   - TestRootEntry
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &8654788082751961960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,6 +338,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &8787534492710158254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +363,8 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
 --- !u!114 &8787734471168114426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,3 +389,5 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []

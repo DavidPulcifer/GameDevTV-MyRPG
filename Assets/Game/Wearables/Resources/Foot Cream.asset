@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3445ab0439f360843acdd92815681aed, type: 3}
+  m_Name: Foot Cream
+  m_EditorClassIdentifier: 
+  itemID: 2ef60a00-62c0-4838-a4fa-5753bf4dbf9f
+  displayName: Foot Cream
+  description: Good for bunions!
+  icon: {fileID: 21300000, guid: 924bdb202b4855641a771907676d828f, type: 3}
+  pickup: {fileID: 1942281582758595775, guid: 910d68ce276f1ee498ec4bbfd46e4e51, type: 3}
+  stackable: 0
+  allowedEquipLocation: 4
+  additiveModifiers:
+  - stat: 0
+    value: 5
+  percentageModifiers: []
