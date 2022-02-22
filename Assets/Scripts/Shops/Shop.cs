@@ -1,5 +1,6 @@
 using GameDevTV.Inventories;
 using RPG.Control;
+using RPG.Inventories;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,16 +22,30 @@ namespace RPG.Shops
             [Range(-100, 100)]
             public float buyingDiscountPercentage;
         }
-        
+
+        Dictionary<InventoryItem, int> transaction = new Dictionary<InventoryItem, int>();
+        Shopper currentShopper = null;
 
         public event Action onChange;
 
+        public void SetShopper(Shopper shopper)
+        {
+            currentShopper = shopper;
+        }
+
         public IEnumerable<ShopItem> GetFilteredItems() 
+        {
+            return GetAllItems();
+        }
+
+        public IEnumerable<ShopItem> GetAllItems()
         {
             foreach (StockItemConfig config in stockConfig)
             {
-                float price = config.item.GetPrice() * (1-config.buyingDiscountPercentage/100);
-                yield return new ShopItem(config.item, config.initialStock, price, 0);
+                float price = config.item.GetPrice() * (1 - config.buyingDiscountPercentage / 100);
+                int quantityInTransaction = 0;
+                transaction.TryGetValue(config.item, out quantityInTransaction);
+                yield return new ShopItem(config.item, config.initialStock, price, quantityInTransaction);
             }
         }
 
@@ -39,8 +54,47 @@ namespace RPG.Shops
         public void SelectMode(bool isBuying) { }
         public bool IsBuyingMode() { return true; }
         public bool CanTransact() { return true; }
-        public void ConfirmTransaction() { }
-        public float TransactionTotal() { return 0; }
+        public void ConfirmTransaction() 
+        {
+            
+            Inventory shopperInventory = currentShopper.GetComponent<Inventory>();
+            Purse shopperPurse = currentShopper.GetComponent<Purse>();
+            if (shopperInventory == null || shopperPurse == null) return;
+
+            // Transfer to or from the inventory
+            foreach (ShopItem shopItem in GetAllItems())
+            {
+                InventoryItem item = shopItem.GetInventoryItem();
+                int quantity = shopItem.GetQuantityInTransaction();
+                float price = shopItem.GetPrice();
+
+                for (int i = 0; i < quantity; i++)
+                {
+                    if (shopperPurse.GetBalance() < price) break;
+
+                    bool success = shopperInventory.AddToFirstEmptySlot(item, 1);
+                    if(success)
+                    {
+                        AddToTransaction(item, -1);
+                        shopperPurse.UpdateBalance(-price);
+                    }
+                }
+                
+            }
+            // Removal from transaction
+            // Debiting or crediting of funds
+        }
+        public float TransactionTotal() 
+        {
+            float total = 0;
+
+            foreach (ShopItem item in GetAllItems())
+            {
+                total += item.GetPrice() * item.GetQuantityInTransaction();
+            }
+
+            return total;
+        }
 
         public string GetShopName()
         {
@@ -49,7 +103,22 @@ namespace RPG.Shops
 
         public void AddToTransaction(InventoryItem item, int quantity) 
         {
-            print($"Added to transaction: {item.GetDisplayName()} x {quantity}");
+            if (!transaction.ContainsKey(item))
+            {
+                transaction[item] = 0;
+            }
+
+            transaction[item] += quantity;
+
+            if(transaction[item] <=0)
+            {
+                transaction.Remove(item);
+            }
+
+            if(onChange != null)
+            {
+                onChange();
+            }
         }
 
         public CursorType GetCursorType()
