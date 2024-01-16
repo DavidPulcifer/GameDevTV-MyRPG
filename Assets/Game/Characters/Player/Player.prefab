@@ -295,6 +295,7 @@ MonoBehaviour:
   maxNavMeshProjectionDistance: 1
   maxNavPathLength: 40
   rayCastRadius: 1
+  numberOfAbilities: 6
 --- !u!114 &257632484374846086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,6 +346,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Merr der Oboe
+--- !u!114 &3637339463453032676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939921017035819185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc27d872d94ce15458b6623dff253720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingBalance: 400
 --- !u!114 &5934973280760693741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +398,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySize: 16
+--- !u!114 &6911598239347231853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939921017035819185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b113e2ca023e442bae6d11aa6dcfc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8009783896992564825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939921017035819185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05f79c5f243fcf4a8836dc1e13f5186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8699467530141980814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939921017035819185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1628dd4d94e47e44bed64c00256d0c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusConfig:
+  - trait: 0
+    stat: 3
+    additiveBonusPerPoint: 0
+    percentageBonusPerPoint: 5
+  - trait: 2
+    stat: 0
+    additiveBonusPerPoint: 0
+    percentageBonusPerPoint: 5
+  - trait: 3
+    stat: 4
+    additiveBonusPerPoint: 0
+    percentageBonusPerPoint: 5
+  - trait: 3
+    stat: 5
+    additiveBonusPerPoint: 0
+    percentageBonusPerPoint: 5
+  - trait: 4
+    stat: 7
+    additiveBonusPerPoint: 5
+    percentageBonusPerPoint: 0
 --- !u!114 &9161006481186924722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,7 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 990b3b17a326e574ab39009b810fde7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3637339463453032676
+--- !u!114 &8360035231542137524
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -405,10 +476,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3939921017035819185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc27d872d94ce15458b6623dff253720, type: 3}
+  m_Script: {fileID: 11500000, guid: 914d685500b47c6468872643446cef39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingBalance: 400
 --- !u!1001 &8386207860617674959
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8570b50ad5f9fed4e97d0e8539d956d6, type: 3}
+  m_Name: Targeting Super Mega Splash
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 5d3ed1f2370540a479a74c03e4b44cab, type: 3}
+  cursorHotspot: {x: 0, y: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  areaAffectRadius: 5
+  targetingPrefab: {fileID: 2338829977836820541, guid: 56146a3a4baf9d346bd044e68dd18011,
+    type: 3}

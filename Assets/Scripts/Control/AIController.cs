@@ -5,6 +5,7 @@ using RPG.Movement;
 using RPG.Attributes;
 using UnityEngine;
 using System;
+using UnityEngine.AI;
 
 namespace RPG.Control
 {
@@ -37,7 +38,9 @@ namespace RPG.Control
             health = GetComponent<Health>();
             mover = GetComponent<Mover>();
             player = GameObject.FindWithTag("Player");
+
             guardPosition = new LazyValue<Vector3>(GetGuardPosition);
+            guardPosition.ForceInit();
         }
 
         Vector3 GetGuardPosition()
@@ -45,9 +48,19 @@ namespace RPG.Control
             return transform.position;
         }
 
+        internal void Reset()
+        {
+            NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
+            navMeshAgent.Warp(guardPosition.value);
+            timeSinceLastSawPlayer = Mathf.Infinity;
+            timeSinceReachedWaypoint = Mathf.Infinity;
+            timeSinceAggravated = Mathf.Infinity;
+            currentWayPointIndex = 0;
+        }
+
         private void Start()
         {
-            guardPosition.ForceInit();
+            
         }
 
         private void Update()

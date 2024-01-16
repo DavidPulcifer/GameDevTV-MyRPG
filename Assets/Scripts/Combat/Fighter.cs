@@ -91,6 +91,12 @@ namespace RPG.Combat
 
         public Health GetTarget() { return target; }
 
+        public Transform GetHandTransform(bool isRightHand)
+        {
+            if (isRightHand) return rightHandTransform;
+            return leftHandTransform;
+        }
+
         private void AttackBehavior()
         {
             transform.LookAt(target.transform);

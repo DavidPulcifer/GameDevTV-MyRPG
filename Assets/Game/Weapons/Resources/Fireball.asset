@@ -18,6 +18,8 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 09673a720fdcba64bb8f80ea403f99cf, type: 3}
   pickup: {fileID: 5993204380614889627, guid: 4a81a79b2f73139468ab6799ec0697e3, type: 3}
   stackable: 0
+  price: 0
+  category: 2
   allowedEquipLocation: 5
   animatorOverride: {fileID: 22100000, guid: 89d5d86088cf6f7418fb3058bc81aeea, type: 2}
   equippedPrefab: {fileID: 0}
