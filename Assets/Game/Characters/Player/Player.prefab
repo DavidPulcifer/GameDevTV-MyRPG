@@ -358,7 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc27d872d94ce15458b6623dff253720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingBalance: 400
+  startingBalance: 500
 --- !u!114 &5934973280760693741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,6 +422,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c05f79c5f243fcf4a8836dc1e13f5186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8360035231542137524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939921017035819185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914d685500b47c6468872643446cef39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  repawnLocation: {fileID: 0}
+  respawnDelay: 3
+  fadeTime: 0.2
+  healthRegenPercentage: 20
+  enemyHealthRegenPercentage: 20
 --- !u!114 &8699467530141980814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,18 +482,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 990b3b17a326e574ab39009b810fde7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8360035231542137524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3939921017035819185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 914d685500b47c6468872643446cef39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8386207860617674959

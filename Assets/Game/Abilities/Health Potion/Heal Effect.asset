@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43bf85ac3ee2a684483704fb6d8e1895, type: 3}
   m_Name: Heal Effect
   m_EditorClassIdentifier: 
-  healthChange: 30
+  healthChange: 100
