@@ -102,6 +102,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plus
       objectReference: {fileID: 0}
+    - target: {fileID: 6936571568067584302, guid: 74a2f17cc94c4a9468bb0b3022633016,
+        type: 3}
+      propertyPath: m_RaycastPadding.w
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6936571568067584302, guid: 74a2f17cc94c4a9468bb0b3022633016,
+        type: 3}
+      propertyPath: m_RaycastPadding.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6936571568067584302, guid: 74a2f17cc94c4a9468bb0b3022633016,
+        type: 3}
+      propertyPath: m_RaycastPadding.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6936571568067584302, guid: 74a2f17cc94c4a9468bb0b3022633016,
+        type: 3}
+      propertyPath: m_RaycastPadding.z
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8353297390583788922, guid: 74a2f17cc94c4a9468bb0b3022633016,
         type: 3}
       propertyPath: m_Pivot.x
@@ -211,7 +231,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5625068496293662224}
     - target: {fileID: 9216838203015624294, guid: 74a2f17cc94c4a9468bb0b3022633016,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -226,7 +246,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1105708746377733692}
     - target: {fileID: 9216838203015624294, guid: 74a2f17cc94c4a9468bb0b3022633016,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -249,6 +269,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a2f17cc94c4a9468bb0b3022633016, type: 3}
+--- !u!114 &5625068496293662224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6936571568067584302, guid: 74a2f17cc94c4a9468bb0b3022633016,
+    type: 3}
+  m_PrefabInstance: {fileID: 3338265634653679422}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3506269926227108441
 PrefabInstance:
   m_ObjectHideFlags: 0
