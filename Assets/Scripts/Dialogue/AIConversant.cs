@@ -1,7 +1,5 @@
 using RPG.Attributes;
 using RPG.Control;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace RPG.Dialogue
@@ -10,6 +8,7 @@ namespace RPG.Dialogue
     {
         [SerializeField] Dialogue dialogue = null;
         [SerializeField] string conversantName;
+       
 
         public CursorType GetCursorType()
         {
@@ -31,5 +30,7 @@ namespace RPG.Dialogue
         }
 
         public string GetName() { return conversantName; }
+
+        
     }
 }

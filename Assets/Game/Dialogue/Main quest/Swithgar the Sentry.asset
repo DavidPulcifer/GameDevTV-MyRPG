@@ -42,8 +42,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1539
-    y: 34
+    x: 1860
+    y: 31
     width: 200
     height: 100
   onEnterAction: []
@@ -69,15 +69,15 @@ MonoBehaviour:
   - 91ea2121-d21f-446b-b28c-bceb1dc19a5d
   rect:
     serializedVersion: 2
-    x: 1289
-    y: 35
+    x: 1555
+    y: 31
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
---- !u!114 &-4540916228922131865
+--- !u!114 &-3581290512859919073
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,22 +87,80 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 242190b2-bb38-4bc0-8654-bd490bbc13a9
+  m_Name: 8882ca16-5bfc-47e9-8e1b-01e96b1d3975
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: I haven't heard about any trouble.
+  isPlayerSpeaking: 0
+  text: Hey!
   children:
-  - e1664728-903a-43e9-9e70-a18f2c3a69ab
+  - ed54dd70-a6b4-4cb0-88b8-cafa95a65c8c
+  - 5af9c483-cf1e-41e9-8a06-b45a223602a7
+  - becb5983-9000-4b29-92ad-5a9d732db508
   rect:
     serializedVersion: 2
-    x: 1290
-    y: 252
+    x: 42
+    y: 132
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
+--- !u!114 &-3100544669978146319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: fc3f3efa-2e76-480b-830e-0d8fad8cce10
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thanks!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2624
+    y: 234
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GiveQuest
+  condition:
+    and: []
+--- !u!114 &-65461925014540787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 5af9c483-cf1e-41e9-8a06-b45a223602a7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh, it's you. Hello I guess...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 287
+    y: 232
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - Reject Swithgar
+        negate: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,9 +171,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: New In Town
+  m_Name: Swithgar the Sentry
   m_EditorClassIdentifier: 
   nodes:
+  - {fileID: -3581290512859919073}
   - {fileID: 8118340480110926009}
   - {fileID: 8787734471168114426}
   - {fileID: 3518707774676684481}
@@ -125,9 +184,77 @@ MonoBehaviour:
   - {fileID: -7059451543109803138}
   - {fileID: 1805163505305319353}
   - {fileID: 647591877138991310}
-  - {fileID: -4540916228922131865}
   - {fileID: 8654788082751961960}
+  - {fileID: 8822493383361587268}
+  - {fileID: 8441089299532103925}
+  - {fileID: 82651496577725449}
+  - {fileID: -3100544669978146319}
+  - {fileID: 7324535044573915270}
+  - {fileID: -65461925014540787}
+  - {fileID: 5285051901189196502}
+  - {fileID: 270509371018486510}
   newNodeOffset: {x: 250, y: 0}
+--- !u!114 &82651496577725449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: c9e6c017-3f31-4854-88cf-53c969367e75
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: It's literally 30 feet away, why can't you get it yourself?
+  children:
+  - 04af0684-94c6-402c-959a-d11e2502661a
+  rect:
+    serializedVersion: 2
+    x: 2402
+    y: 392
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &270509371018486510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: becb5983-9000-4b29-92ad-5a9d732db508
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Did you get that package yet?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 282
+    y: 353
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Help Swithgar
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Help Swithgar
+        negate: 1
 --- !u!114 &647591877138991310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,14 +268,14 @@ MonoBehaviour:
   m_Name: b5792171-f12f-4013-9687-d0b58dd47343
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Newton, eh? I heard there's trouble brewing down there.
+  text: Oh? Where are you from and what is your purpose here?
   children:
-  - 242190b2-bb38-4bc0-8654-bd490bbc13a9
   - b10ed072-d8ff-4450-914c-c4bc25dfa347
+  - 10b89332-6936-4a95-aac3-428160830a7e
   rect:
     serializedVersion: 2
-    x: 534
-    y: 257
+    x: 789
+    y: 221
     width: 200
     height: 100
   onEnterAction: []
@@ -168,12 +295,13 @@ MonoBehaviour:
   m_Name: e1664728-903a-43e9-9e70-a18f2c3a69ab
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Don't you worry about it. Say, do you have something to eat? I'm starving.
-  children: []
+  text: 'Don''t worry about it. '
+  children:
+  - e16f49ec-54e7-434a-98f6-c646d7030d79
   rect:
     serializedVersion: 2
-    x: 1544
-    y: 163
+    x: 1876
+    y: 301
     width: 200
     height: 100
   onEnterAction: []
@@ -198,12 +326,40 @@ MonoBehaviour:
   - 9627c4e4-96d2-424b-8b79-1e3468ec1239
   rect:
     serializedVersion: 2
-    x: 293
-    y: 40
+    x: 553
+    y: 32
     width: 200
     height: 100
   onEnterAction:
   - Test Selection
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5285051901189196502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e16f49ec-54e7-434a-98f6-c646d7030d79
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Say, can you do me a favor? I ordered something from the merchant over there,
+    but I can't leave my post. Can you get it for me?
+  children:
+  - c4ec763f-2d91-4daf-845d-62a59b5dd631
+  - c9e6c017-3f31-4854-88cf-53c969367e75
+  rect:
+    serializedVersion: 2
+    x: 2132
+    y: 302
+    width: 200
+    height: 100
+  onEnterAction: []
   onExitAction: []
   condition:
     and: []
@@ -225,8 +381,8 @@ MonoBehaviour:
   - e1664728-903a-43e9-9e70-a18f2c3a69ab
   rect:
     serializedVersion: 2
-    x: 1290
-    y: 148
+    x: 1548
+    y: 186
     width: 200
     height: 100
   onEnterAction: []
@@ -252,8 +408,8 @@ MonoBehaviour:
   - 8f27bf40-f012-4f85-a54b-06516f75a1c0
   rect:
     serializedVersion: 2
-    x: 1036
-    y: 36
+    x: 1306
+    y: 33
     width: 200
     height: 100
   onEnterAction: []
@@ -286,6 +442,32 @@ MonoBehaviour:
   onExitAction: []
   condition:
     and: []
+--- !u!114 &7324535044573915270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 04af0684-94c6-402c-959a-d11e2502661a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Fine.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2625
+    y: 392
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - RejectSwithgar
+  condition:
+    and: []
 --- !u!114 &8118340480110926009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,12 +487,47 @@ MonoBehaviour:
   - 9253bf8e-085c-4b88-93ac-4862d49a7433
   rect:
     serializedVersion: 2
-    x: 48
-    y: 122
+    x: 297
+    y: 96
     width: 200
     height: 100
-  onEnterAction:
-  - TestRootEntry
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - Reject Swithgar
+        negate: 1
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Help Swithgar
+        negate: 1
+--- !u!114 &8441089299532103925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: c4ec763f-2d91-4daf-845d-62a59b5dd631
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sure!
+  children:
+  - fc3f3efa-2e76-480b-830e-0d8fad8cce10
+  rect:
+    serializedVersion: 2
+    x: 2402
+    y: 233
+    width: 200
+    height: 100
+  onEnterAction: []
   onExitAction: []
   condition:
     and: []
@@ -327,13 +544,13 @@ MonoBehaviour:
   m_Name: b10ed072-d8ff-4450-914c-c4bc25dfa347
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Did I say Newton? I'm actually from Springville.
+  text: I'm from Mereham. I'm here to sell spiced wine at the market.
   children:
   - 9627c4e4-96d2-424b-8b79-1e3468ec1239
   rect:
     serializedVersion: 2
-    x: 787
-    y: 366
+    x: 1053
+    y: 127
     width: 200
     height: 100
   onEnterAction: []
@@ -378,13 +595,39 @@ MonoBehaviour:
   m_Name: 436f6602-716b-4851-839d-19bb0b2347d7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I came here from Newton
+  text: It's true. I'm new in town.
   children:
   - b5792171-f12f-4013-9687-d0b58dd47343
   rect:
     serializedVersion: 2
-    x: 289
-    y: 198
+    x: 547
+    y: 222
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &8822493383361587268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 10b89332-6936-4a95-aac3-428160830a7e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Honestly, I have no idea!
+  children:
+  - e1664728-903a-43e9-9e70-a18f2c3a69ab
+  rect:
+    serializedVersion: 2
+    x: 1045
+    y: 330
     width: 200
     height: 100
   onEnterAction: []

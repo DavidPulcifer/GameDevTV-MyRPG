@@ -7,9 +7,10 @@ using UnityEngine;
 
 namespace RPG.Dialogue
 {
-    public class PlayerConversant : MonoBehaviour
+    public class PlayerConversant : MonoBehaviour, IPredicateEvaluator
     {
         [SerializeField] string playerName;
+        [SerializeField] List<string> dialogueFlags = new List<string>();
 
         Dialogue currentDialogue;
         DialogueNode currentNode = null;
@@ -106,6 +107,14 @@ namespace RPG.Dialogue
             return FilterOnCondition(currentDialogue.GetAllChildren(currentNode)).Count() > 0;
         }
 
+        public void AddDialogueFlag(string flag)
+        {
+            if (!dialogueFlags.Contains(flag))
+            {
+                dialogueFlags.Add(flag);
+            }
+        }
+
         private IEnumerable<DialogueNode> FilterOnCondition(IEnumerable<DialogueNode> inputNode)
         {
             foreach (var node in inputNode)
@@ -152,6 +161,24 @@ namespace RPG.Dialogue
             {
                 trigger.Trigger(action);
             }
+        }
+
+        public bool? Evaluate(string predicate, string[] parameters)
+        {
+            switch (predicate)
+            {
+                case "HasDialogueFlag":
+                    foreach (string parameter in parameters)
+                    {
+                        if (dialogueFlags.Contains(parameter))
+                        {
+                            return true;
+                        }
+                    }
+                    return false;
+
+            }
+            return null;
         }
     }
 

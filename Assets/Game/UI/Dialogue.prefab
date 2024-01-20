@@ -334,32 +334,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1683817248826455976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6739068686850132899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 20
-    m_Right: 20
-    m_Top: 20
-    m_Bottom: 20
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1001 &243872593505816562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -898,6 +872,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2535757052177132038, guid: 62672a8d3329c204d8beb3ca80907666,
+        type: 3}
+      propertyPath: m_lineSpacing
+      value: 62
+      objectReference: {fileID: 0}
     - target: {fileID: 4593293457341903187, guid: 62672a8d3329c204d8beb3ca80907666,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1119,6 +1098,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1683817248826455976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6739068686850132899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 20
+    m_Right: 20
+    m_Top: 20
+    m_Bottom: 20
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1001 &7442193287032954507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1235,6 +1240,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535757052177132038, guid: 62672a8d3329c204d8beb3ca80907666,
+        type: 3}
+      propertyPath: m_lineSpacing
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 4593293457341903187, guid: 62672a8d3329c204d8beb3ca80907666,
         type: 3}
@@ -1390,6 +1400,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535757052177132038, guid: 62672a8d3329c204d8beb3ca80907666,
+        type: 3}
+      propertyPath: m_text
+      value: I've lived here all my life! I came here to go fishing and play with
+        the squirrels
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535757052177132038, guid: 62672a8d3329c204d8beb3ca80907666,
+        type: 3}
+      propertyPath: m_lineSpacing
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 4593293457341903187, guid: 62672a8d3329c204d8beb3ca80907666,
         type: 3}

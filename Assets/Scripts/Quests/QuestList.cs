@@ -117,7 +117,6 @@ namespace RPG.Quests
 
         public bool? Evaluate(string predicate, string[] parameters)
         {
-            if (predicate != "HasQuest") return null;
             switch (predicate)
             {
                 case "HasQuest":

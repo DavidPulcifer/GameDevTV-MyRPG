@@ -129,6 +129,34 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 738709408}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1338515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1502b7b213204f44f89d86238ca14a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: RejectSwithgar
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1113193659}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerConversant, Assembly-CSharp
+        m_MethodName: AddDialogueFlag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Reject Swithgar
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1338523 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1556052867101855078, guid: ce99a60992419c94b888ce34977fb247,
@@ -181,8 +209,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bf477a895fa01247ae7b701f1affe60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: dbb9078a1d7755644b8bc270f413fbdf, type: 2}
-  conversantName: Town Greeter
+  dialogue: {fileID: 11400000, guid: 6966c55017eb11f4590df7cff2183b24, type: 2}
+  conversantName: Swithgar the Sentry
+--- !u!114 &1338532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1502b7b213204f44f89d86238ca14a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: GiveQuest
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1338533}
+        m_TargetAssemblyTypeName: RPG.Quests.QuestGiver, Assembly-CSharp
+        m_MethodName: GiveQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1338533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea63552968a18b645b1c180087ab21fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 754de99d8655c044491540c4a3b874a0, type: 2}
 --- !u!1001 &2780040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2307,6 +2376,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5739335146028960068, guid: 722047460aec5ea418243be5de842d85,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: d1ba4d2f0fda55d4683fce9a49ebfdc9,
+        type: 2}
     - target: {fileID: 5739335146028960068, guid: 722047460aec5ea418243be5de842d85,
         type: 3}
       propertyPath: conversantName
@@ -6401,7 +6476,7 @@ PrefabInstance:
     - target: {fileID: 3697622704622461409, guid: ce99a60992419c94b888ce34977fb247,
         type: 3}
       propertyPath: m_Name
-      value: Town Greeter
+      value: Swithgar the Sentry
       objectReference: {fileID: 0}
     - target: {fileID: 6453939673629322765, guid: ce99a60992419c94b888ce34977fb247,
         type: 3}
@@ -9736,6 +9811,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1093759911}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1113193659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 800922252760468119, guid: 353aef4ee29750c41b6b7f5f30625914,
+    type: 3}
+  m_PrefabInstance: {fileID: 2436084601559754581}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 436cdead6af8575419d81a811035fcef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1115700728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20929,12 +21016,12 @@ PrefabInstance:
     - target: {fileID: 2436084601662705003, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 8.3e-44
+      value: -34.306244
       objectReference: {fileID: 0}
     - target: {fileID: 2436084601662705003, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 4.5905e-41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2436084601662705003, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -21064,7 +21151,7 @@ PrefabInstance:
     - target: {fileID: 2809907673919296409, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.74976
+      value: -570.74994
       objectReference: {fileID: 0}
     - target: {fileID: 2810127679427545817, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
