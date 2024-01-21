@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: Help Swithgar
   m_EditorClassIdentifier: 
   objectives:
-  - reference: getPackage
-    description: Get the package
-    usesCondition: 0
+  - reference: getDelivery
+    description: Ask Eadric to deliver the package to Swithgar
+    usesCondition: 1
     completionCondition:
-      and: []
+      and:
+      - or:
+        - predicate: HasDialogueFlag
+          parameters:
+          - SwithgarDeliveryScheduled
+          negate: 0
   rewards:
-  - number: 100
+  - number: 50
     item: {fileID: 11400000, guid: 65b5b4f1db9fb0344899c1fee4c57ddc, type: 2}

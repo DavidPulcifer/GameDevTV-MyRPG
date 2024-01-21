@@ -145,16 +145,16 @@ MonoBehaviour:
   onTrigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1113193659}
-        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerConversant, Assembly-CSharp
-        m_MethodName: AddDialogueFlag
+      - m_Target: {fileID: 2436084601559754583}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerReputation, Assembly-CSharp
+        m_MethodName: HarmReputation
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Reject Swithgar
+          m_StringArgument: soldiers
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1338523 stripped
@@ -195,6 +195,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2436084601559754583}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerReputation, Assembly-CSharp
+        m_MethodName: DestroyReputation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: soldiers
           m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1338530
@@ -252,6 +264,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: 754de99d8655c044491540c4a3b874a0, type: 2}
+--- !u!114 &1338534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1502b7b213204f44f89d86238ca14a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: RepairRep
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2436084601559754583}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerReputation, Assembly-CSharp
+        m_MethodName: ImproveReputation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: soldiers
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &2780040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2545,6 +2585,7 @@ Transform:
   - {fileID: 209481949}
   - {fileID: 828328952}
   - {fileID: 1858742054}
+  - {fileID: 942769531}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8187,6 +8228,199 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 942575737}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &942769530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 243359718}
+    m_Modifications:
+    - target: {fileID: 1372325658218537784, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: ab74608c-6cd6-42b3-b87c-72d6f81eafae
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 58.466557
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25.155153
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 66.95586
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739335146028960068, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 081a4ae3c7295a848b4e1503d85b4f44,
+        type: 2}
+    - target: {fileID: 5739335146028960068, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: conversantName
+      value: Eadric
+      objectReference: {fileID: 0}
+    - target: {fileID: 6203647017921731394, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+        type: 3}
+      propertyPath: m_Name
+      value: Eadric
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14a69e5c4a4a3994faf5fb507b6a625f, type: 3}
+--- !u!4 &942769531 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4384165907772724398, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+    type: 3}
+  m_PrefabInstance: {fileID: 942769530}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &942769532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6203647017921731394, guid: 14a69e5c4a4a3994faf5fb507b6a625f,
+    type: 3}
+  m_PrefabInstance: {fileID: 942769530}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &942769533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942769532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1502b7b213204f44f89d86238ca14a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: CompleteQuest
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1113193659}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerConversant, Assembly-CSharp
+        m_MethodName: AddDialogueFlag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: SwithgarDeliveryScheduled
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2436084601559754583}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerReputation, Assembly-CSharp
+        m_MethodName: ImproveReputation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: soldiers
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &942769534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942769532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1502b7b213204f44f89d86238ca14a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: DamageRep
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2436084601559754583}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerReputation, Assembly-CSharp
+        m_MethodName: HarmReputation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: villagers
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &942769535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942769532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1502b7b213204f44f89d86238ca14a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: RepairRep
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2436084601559754583}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerReputation, Assembly-CSharp
+        m_MethodName: ImproveReputation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: villagers
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &947666079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9817,7 +10051,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2436084601559754581}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2436084601559754582}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 436cdead6af8575419d81a811035fcef, type: 3}
@@ -19871,7 +20105,7 @@ PrefabInstance:
     - target: {fileID: 6524018341456000567, guid: 9f55a7980bf70ef4a8a30e5812899d48,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -384.1816
+      value: -382.49
       objectReference: {fileID: 0}
     - target: {fileID: 6524018341456000567, guid: 9f55a7980bf70ef4a8a30e5812899d48,
         type: 3}
@@ -21016,7 +21250,7 @@ PrefabInstance:
     - target: {fileID: 2436084601662705003, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: -34.306244
+      value: -21.890366
       objectReference: {fileID: 0}
     - target: {fileID: 2436084601662705003, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -21151,7 +21385,7 @@ PrefabInstance:
     - target: {fileID: 2809907673919296409, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.74994
+      value: -570.74976
       objectReference: {fileID: 0}
     - target: {fileID: 2810127679427545817, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -23415,3 +23649,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 353aef4ee29750c41b6b7f5f30625914, type: 3}
+--- !u!1 &2436084601559754582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1685436167664751615, guid: 353aef4ee29750c41b6b7f5f30625914,
+    type: 3}
+  m_PrefabInstance: {fileID: 2436084601559754581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2436084601559754583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2436084601559754582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b57e132f8612384aaf06c560a74c226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -10,6 +10,7 @@ namespace RPG.Dialogue
     public class DialogueNode : ScriptableObject
     {
         [SerializeField] bool isPlayerSpeaking = false;
+        [TextArea(3, 10)]
         [SerializeField] string text;
         [SerializeField] List<string> children = new List<string>();
         [SerializeField] Rect rect = new Rect(0, 0, 200, 100);
