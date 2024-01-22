@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7319162455411962696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2d70d2d8-9abf-4a6e-9f3c-bbe0a837183d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thanks!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2038
+    y: 342
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GiveQuest
+  condition:
+    and: []
 --- !u!114 &-7034400382920047758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +113,45 @@ MonoBehaviour:
         parameters:
         - villagers
         negate: 1
+--- !u!114 &-5370288975021256366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 1bc1b365-ba90-4220-94ba-f80dbb84115e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Say, would you mind passing a message for me? If you see my sister, Ealdfrid,
+    tell her "The silent owl sings at midnight. The field mouse runs away."
+  children:
+  - 1e3c00fb-f285-4a3a-a4a0-a92f738df4ff
+  - 0720d7fe-b947-454d-9e7b-a2838ed2e0d7
+  - 6bb9755f-2acb-4c0b-97d2-282ab65e0170
+  rect:
+    serializedVersion: 2
+    x: 1066
+    y: 239
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - RejectEadric
+        negate: 1
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Pass Eadrics Message
+        negate: 1
 --- !u!114 &-4625032801073219887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +227,8 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   text: They say they are hunting for outlaws, but I suspect that is only part of
     the truth.
-  children: []
+  children:
+  - 1bc1b365-ba90-4220-94ba-f80dbb84115e
   rect:
     serializedVersion: 2
     x: 840
@@ -293,6 +359,13 @@ MonoBehaviour:
   - {fileID: 3678821421138626568}
   - {fileID: 1427901655191775825}
   - {fileID: -6701419655359432314}
+  - {fileID: -5370288975021256366}
+  - {fileID: 1631643000516178618}
+  - {fileID: 2942608660157215091}
+  - {fileID: 3815228197324720250}
+  - {fileID: 4488075393297734412}
+  - {fileID: -7319162455411962696}
+  - {fileID: 6350702522603824003}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &342109250188418767
 MonoBehaviour:
@@ -352,6 +425,32 @@ MonoBehaviour:
   - CompleteQuest
   condition:
     and: []
+--- !u!114 &1631643000516178618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 1e3c00fb-f285-4a3a-a4a0-a92f738df4ff
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I prefer not to, sorry.
+  children:
+  - 3d310d6d-f1b4-43ab-ab55-ca6afe401bfa
+  rect:
+    serializedVersion: 2
+    x: 1799
+    y: 234
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
 --- !u!114 &1782623244339940446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,6 +471,32 @@ MonoBehaviour:
     serializedVersion: 2
     x: 585
     y: 137
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2942608660157215091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 0720d7fe-b947-454d-9e7b-a2838ed2e0d7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sure! Happy to help!
+  children:
+  - 2d70d2d8-9abf-4a6e-9f3c-bbe0a837183d
+  rect:
+    serializedVersion: 2
+    x: 1801
+    y: 340
     width: 200
     height: 100
   onEnterAction: []
@@ -461,6 +586,58 @@ MonoBehaviour:
   onExitAction: []
   condition:
     and: []
+--- !u!114 &3815228197324720250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6bb9755f-2acb-4c0b-97d2-282ab65e0170
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What does that mean?
+  children:
+  - a46a7854-1aec-4c3b-99be-9441cdae4727
+  rect:
+    serializedVersion: 2
+    x: 1313
+    y: 450
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4488075393297734412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 3d310d6d-f1b4-43ab-ab55-ca6afe401bfa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: No problem! I'll see her tonight.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2038
+    y: 234
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - RejectEadric
+  condition:
+    and: []
 --- !u!114 &5813362008004897594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,6 +658,34 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1058
     y: 36
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &6350702522603824003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: a46a7854-1aec-4c3b-99be-9441cdae4727
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh, uhh... It's nothing. Just my way of saying hello. She'll understand.
+    So, will you tell her?
+  children:
+  - 1e3c00fb-f285-4a3a-a4a0-a92f738df4ff
+  - 0720d7fe-b947-454d-9e7b-a2838ed2e0d7
+  rect:
+    serializedVersion: 2
+    x: 1563
+    y: 449
     width: 200
     height: 100
   onEnterAction: []

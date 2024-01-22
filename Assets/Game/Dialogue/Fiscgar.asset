@@ -1,0 +1,338 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9171089206402356925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 93370e8f-a413-42bf-87ab-a3d1a803b671
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: 'Oi! '
+  children:
+  - 337c841a-ba60-4192-af93-66de173210b3
+  rect:
+    serializedVersion: 2
+    x: 29
+    y: 120
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-6190251288076973036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: cca4aa65-1fab-42cd-8f0f-696835e35e7c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yes, I did
+  children:
+  - e29355e5-414d-46fe-bce4-661c03483aa5
+  rect:
+    serializedVersion: 2
+    x: 570
+    y: 111
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - TookFish
+        negate: 0
+--- !u!114 &-5213007037145251342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: bd8be8f8-04eb-45e7-99b5-defd8d49c382
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Tho yer lookin' a bit short of a sheet. Go ahead and take one if ya got feet.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1094
+    y: 238
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - TalkToFiscgar
+  - ImproveRep
+  condition:
+    and: []
+--- !u!114 &-4940433554513315789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2ce6b2ab-7bc0-46a7-83b3-ab4a60693038
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oi, what a tea leaf!
+  children:
+  - 93c06d28-73d4-4246-bdd6-1a0a326bea2d
+  rect:
+    serializedVersion: 2
+    x: 821
+    y: 371
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - TookFish
+        negate: 0
+--- !u!114 &-3533976705980857028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 0e17730b-b971-4e5a-9b43-0c201850e6c0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No, I didn't
+  children:
+  - 42fb3fba-d591-4275-bc53-3659eb7ac058
+  - 2ce6b2ab-7bc0-46a7-83b3-ab4a60693038
+  rect:
+    serializedVersion: 2
+    x: 567
+    y: 248
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-3480914387639925231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e29355e5-414d-46fe-bce4-661c03483aa5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Well, I'll be brown bread! You're proper upright, friend.
+  children:
+  - f4349c22-2ed9-4563-9b7e-71903f4b9429
+  rect:
+    serializedVersion: 2
+    x: 834
+    y: 112
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2651121311778136788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 95710eac-0386-4df5-9d4e-6ff25e01df15
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Yeah, means yer a thief! Git gone ya lump o' school!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1319
+    y: 372
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - TalkToFiscgar
+  - DamageRep
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Fiscgar
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -9171089206402356925}
+  - {fileID: -6190251288076973036}
+  - {fileID: -3533976705980857028}
+  - {fileID: -3480914387639925231}
+  - {fileID: 6063233343035623585}
+  - {fileID: 8829700118507146827}
+  - {fileID: 3611008994343112550}
+  - {fileID: -4940433554513315789}
+  - {fileID: -5213007037145251342}
+  - {fileID: 5076641173180303610}
+  - {fileID: -2651121311778136788}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &3611008994343112550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 42fb3fba-d591-4275-bc53-3659eb7ac058
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Well, I'll be brown bread! You're proper upright, friend.
+  children:
+  - bd8be8f8-04eb-45e7-99b5-defd8d49c382
+  rect:
+    serializedVersion: 2
+    x: 839
+    y: 238
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - TookFish
+        negate: 1
+--- !u!114 &5076641173180303610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 93c06d28-73d4-4246-bdd6-1a0a326bea2d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: tea leaf?
+  children:
+  - 95710eac-0386-4df5-9d4e-6ff25e01df15
+  rect:
+    serializedVersion: 2
+    x: 1071
+    y: 372
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &6063233343035623585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 337c841a-ba60-4192-af93-66de173210b3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: D'you swipe any o' my pike?
+  children:
+  - cca4aa65-1fab-42cd-8f0f-696835e35e7c
+  - 0e17730b-b971-4e5a-9b43-0c201850e6c0
+  rect:
+    serializedVersion: 2
+    x: 258
+    y: 120
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - TalkToFiscgar
+        negate: 1
+--- !u!114 &8829700118507146827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f4349c22-2ed9-4563-9b7e-71903f4b9429
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You gotta be awful on the floor to nick an albacore, eh? Go ahead and keep
+    it.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1086
+    y: 113
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - TalkToFiscgar
+  condition:
+    and: []
