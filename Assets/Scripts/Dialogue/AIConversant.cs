@@ -1,5 +1,6 @@
 using RPG.Attributes;
 using RPG.Control;
+using RPG.Movement;
 using UnityEngine;
 
 namespace RPG.Dialogue
@@ -24,6 +25,9 @@ namespace RPG.Dialogue
 
             if (Input.GetMouseButtonDown(0))
             {
+                Vector3 direction = (callingController.transform.position - transform.position).normalized;
+                Vector3 targetPosition = transform.position + direction * 1f; // 1 unit away in the direction of callingController
+                callingController.GetComponent<Mover>().StartMoveAction(targetPosition, 1f);
                 callingController.GetComponent<PlayerConversant>().StartDialogue(this, dialogue);
             }
             return true;

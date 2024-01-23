@@ -2,9 +2,9 @@ using GameDevTV.Inventories;
 using GameDevTV.Saving;
 using RPG.Control;
 using RPG.Inventories;
+using RPG.Movement;
 using RPG.Stats;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -143,8 +143,7 @@ namespace RPG.Shops
         }
 
         public void ConfirmTransaction() 
-        {
-            
+        {            
             Inventory shopperInventory = currentShopper.GetComponent<Inventory>();
             Purse shopperPurse = currentShopper.GetComponent<Purse>();
             if (shopperInventory == null || shopperPurse == null) return;
@@ -234,6 +233,9 @@ namespace RPG.Shops
         {
             if (Input.GetMouseButtonDown(0))
             {
+                Vector3 direction = (callingController.transform.position - transform.position).normalized;
+                Vector3 targetPosition = transform.position + direction * 1f; // 1 unit away in the direction of callingController
+                callingController.GetComponent<Mover>().StartMoveAction(targetPosition, 1f);
                 callingController.GetComponent<Shopper>().SetActiveShop(this);
             }
             return true;

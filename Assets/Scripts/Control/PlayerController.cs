@@ -118,8 +118,7 @@ namespace RPG.Control
         }
 
         private bool InteractWithMovement()
-        {
-            
+        {            
             Vector3 target;
             bool hasHit = RaycastNavMesh(out target);
 
