@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed40d2c9b1a9f2741b6dcaa94ae14d39, type: 3}
+  m_Name: Sharpen Axe
+  m_EditorClassIdentifier: 
+  objectives:
+  - reference: grabAxe
+    description: Grab the axe
+    usesCondition: 0
+    completionCondition:
+      and: []
+  - reference: sharpenAxe
+    description: Get the axe sharpened
+    usesCondition: 0
+    completionCondition:
+      and: []
+  rewards:
+  - number: 1
+    item: {fileID: 11400000, guid: ab8513df3dcb0e64aaa24d78ade8e11b, type: 2}

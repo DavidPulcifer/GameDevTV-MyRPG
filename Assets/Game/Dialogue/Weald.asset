@@ -1,0 +1,339 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8772709310183016320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2245eddf-a175-4e2c-a1fe-2ae82d0a4fe4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm honestly not sure, but I'd be happy to try.
+  children:
+  - b59122b1-fb49-458b-82ee-96e44304defa
+  rect:
+    serializedVersion: 2
+    x: 776
+    y: 251
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-8562757785874333615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7fee3902-ec76-4718-84b9-55b72286b1fd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (grunts)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1524
+    y: 354
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - DamageRep
+  condition:
+    and: []
+--- !u!114 &-6878419432516664696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 1328a74e-f8b8-4503-b36d-8d919c4bda25
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I just appeared over there across the bridge and I have no idea who I am
+    or what I'm doing here.
+  children:
+  - 7bbfcf0b-f111-4e2a-8799-d62ed89636af
+  rect:
+    serializedVersion: 2
+    x: 1276
+    y: 250
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2870035837993106382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 665f5278-8fbd-4a83-9771-56163e205826
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Any luck with the axe?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 534
+    y: 250
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Sharpen Axe
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Sharpen Axe
+        negate: 1
+--- !u!114 &-2028303884680261667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 100dac82-c8c9-4b00-95b3-3e7255675762
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (grunts)
+  children:
+  - b98d321b-37c8-4906-8f48-a71e11e28a30
+  - 665f5278-8fbd-4a83-9771-56163e205826
+  rect:
+    serializedVersion: 2
+    x: 254
+    y: 140
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-1167688399136059410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b98d321b-37c8-4906-8f48-a71e11e28a30
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You know anything about sharpening axes? I turned by back for one second
+    and those jerk soldiers thought it would be funny to chop right into an iron
+    knot.
+  children:
+  - 2245eddf-a175-4e2c-a1fe-2ae82d0a4fe4
+  - 05c65488-ba77-452f-857a-6f2cdd6ff744
+  rect:
+    serializedVersion: 2
+    x: 534
+    y: 138
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Sharpen Axe
+        negate: 1
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - RejectWeald
+        negate: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Weald
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -2028303884680261667}
+  - {fileID: -1167688399136059410}
+  - {fileID: -2870035837993106382}
+  - {fileID: -8772709310183016320}
+  - {fileID: 3741113759491032775}
+  - {fileID: 5265604836025698338}
+  - {fileID: 4595053820467156087}
+  - {fileID: -6878419432516664696}
+  - {fileID: 7045339434185154496}
+  - {fileID: 4507814770820081536}
+  - {fileID: -8562757785874333615}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &3741113759491032775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 05c65488-ba77-452f-857a-6f2cdd6ff744
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sorry, I don't want to do that.
+  children:
+  - 6122b94b-cdfb-45da-9a2d-cff3a21366f6
+  rect:
+    serializedVersion: 2
+    x: 781
+    y: 139
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4507814770820081536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 33227302-c4b2-4ac8-aa75-e625b057d9ce
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: uhh... just joking. Of course I know whether or not I can sharpen an axe...
+  children:
+  - 7fee3902-ec76-4718-84b9-55b72286b1fd
+  rect:
+    serializedVersion: 2
+    x: 1270
+    y: 354
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4595053820467156087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b59122b1-fb49-458b-82ee-96e44304defa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Wow, thanks! But what do you mean you're not sure?
+  children:
+  - 1328a74e-f8b8-4503-b36d-8d919c4bda25
+  - 33227302-c4b2-4ac8-aa75-e625b057d9ce
+  rect:
+    serializedVersion: 2
+    x: 1026
+    y: 249
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GiveQuest
+  condition:
+    and: []
+--- !u!114 &5265604836025698338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6122b94b-cdfb-45da-9a2d-cff3a21366f6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (grunts)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1031
+    y: 139
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - DamageRep
+  - RejectWeald
+  condition:
+    and: []
+--- !u!114 &7045339434185154496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7bbfcf0b-f111-4e2a-8799-d62ed89636af
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: That's crazy, let me know if there is anything I can do to help.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1526
+    y: 249
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
