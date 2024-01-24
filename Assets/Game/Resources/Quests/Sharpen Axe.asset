@@ -15,9 +15,14 @@ MonoBehaviour:
   objectives:
   - reference: grabAxe
     description: Grab the axe
-    usesCondition: 0
+    usesCondition: 1
     completionCondition:
-      and: []
+      and:
+      - or:
+        - predicate: HasDialogueFlag
+          parameters:
+          - TookAxe
+          negate: 0
   - reference: sharpenAxe
     description: Get the axe sharpened
     usesCondition: 0
@@ -26,3 +31,4 @@ MonoBehaviour:
   rewards:
   - number: 1
     item: {fileID: 11400000, guid: ab8513df3dcb0e64aaa24d78ade8e11b, type: 2}
+    experience: 100

@@ -15,8 +15,15 @@ MonoBehaviour:
   objectives:
   - reference: walkUp
     description: Walk over to the shop
+    usesCondition: 0
+    completionCondition:
+      and: []
   - reference: talkTo
     description: Talk to the person
+    usesCondition: 0
+    completionCondition:
+      and: []
   rewards:
   - number: 1000
     item: {fileID: 11400000, guid: 65b5b4f1db9fb0344899c1fee4c57ddc, type: 2}
+    experience: 100

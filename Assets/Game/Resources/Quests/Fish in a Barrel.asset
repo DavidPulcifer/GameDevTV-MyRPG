@@ -26,3 +26,4 @@ MonoBehaviour:
   rewards:
   - number: 1
     item: {fileID: 11400000, guid: e3b91ec25f1715b4c8bd834fa2c07622, type: 2}
+    experience: 100

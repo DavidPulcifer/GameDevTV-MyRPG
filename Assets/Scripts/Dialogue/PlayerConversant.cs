@@ -115,6 +115,14 @@ namespace RPG.Dialogue
             }
         }
 
+        public void RemoveDialogueFlag(string flag)
+        {
+            if (dialogueFlags.Contains(flag))
+            {
+                dialogueFlags.Remove(flag);
+            }
+        }
+
         private IEnumerable<DialogueNode> FilterOnCondition(IEnumerable<DialogueNode> inputNode)
         {
             foreach (var node in inputNode)

@@ -95,7 +95,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 793
-    y: 417
+    y: 416
     width: 200
     height: 100
   onEnterAction: []
@@ -363,7 +363,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 539
-    y: 327
+    y: 326
     width: 200
     height: 100
   onEnterAction: []
@@ -470,7 +470,7 @@ MonoBehaviour:
   - 8f27bf40-f012-4f85-a54b-06516f75a1c0
   rect:
     serializedVersion: 2
-    x: 1306
+    x: 1305
     y: 33
     width: 200
     height: 100

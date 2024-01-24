@@ -1,6 +1,7 @@
 using GameDevTV.Inventories;
 using GameDevTV.Saving;
 using GameDevTV.Utils;
+using RPG.Stats;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -72,6 +73,7 @@ namespace RPG.Quests
                 {
                     GetComponent<ItemDropper>().DropItem(reward.item, reward.number);
                 }
+                GetComponent<Experience>().GainExperience(reward.experience);
             }
         }
 

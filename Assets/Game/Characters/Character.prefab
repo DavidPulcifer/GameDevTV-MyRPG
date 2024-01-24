@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 80780676877295058}
   - component: {fileID: 1850844918864961143}
   - component: {fileID: 6580568287237467821}
+  - component: {fileID: 299298998483972156}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -216,6 +217,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -227,6 +230,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -239,6 +243,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!195 &1485952435
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -296,6 +301,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2445821588185916449}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Spawn
         m_Mode: 0
         m_Arguments:
@@ -307,6 +313,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 5729037640590567014}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -321,6 +328,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1724012341578222975}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -372,6 +380,8 @@ MonoBehaviour:
   rightHandTransform: {fileID: 0}
   leftHandTransform: {fileID: 0}
   defaultWeapon: {fileID: 0}
+  autoAttackRange: 4
+  autoAttackActive: 1
 --- !u!136 &1749623749653543240
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -432,6 +442,19 @@ MonoBehaviour:
   progression: {fileID: 11400000, guid: 3b4fddcf48337844a9557b3adda58439, type: 2}
   levelUpParticleEffect: {fileID: 0}
   shouldUseModifiers: 0
+--- !u!114 &299298998483972156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4900566663845078440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a02cab278be73ab4db892814502bcb1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationState: Locomotion
 --- !u!1 &7352382660198468594
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887418644950793907, guid: 509190ed9cc861c418b96be45aafad09,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887418644950793907, guid: 509190ed9cc861c418b96be45aafad09,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -588,6 +616,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887418644950793907, guid: 509190ed9cc861c418b96be45aafad09,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8887418644950793907, guid: 509190ed9cc861c418b96be45aafad09,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -599,16 +632,6 @@ PrefabInstance:
     - target: {fileID: 8887418644950793907, guid: 509190ed9cc861c418b96be45aafad09,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887418644950793907, guid: 509190ed9cc861c418b96be45aafad09,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8887418644950793907, guid: 509190ed9cc861c418b96be45aafad09,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8887418644950793907, guid: 509190ed9cc861c418b96be45aafad09,

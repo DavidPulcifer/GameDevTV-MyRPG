@@ -75,7 +75,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 1094
-    y: 238
+    y: 237
     width: 200
     height: 100
   onEnterAction: []
@@ -297,7 +297,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 258
-    y: 120
+    y: 119
     width: 200
     height: 100
   onEnterAction: []

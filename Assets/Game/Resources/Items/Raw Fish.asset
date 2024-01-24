@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccbc3c0590d41284fb7977c09571be2a, type: 3}
   m_Name: Raw Fish
   m_EditorClassIdentifier: 
-  itemID: f5239cac-2b1c-4155-8ee0-0eee93923476
+  itemID: f5239cac-2b1c-4155-8ee0-0eee93923475
   displayName: Raw Fish
   description: Freshly caught fresh water fish.
   icon: {fileID: 21300000, guid: a7d1eaedbb8e0154a9c7b5fa68b94b3d, type: 3}

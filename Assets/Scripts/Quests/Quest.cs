@@ -8,7 +8,7 @@ using UnityEngine;
 namespace RPG.Quests
 {
 
-    [CreateAssetMenu(fileName = "Quest", menuName = "RPG Project/Quest", order = 0)]
+    [CreateAssetMenu(fileName = "Quest", menuName = "Quest", order = 0)]
     public class Quest: ScriptableObject
     {
         [SerializeField] List<Objective> objectives = new List<Objective>();
@@ -21,6 +21,7 @@ namespace RPG.Quests
             [Min(1)]
             public int number;
             public InventoryItem item;
+            public int experience;
         }
 
         [System.Serializable]
