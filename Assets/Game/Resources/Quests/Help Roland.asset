@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed40d2c9b1a9f2741b6dcaa94ae14d39, type: 3}
-  m_Name: Help Swithgar
+  m_Name: Help Roland
   m_EditorClassIdentifier: 
   objectives:
   - reference: getDelivery
-    description: Ask Eadric to deliver the package to Swithgar
+    description: Ask Eadric to deliver the package to Roland
     usesCondition: 1
     completionCondition:
       and:
       - or:
         - predicate: HasDialogueFlag
           parameters:
-          - SwithgarDeliveryScheduled
+          - RolandDeliveryScheduled
           negate: 0
   rewards:
   - number: 50

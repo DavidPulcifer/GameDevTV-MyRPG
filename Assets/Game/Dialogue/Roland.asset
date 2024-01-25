@@ -70,7 +70,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 1555
-    y: 31
+    y: 30
     width: 200
     height: 100
   onEnterAction: []
@@ -95,7 +95,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 793
-    y: 416
+    y: 414
     width: 200
     height: 100
   onEnterAction: []
@@ -182,7 +182,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 289
-    y: 327
+    y: 326
     width: 200
     height: 100
   onEnterAction: []
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: Swithgar the Sentry
+  m_Name: Roland
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -3581290512859919073}
@@ -284,12 +284,12 @@ MonoBehaviour:
     - or:
       - predicate: HasQuest
         parameters:
-        - Help Swithgar
+        - Help Roland
         negate: 0
     - or:
       - predicate: CompletedQuest
         parameters:
-        - Help Swithgar
+        - Help Roland
         negate: 1
 --- !u!114 &647591877138991310
 MonoBehaviour:
@@ -336,7 +336,7 @@ MonoBehaviour:
   - e16f49ec-54e7-434a-98f6-c646d7030d79
   rect:
     serializedVersion: 2
-    x: 1876
+    x: 1877
     y: 301
     width: 200
     height: 100
@@ -363,7 +363,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 539
-    y: 326
+    y: 325
     width: 200
     height: 100
   onEnterAction: []
@@ -392,8 +392,7 @@ MonoBehaviour:
     y: 32
     width: 200
     height: 100
-  onEnterAction:
-  - Test Selection
+  onEnterAction: []
   onExitAction: []
   condition:
     and: []
@@ -418,7 +417,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 2132
-    y: 302
+    y: 301
     width: 200
     height: 100
   onEnterAction: []
@@ -475,8 +474,7 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction:
-  - Test AI Exit Action
+  onExitAction: []
   condition:
     and: []
 --- !u!114 &6369183420114305989
@@ -532,12 +530,12 @@ MonoBehaviour:
     - or:
       - predicate: HasQuest
         parameters:
-        - Help Swithgar
+        - Help Roland
         negate: 0
     - or:
       - predicate: CompletedQuest
         parameters:
-        - Help Swithgar
+        - Help Roland
         negate: 0
 --- !u!114 &7324535044573915270
 MonoBehaviour:
@@ -595,12 +593,12 @@ MonoBehaviour:
     - or:
       - predicate: HasDialogueFlag
         parameters:
-        - Reject Swithgar
+        - Reject Roland
         negate: 1
     - or:
       - predicate: HasQuest
         parameters:
-        - Help Swithgar
+        - Help Roland
         negate: 1
     - or:
       - predicate: HasBadRep

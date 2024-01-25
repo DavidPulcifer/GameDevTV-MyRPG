@@ -135,7 +135,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 1066
-    y: 239
+    y: 238
     width: 200
     height: 100
   onEnterAction: []
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 7fe44175-327a-4ede-98e5-762f7da1b4c4
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Actually I'm here to ask a favor from Swithgar. Can you deliver his package
+  text: Actually I'm here to ask a favor from Roland. Can you deliver his package
     to him?
   children:
   - f462ecf0-d847-4ad4-9226-c0aa70404af3
@@ -269,12 +269,12 @@ MonoBehaviour:
     - or:
       - predicate: HasQuest
         parameters:
-        - Help Swithgar
+        - Help Roland
         negate: 0
     - or:
       - predicate: CompletedQuest
         parameters:
-        - Help Swithgar
+        - Help Roland
         negate: 1
 --- !u!114 &-2958048676834137260
 MonoBehaviour:
@@ -417,7 +417,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 1310
-    y: 142
+    y: 143
     width: 200
     height: 100
   onEnterAction: []
@@ -529,11 +529,7 @@ MonoBehaviour:
   onEnterAction: []
   onExitAction: []
   condition:
-    and:
-    - or:
-      - predicate: 
-        parameters: []
-        negate: 0
+    and: []
 --- !u!114 &3678821421138626568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +601,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 1313
-    y: 450
+    y: 449
     width: 200
     height: 100
   onEnterAction: []
