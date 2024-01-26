@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5468936694399510681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 5a220d36-b99d-46f5-bda0-4f3f656d3900
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (the flower visibly relaxes and beams with joy)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1413
+    y: 208
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - SoothSolgeisl
+  condition:
+    and: []
+--- !u!114 &-5057960235442364846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b06c33f7-6bdf-412d-bd6c-4c6ca48ce83f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I don't know if you can understand me but...
+  children:
+  - a75c22ad-8da7-4025-a76d-0f4bae98a6e3
+  rect:
+    serializedVersion: 2
+    x: 661
+    y: 209
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-4631933088559682455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: decf89f6-59e1-4042-bce6-947e2d9c8fc4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (You're not sure how you know this, but the flower looks scared)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 413
+    y: 108
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - HandleRosamund
+        negate: 1
+--- !u!114 &-1978167577938382610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 23aadf9b-a81d-420a-97a5-60f818ff1c6a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (The flower is still hesitant, but doesn't appear scared like before)
+  children:
+  - b06c33f7-6bdf-412d-bd6c-4c6ca48ce83f
+  rect:
+    serializedVersion: 2
+    x: 411
+    y: 209
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - HandleRosamund
+        negate: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Solgeisl
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 2832526454551406133}
+  - {fileID: -4631933088559682455}
+  - {fileID: -1978167577938382610}
+  - {fileID: -5057960235442364846}
+  - {fileID: 3160255896328146922}
+  - {fileID: 337350781499507943}
+  - {fileID: -5468936694399510681}
+  - {fileID: 4933047765653274716}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &337350781499507943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 79f07551-dc1b-466c-8d71-be57a49517f7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: She thinks you are beautiful
+  children:
+  - 5a220d36-b99d-46f5-bda0-4f3f656d3900
+  rect:
+    serializedVersion: 2
+    x: 1163
+    y: 207
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2832526454551406133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d4e7a68b-f386-4537-af2d-82ed5cc6f05b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: ...
+  children:
+  - decf89f6-59e1-4042-bce6-947e2d9c8fc4
+  - 23aadf9b-a81d-420a-97a5-60f818ff1c6a
+  - e0d0c74c-c256-46d4-9f26-24c1b9b3b73f
+  rect:
+    serializedVersion: 2
+    x: 164
+    y: 107
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3160255896328146922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: a75c22ad-8da7-4025-a76d-0f4bae98a6e3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: That soldier over there is Rosamund and she doesn't mean any harm
+  children:
+  - 79f07551-dc1b-466c-8d71-be57a49517f7
+  rect:
+    serializedVersion: 2
+    x: 914
+    y: 208
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4933047765653274716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e0d0c74c-c256-46d4-9f26-24c1b9b3b73f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Beaming with joy)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 407
+    y: 316
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - SoothSolgeisl
+        negate: 0

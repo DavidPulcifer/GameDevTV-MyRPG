@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Hugues
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 120901193436830620}
+  - {fileID: 3802195074369264809}
+  - {fileID: 2361785357862338689}
+  - {fileID: 6304832217616601620}
+  - {fileID: 777826446093877364}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &120901193436830620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b1a0c3b2-a800-45a1-a0fa-8b32430789e3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Well, well, well...
+  children:
+  - d31c5360-f868-4452-ab24-be3df7664456
+  - 41729220-e8fd-44b2-936a-81ad675e3639
+  - 0409501a-d33e-4511-907b-b12424e774ac
+  rect:
+    serializedVersion: 2
+    x: 191
+    y: 167
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - soldiers
+        negate: 0
+--- !u!114 &777826446093877364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6fb04d2f-3497-44e6-961f-5cd3f0cc251c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Make sure to check in with Eloise for inspection. We have to make sure you're
+    not an outlaw.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 693
+    y: 166
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - Outlaw Inspection
+        negate: 1
+--- !u!114 &2361785357862338689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 41729220-e8fd-44b2-936a-81ad675e3639
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Glad to see you!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 441
+    y: 356
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - soldiers
+        negate: 0
+--- !u!114 &3802195074369264809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d31c5360-f868-4452-ab24-be3df7664456
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh, sorry. I thought you were someone else.
+  children:
+  - 6fb04d2f-3497-44e6-961f-5cd3f0cc251c
+  rect:
+    serializedVersion: 2
+    x: 442
+    y: 167
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - soldiers
+        negate: 1
+    - or:
+      - predicate: HasBadRep
+        parameters:
+        - soldiers
+        negate: 1
+--- !u!114 &6304832217616601620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 0409501a-d33e-4511-907b-b12424e774ac
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: It's you...
+  children:
+  - 6fb04d2f-3497-44e6-961f-5cd3f0cc251c
+  rect:
+    serializedVersion: 2
+    x: 442
+    y: 261
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasBadRep
+        parameters:
+        - soldiers
+        negate: 0

@@ -1,0 +1,440 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7588540561221855135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d6a001df-ef36-4146-90ea-a3b6938d38e2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sorry, I'm going to have to beat you up
+  children:
+  - c8b972d9-8d79-4cf1-b6f5-d525346b6fd1
+  rect:
+    serializedVersion: 2
+    x: 596
+    y: 162
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Beat Up Soldier
+        negate: 0
+--- !u!114 &-7402330143683009554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d2c5fd4a-792c-429e-9202-de52c2e8ac01
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: But why?!
+  children:
+  - e8b313d7-a84a-4188-822d-9c02a1834d33
+  rect:
+    serializedVersion: 2
+    x: 1340
+    y: 159
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-6627382759011668791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 8e17c3c1-ac35-4296-8cba-ecf7ab79759e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh, hello. I'm just admiring those flowers. Especially the big yellow one.
+    I've never seen anything like it before.
+  children:
+  - d6a001df-ef36-4146-90ea-a3b6938d38e2
+  - 7fb0d85e-462e-49a7-8dfb-fb2adb7aed10
+  rect:
+    serializedVersion: 2
+    x: 345
+    y: 163
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-6378239940238201390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e613e5cc-bd14-48a9-9ecf-e73de4278376
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Die
+  children:
+  - 66860913-b78f-4466-9cbb-6c3c8903966a
+  rect:
+    serializedVersion: 2
+    x: 2131
+    y: 157
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Beat Up Soldier
+        negate: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Rosamund
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 7419879113481404795}
+  - {fileID: -6627382759011668791}
+  - {fileID: -7588540561221855135}
+  - {fileID: 3020512660632665508}
+  - {fileID: -7402330143683009554}
+  - {fileID: 7290687806881765673}
+  - {fileID: 1984158236332900301}
+  - {fileID: -6378239940238201390}
+  - {fileID: 101878552023497829}
+  - {fileID: 1221487425037472999}
+  - {fileID: 2745784107565520931}
+  - {fileID: 613585430567315344}
+  - {fileID: 6629473071682549353}
+  - {fileID: 2471373057539438830}
+  - {fileID: 8649680549265995298}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &101878552023497829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6d8e6b8c-9067-41c2-98c3-645a61742b55
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Maybe I can reassure her. Can you provide some sign that you mean no harm?
+  children:
+  - 4ea7617b-8f83-42ef-9ae7-7c2e3dc8f204
+  rect:
+    serializedVersion: 2
+    x: 2130
+    y: 252
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &613585430567315344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 4ea7617b-8f83-42ef-9ae7-7c2e3dc8f204
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I'll take my helmet off. Maybe that will make me look less scary.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2398
+    y: 252
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - HelmetOff
+  condition:
+    and: []
+--- !u!114 &1221487425037472999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 66860913-b78f-4466-9cbb-6c3c8903966a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Aw man! No one told me being a soldier would be so dangerous!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2399
+    y: 157
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - attack
+  condition:
+    and: []
+--- !u!114 &1984158236332900301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7aa494d6-1db5-44e1-919b-b2008f6ee758
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I'm so sorry! I had no idea. I just think she's amazing! Is there anything
+    I can do?
+  children:
+  - e613e5cc-bd14-48a9-9ecf-e73de4278376
+  - 6d8e6b8c-9067-41c2-98c3-645a61742b55
+  rect:
+    serializedVersion: 2
+    x: 1868
+    y: 158
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2471373057539438830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: c8b972d9-8d79-4cf1-b6f5-d525346b6fd1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Really?!
+  children:
+  - ee3efd47-cf8f-4945-8a06-a2bed4ac6462
+  rect:
+    serializedVersion: 2
+    x: 847
+    y: 162
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2745784107565520931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 82f47d62-4e0b-426f-a1d4-c87646b97ba1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Very!
+  children:
+  - d0ec8b04-f5c1-4acd-b022-db38e9dc1155
+  rect:
+    serializedVersion: 2
+    x: 1344
+    y: 271
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3020512660632665508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7fb0d85e-462e-49a7-8dfb-fb2adb7aed10
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: She's beautiful isn't she?
+  children:
+  - 82f47d62-4e0b-426f-a1d4-c87646b97ba1
+  rect:
+    serializedVersion: 2
+    x: 595
+    y: 276
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Talk to Soldier
+        negate: 0
+--- !u!114 &6629473071682549353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d0ec8b04-f5c1-4acd-b022-db38e9dc1155
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Her name is Solgeisl, but according to Blomvarda you're scaring her.
+  children:
+  - 7aa494d6-1db5-44e1-919b-b2008f6ee758
+  rect:
+    serializedVersion: 2
+    x: 1589
+    y: 271
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &7290687806881765673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e8b313d7-a84a-4188-822d-9c02a1834d33
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: You're scaring Solgeisl. That's the yellow flower's name
+  children:
+  - 7aa494d6-1db5-44e1-919b-b2008f6ee758
+  rect:
+    serializedVersion: 2
+    x: 1593
+    y: 159
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &7419879113481404795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 53caaf74-5608-49b0-a21f-6c2257dcac5e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Beautiful...
+  children:
+  - 8e17c3c1-ac35-4296-8cba-ecf7ab79759e
+  rect:
+    serializedVersion: 2
+    x: 95
+    y: 163
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &8649680549265995298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: ee3efd47-cf8f-4945-8a06-a2bed4ac6462
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yeah...
+  children:
+  - d2c5fd4a-792c-429e-9202-de52c2e8ac01
+  rect:
+    serializedVersion: 2
+    x: 1097
+    y: 162
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
