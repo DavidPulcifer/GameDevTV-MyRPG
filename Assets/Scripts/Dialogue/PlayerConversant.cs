@@ -21,6 +21,7 @@ namespace RPG.Dialogue
                 
         public void StartDialogue(AIConversant newConversant, Dialogue newDialogue)
         {
+            if (IsActive()) Quit();
             currentConversant = newConversant;
             currentDialogue = newDialogue;
             currentNode = currentDialogue.GetRootNode();

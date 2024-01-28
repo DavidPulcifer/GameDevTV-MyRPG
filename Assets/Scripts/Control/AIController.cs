@@ -11,6 +11,7 @@ namespace RPG.Control
 {
     public class AIController : MonoBehaviour
     {
+        [SerializeField] float aggroDistance = 5f;
         [SerializeField] float chaseDistance = 5f;
         [SerializeField] float susTime = 5f;
         [SerializeField] float aggroCoolDownTime = 5f;
@@ -25,8 +26,9 @@ namespace RPG.Control
         Health health;
         Mover mover;
         GameObject player;
+        Patroller patroller;
 
-        LazyValue<Vector3> guardPosition;
+        LazyValue<Vector3> aiPosition;
         float timeSinceLastSawPlayer = Mathf.Infinity;
         float timeSinceReachedWaypoint = Mathf.Infinity;
         float timeSinceAggravated = Mathf.Infinity;
@@ -37,30 +39,27 @@ namespace RPG.Control
             fighter = GetComponent<Fighter>();
             health = GetComponent<Health>();
             mover = GetComponent<Mover>();
+            patroller = GetComponent<Patroller>();
             player = GameObject.FindWithTag("Player");
 
-            guardPosition = new LazyValue<Vector3>(GetGuardPosition);
-            guardPosition.ForceInit();
+            aiPosition = new LazyValue<Vector3>(GetAIPosition);
+            aiPosition.ForceInit();
         }
 
-        Vector3 GetGuardPosition()
+        Vector3 GetAIPosition()
         {
             return transform.position;
         }
 
         internal void Reset()
         {
+            patroller.Reset();
             NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
-            navMeshAgent.Warp(guardPosition.value);
+            navMeshAgent.Warp(aiPosition.value);
             timeSinceLastSawPlayer = Mathf.Infinity;
             timeSinceReachedWaypoint = Mathf.Infinity;
             timeSinceAggravated = Mathf.Infinity;
             currentWayPointIndex = 0;
-        }
-
-        private void Start()
-        {
-            
         }
 
         private void Update()
@@ -72,13 +71,17 @@ namespace RPG.Control
             {                
                 AttackBehavior(player);
             }
+            else if (ShouldChase())
+            {
+                ChaseBehavior();
+            }
             else if (timeSinceLastSawPlayer < susTime)
             {
                 SusBehavior();
             }
             else
             {
-                PatrolBehavior();
+                patroller.PatrolBehavior();
             }
 
             UpdateTimers();
@@ -89,16 +92,16 @@ namespace RPG.Control
             timeSinceAggravated = 0f;
         }
 
-        private void UpdateTimers()
+        void UpdateTimers()
         {
             timeSinceLastSawPlayer += Time.deltaTime;
             timeSinceReachedWaypoint += Time.deltaTime;
             timeSinceAggravated += Time.deltaTime;
         }
 
-        private void PatrolBehavior()
+        void PatrolBehavior()
         {
-            Vector3 nextPosition = guardPosition.value;
+            Vector3 nextPosition = aiPosition.value;
 
             if(patrolPath != null)
             {
@@ -115,47 +118,60 @@ namespace RPG.Control
             }            
         }
 
-        private bool AtWaypoint()
+        bool AtWaypoint()
         {
             float distanceToWavePointSqrMagnitude = (transform.position - GetCurrentWaypoint()).sqrMagnitude;
             return distanceToWavePointSqrMagnitude < wayPointTolerance * wayPointTolerance;
         }
 
-        private void CycleWaypoint()
+        void CycleWaypoint()
         {
             currentWayPointIndex = patrolPath.GetNextIndex(currentWayPointIndex);
         }
 
-        private Vector3 GetCurrentWaypoint()
+        Vector3 GetCurrentWaypoint()
         {
             return patrolPath.GetWaypoint(currentWayPointIndex);
         }
 
-        private void SusBehavior()
+        void SusBehavior()
         {
             GetComponent<ActionScheduler>().CancelCurrentAction();
         }
 
-        private void AttackBehavior(GameObject player)
+        void ChaseBehavior()
+        {
+            timeSinceLastSawPlayer = 0;
+            //fighter.MoveToTarget();
+        }
+
+        void AttackBehavior(GameObject player)
         {
             timeSinceLastSawPlayer = 0;
             fighter.Attack(player);
 
-            AggravateNEarbyEnemies();
+            AggravateNearbyEnemies();
         }
 
-        private void AggravateNEarbyEnemies()
+        void AggravateNearbyEnemies()
         {
             RaycastHit[] hits = Physics.SphereCastAll(transform.position, shoutDistance, Vector3.up, 0);
             foreach (RaycastHit hit in hits)
             {
                 AIController ai = hit.collider.GetComponent<AIController>();
-                if (ai == null) continue;
+                if (ai == null || ai == this) continue;
                 ai.Aggrevate();
             }
         }
 
-        private bool IsAggrevated()
+        bool IsAggrevated()
+        {
+            float DistanceToPlayerSqrMagnitude = (transform.position - player.transform.position).sqrMagnitude;
+
+            return DistanceToPlayerSqrMagnitude < aggroDistance * aggroDistance || timeSinceAggravated < aggroCoolDownTime;
+        }
+
+        bool ShouldChase()
         {
             float DistanceToPlayerSqrMagnitude = (transform.position - player.transform.position).sqrMagnitude;
 
@@ -163,9 +179,11 @@ namespace RPG.Control
         }
                 
         //Called within Unity IDE
-        private void OnDrawGizmosSelected()
+        void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, aggroDistance);
+            Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, chaseDistance);
         }
     }

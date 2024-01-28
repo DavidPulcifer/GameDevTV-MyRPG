@@ -70,6 +70,11 @@ namespace RPG.Combat
             }
         }
 
+        public void MoveToTarget()
+        {
+            GetComponent<Mover>().MoveTo(target.transform.position, 1f);
+        }
+
         public void EquipWeapon(WeaponConfig weapon)
         {
             currentWeaponConfig = weapon;

@@ -236,7 +236,8 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction: []
+  onExitAction:
+  - SuspectSoldiers
   condition:
     and: []
 --- !u!114 &-3806167464884186749
