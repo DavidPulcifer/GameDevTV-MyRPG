@@ -39,12 +39,19 @@ namespace RPG.Movement
             navMeshAgent.isStopped = false;
         }
 
+        public void Crouch(bool shouldCrouch)
+        {
+            Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
+            Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+            float speed = localVelocity.z;
+            if (speed > Mathf.Epsilon) return;
+            GetComponent<Animator>().SetBool("shouldCrouch", shouldCrouch);
+        }
+
         public void Cancel()
         {
             navMeshAgent.isStopped = true;
-        }
-
-        
+        }        
 
         private void UpdateAnimator()
         {

@@ -71,6 +71,11 @@ namespace RPG.Dialogue
             }
         }
 
+        public AIConversant GetCurrentConversant()
+        {
+            return currentConversant;
+        }
+
         public IEnumerable<DialogueNode> GetChoices()
         {
             return FilterOnCondition(currentDialogue.GetPlayerChildren(currentNode));

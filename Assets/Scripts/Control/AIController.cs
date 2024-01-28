@@ -14,31 +14,22 @@ namespace RPG.Control
         [SerializeField] float aggroDistance = 5f;
         [SerializeField] float chaseDistance = 5f;
         [SerializeField] float susTime = 5f;
-        [SerializeField] float aggroCoolDownTime = 5f;
-        [SerializeField] PatrolPath patrolPath;
-        [SerializeField] float wayPointTolerance = 1f;
-        [SerializeField] float wayPointDwellTime = 3f;
-        [Range(0,1)]
-        [SerializeField] float patrolSpeedFraction = 0.2f;
+        [SerializeField] float aggroCoolDownTime = 5f;        
         [SerializeField] float shoutDistance = 5f;
 
         Fighter fighter;
         Health health;
-        Mover mover;
         GameObject player;
         Patroller patroller;
 
         LazyValue<Vector3> aiPosition;
         float timeSinceLastSawPlayer = Mathf.Infinity;
-        float timeSinceReachedWaypoint = Mathf.Infinity;
         float timeSinceAggravated = Mathf.Infinity;
-        int currentWayPointIndex = 0;
 
         private void Awake()
         {
             fighter = GetComponent<Fighter>();
             health = GetComponent<Health>();
-            mover = GetComponent<Mover>();
             patroller = GetComponent<Patroller>();
             player = GameObject.FindWithTag("Player");
 
@@ -57,9 +48,7 @@ namespace RPG.Control
             NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
             navMeshAgent.Warp(aiPosition.value);
             timeSinceLastSawPlayer = Mathf.Infinity;
-            timeSinceReachedWaypoint = Mathf.Infinity;
             timeSinceAggravated = Mathf.Infinity;
-            currentWayPointIndex = 0;
         }
 
         private void Update()
@@ -95,45 +84,9 @@ namespace RPG.Control
         void UpdateTimers()
         {
             timeSinceLastSawPlayer += Time.deltaTime;
-            timeSinceReachedWaypoint += Time.deltaTime;
             timeSinceAggravated += Time.deltaTime;
-        }
-
-        void PatrolBehavior()
-        {
-            Vector3 nextPosition = aiPosition.value;
-
-            if(patrolPath != null)
-            {
-                if(AtWaypoint())
-                {
-                    timeSinceReachedWaypoint = 0f;
-                    CycleWaypoint();
-                }
-                nextPosition = GetCurrentWaypoint();
-            }
-            if(timeSinceReachedWaypoint > wayPointDwellTime)
-            {
-                mover.StartMoveAction(nextPosition, patrolSpeedFraction);
-            }            
-        }
-
-        bool AtWaypoint()
-        {
-            float distanceToWavePointSqrMagnitude = (transform.position - GetCurrentWaypoint()).sqrMagnitude;
-            return distanceToWavePointSqrMagnitude < wayPointTolerance * wayPointTolerance;
-        }
-
-        void CycleWaypoint()
-        {
-            currentWayPointIndex = patrolPath.GetNextIndex(currentWayPointIndex);
-        }
-
-        Vector3 GetCurrentWaypoint()
-        {
-            return patrolPath.GetWaypoint(currentWayPointIndex);
-        }
-
+        }        
+                
         void SusBehavior()
         {
             GetComponent<ActionScheduler>().CancelCurrentAction();

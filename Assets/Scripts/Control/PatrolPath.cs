@@ -26,6 +26,11 @@ namespace RPG.Control
             return i + 1;
         }
 
+        public int GetRandomIndex()
+        {
+            return Random.Range(0, transform.childCount);
+        }
+
         public Vector3 GetWaypoint(int i)
         {
             return transform.GetChild(i).position;

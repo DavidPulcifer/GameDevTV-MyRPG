@@ -1,9 +1,9 @@
 using GameDevTV.Utils;
+using RPG.Dialogue;
 using RPG.Movement;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 namespace RPG.Control
 {
@@ -14,8 +14,11 @@ namespace RPG.Control
         [SerializeField] float wayPointDwellTime = 3f;
         [Range(0, 1)]
         [SerializeField] float patrolSpeedFraction = 0.2f;
+        [SerializeField] bool randomWander = false;
 
         Mover mover;
+        PlayerConversant playerConversant;
+        AIConversant aiConversant;
 
         LazyValue<Vector3> aiPosition;
         float timeSinceReachedWaypoint = Mathf.Infinity;
@@ -25,6 +28,8 @@ namespace RPG.Control
         void Awake()
         {
             mover = GetComponent<Mover>();
+            playerConversant = GameObject.FindWithTag("Player").GetComponent<PlayerConversant>();
+            aiConversant = GetComponent<AIConversant>();
             aiPosition = new LazyValue<Vector3>(GetAIPosition);
             aiPosition.ForceInit();
         }
@@ -36,8 +41,6 @@ namespace RPG.Control
 
         internal void Reset()
         {
-            NavMeshAgent navMeshAgent = GetComponent<NavMeshAgent>();
-            navMeshAgent.Warp(aiPosition.value);
             timeSinceReachedWaypoint = Mathf.Infinity;
             currentWayPointIndex = 0;
         }
@@ -45,6 +48,11 @@ namespace RPG.Control
         // Update is called once per frame
         void Update()
         {
+            if (aiConversant && playerConversant.GetCurrentConversant() == aiConversant)
+            {
+                mover.Cancel();
+                return;
+            }
             PatrolBehavior();
             UpdateTimers();
         }
@@ -81,7 +89,14 @@ namespace RPG.Control
 
         void CycleWaypoint()
         {
-            currentWayPointIndex = patrolPath.GetNextIndex(currentWayPointIndex);
+            if(randomWander)
+            {
+                currentWayPointIndex = patrolPath.GetRandomIndex();
+            }
+            else
+            {
+                currentWayPointIndex = patrolPath.GetNextIndex(currentWayPointIndex);
+            }
         }
 
         Vector3 GetCurrentWaypoint()
