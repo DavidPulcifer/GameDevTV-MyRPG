@@ -1,0 +1,512 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8259139349621012385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 72f20747-acb8-4db7-b0d9-6d0df061b827
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Lihtan
+  children:
+  - 19cbb158-f304-4afd-99e6-8ab5a8d42ce6
+  - b4387da9-fb03-495b-b87a-24d3ed54bd64
+  - 751ce311-53b2-4107-bf5f-7a80c4e8c401
+  rect:
+    serializedVersion: 2
+    x: 693
+    y: 106
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-8008165549169204929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 4d7a6076-bc9a-472b-8c83-6ca06582a912
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (The shrine is active, however you sense a sinister energy bubbling up from
+    the ground.)
+  children:
+  - 3021c737-fa95-4fa7-9c67-92bd420418a5
+  - e0bc594b-00eb-431c-9b20-f38cbb6b10ff
+  rect:
+    serializedVersion: 2
+    x: 1690
+    y: 302
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - SuspectShrine
+  condition:
+    and: []
+--- !u!114 &-7574571277023099555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e0bc594b-00eb-431c-9b20-f38cbb6b10ff
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Could this be connected to the General and the soldiers who have occupied
+    the village?)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1944
+    y: 204
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - HearGeneral
+        negate: 0
+--- !u!114 &-7057250145694698691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 66cf36d3-aa18-49be-8b9f-4e1b99118754
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Wendan
+  children:
+  - fd631dd0-af39-438f-9816-cfdc1fd16f8d
+  rect:
+    serializedVersion: 2
+    x: 1192
+    y: 206
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - WrongWord
+  condition:
+    and: []
+--- !u!114 &-6904737956418262101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b4387da9-fb03-495b-b87a-24d3ed54bd64
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Scinan
+  children:
+  - 66cf36d3-aa18-49be-8b9f-4e1b99118754
+  - 2f88860e-c235-435c-bc26-991c1a7b685c
+  - b0917d33-fad7-4bd4-a97f-e536edcc87d1
+  rect:
+    serializedVersion: 2
+    x: 942
+    y: 206
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-5188023866452625442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 3021c737-fa95-4fa7-9c67-92bd420418a5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Could this be connected to the soldier's that have occupied the village?)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1944
+    y: 301
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - SuspectSoldiers
+        negate: 0
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - HearGeneral
+        negate: 1
+--- !u!114 &-4677074167152362841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d68b1747-72df-4531-bae7-9e476c509487
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Lithan
+  children:
+  - 751ce311-53b2-4107-bf5f-7a80c4e8c401
+  - b4387da9-fb03-495b-b87a-24d3ed54bd64
+  - 19cbb158-f304-4afd-99e6-8ab5a8d42ce6
+  rect:
+    serializedVersion: 2
+    x: 691
+    y: 304
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - WrongWord
+  condition:
+    and: []
+--- !u!114 &-4212542017562492908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 08d3dc07-1917-44ab-a5e2-54529e15d870
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (The shrine begins to glow. And the shambling dead return to the ground.)
+  children:
+  - 4d7a6076-bc9a-472b-8c83-6ca06582a912
+  rect:
+    serializedVersion: 2
+    x: 1443
+    y: 302
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - Activate Shrine
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - WrongWord
+        negate: 1
+--- !u!114 &-3839752449629020230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 19cbb158-f304-4afd-99e6-8ab5a8d42ce6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Scildan
+  children:
+  - b0917d33-fad7-4bd4-a97f-e536edcc87d1
+  - 66cf36d3-aa18-49be-8b9f-4e1b99118754
+  - 2f88860e-c235-435c-bc26-991c1a7b685c
+  rect:
+    serializedVersion: 2
+    x: 944
+    y: 106
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - WrongWord
+  condition:
+    and: []
+--- !u!114 &-3557586781267020709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2f88860e-c235-435c-bc26-991c1a7b685c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Wealdan
+  children:
+  - 08d3dc07-1917-44ab-a5e2-54529e15d870
+  - fd631dd0-af39-438f-9816-cfdc1fd16f8d
+  rect:
+    serializedVersion: 2
+    x: 1192
+    y: 303
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2676361590382463075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: fd631dd0-af39-438f-9816-cfdc1fd16f8d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Nothing happens. Perhaps you didn't use the right words.)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1444
+    y: 161
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - RemoveWrongWord
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - WrongWord
+        negate: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Shrine
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 8877899003809417917}
+  - {fileID: 6204590587951425383}
+  - {fileID: 3869026006700733386}
+  - {fileID: -4677074167152362841}
+  - {fileID: -8259139349621012385}
+  - {fileID: -6904737956418262101}
+  - {fileID: 3607465759851724073}
+  - {fileID: -3839752449629020230}
+  - {fileID: -7057250145694698691}
+  - {fileID: -3557586781267020709}
+  - {fileID: 1943769196309234733}
+  - {fileID: -4212542017562492908}
+  - {fileID: -2676361590382463075}
+  - {fileID: -8008165549169204929}
+  - {fileID: -5188023866452625442}
+  - {fileID: -7574571277023099555}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1943769196309234733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b0917d33-fad7-4bd4-a97f-e536edcc87d1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Weaxan
+  children:
+  - fd631dd0-af39-438f-9816-cfdc1fd16f8d
+  rect:
+    serializedVersion: 2
+    x: 1194
+    y: 106
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - WrongWord
+  condition:
+    and: []
+--- !u!114 &3607465759851724073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 751ce311-53b2-4107-bf5f-7a80c4e8c401
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Scirian
+  children:
+  - 2f88860e-c235-435c-bc26-991c1a7b685c
+  - 66cf36d3-aa18-49be-8b9f-4e1b99118754
+  - b0917d33-fad7-4bd4-a97f-e536edcc87d1
+  rect:
+    serializedVersion: 2
+    x: 941
+    y: 303
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - WrongWord
+  condition:
+    and: []
+--- !u!114 &3869026006700733386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d25d9487-a341-4643-84fe-0fe7373d8bab
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Ligetan
+  children:
+  - b4387da9-fb03-495b-b87a-24d3ed54bd64
+  - 751ce311-53b2-4107-bf5f-7a80c4e8c401
+  - 19cbb158-f304-4afd-99e6-8ab5a8d42ce6
+  rect:
+    serializedVersion: 2
+    x: 692
+    y: 205
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - WrongWord
+  condition:
+    and: []
+--- !u!114 &6204590587951425383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 28fdad51-8c3a-4368-b7dd-bc19093a3a8d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: (Attempt to activate the shrine)
+  children:
+  - d25d9487-a341-4643-84fe-0fe7373d8bab
+  - d68b1747-72df-4531-bae7-9e476c509487
+  - 72f20747-acb8-4db7-b0d9-6d0df061b827
+  rect:
+    serializedVersion: 2
+    x: 442
+    y: 98
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Activate Shrine
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Activate Shrine
+        negate: 1
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - Read Incantation
+        negate: 0
+--- !u!114 &8877899003809417917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: a4c8993f-202c-42b8-89a2-7a83bfa60bc9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (The shrine radiates holy energy. Yet something doesn't seem quite right.)
+  children:
+  - 28fdad51-8c3a-4368-b7dd-bc19093a3a8d
+  rect:
+    serializedVersion: 2
+    x: 192
+    y: 98
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []

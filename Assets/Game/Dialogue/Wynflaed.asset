@@ -1,5 +1,122 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8723859229671230078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: c8aab96c-5844-4141-85d3-e029b9154ef3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Will you help?
+  children:
+  - 1e891561-17c2-4b8e-8d5a-e7f8f864939a
+  - c796608b-05c8-4e58-a528-431a3446e7e4
+  rect:
+    serializedVersion: 2
+    x: 1148
+    y: 97
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-8375471270787294124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: a0f0067c-e064-46c0-aacb-b893621c66b4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Please help! Father Godwin is trapped!
+  children:
+  - 22567374-6118-42fa-8c82-ebd2356c48a6
+  rect:
+    serializedVersion: 2
+    x: 398
+    y: 97
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Activate Shrine
+        negate: 1
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - Reject Wynflaed
+        negate: 1
+--- !u!114 &-8265788204408645938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e2c19ff9-7607-4436-9cc4-7ca3d90ea327
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Make sure to remember the exact incantation word for word - you may want
+    to write it down - and then speak it to the shrine, and that should do it.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1899
+    y: 97
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GiveQuest
+  - ImproveRep
+  condition:
+    and: []
+--- !u!114 &-6132024381463460954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: c796608b-05c8-4e58-a528-431a3446e7e4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No
+  children:
+  - e4828298-4a06-4b38-a435-4e85670d8654
+  rect:
+    serializedVersion: 2
+    x: 1398
+    y: 2
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
 --- !u!114 &-2089744441585484822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,12 +130,13 @@ MonoBehaviour:
   m_Name: cea6d637-6b6f-49ec-b0c8-2a954d14ed5c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
-  children: []
+  text: (Praying Quietly)
+  children:
+  - a0f0067c-e064-46c0-aacb-b893621c66b4
   rect:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: 151
+    y: 98
     width: 200
     height: 100
   onEnterAction: []
@@ -39,4 +157,147 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -2089744441585484822}
+  - {fileID: -8375471270787294124}
+  - {fileID: 7805144246372783687}
+  - {fileID: 8037940172212135346}
+  - {fileID: -8723859229671230078}
+  - {fileID: 6623367230120873632}
+  - {fileID: -6132024381463460954}
+  - {fileID: 3461180297439414010}
+  - {fileID: 1907063519266242183}
+  - {fileID: -8265788204408645938}
   newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1907063519266242183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 23afbb48-0a70-4ba0-a45d-60afa60a640d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank Helith! The incantation is in the holy book here on the pedestal. You'll
+    find it on page 137.
+  children:
+  - e2c19ff9-7607-4436-9cc4-7ca3d90ea327
+  rect:
+    serializedVersion: 2
+    x: 1648
+    y: 97
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3461180297439414010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e4828298-4a06-4b38-a435-4e85670d8654
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: oh, ok... Maybe I can find someone else.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1648
+    y: 2
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - Reject Wynflaed
+  - DamageRep
+  condition:
+    and: []
+--- !u!114 &6623367230120873632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 1e891561-17c2-4b8e-8d5a-e7f8f864939a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yes
+  children:
+  - 23afbb48-0a70-4ba0-a45d-60afa60a640d
+  rect:
+    serializedVersion: 2
+    x: 1398
+    y: 97
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &7805144246372783687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 22567374-6118-42fa-8c82-ebd2356c48a6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I can't explain it, but something deativated the shrine that protects the
+    town. And now the dead are rising.
+  children:
+  - 19d786ed-46f2-43af-8e67-1d84bf283b09
+  rect:
+    serializedVersion: 2
+    x: 648
+    y: 97
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &8037940172212135346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 19d786ed-46f2-43af-8e67-1d84bf283b09
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: They have Father Godwin trapped near the shrine. But more than that, if we
+    don't reactivate the shrine soon they could take over the village!
+  children:
+  - c8aab96c-5844-4141-85d3-e029b9154ef3
+  rect:
+    serializedVersion: 2
+    x: 898
+    y: 97
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []

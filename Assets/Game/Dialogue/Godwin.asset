@@ -28,15 +28,16 @@ MonoBehaviour:
   m_Name: a72bf508-9e2a-48d2-9412-768de4d67209
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
+  text: I'm going to stop crouching now.
   children: []
   rect:
     serializedVersion: 2
-    x: 157
-    y: 106
+    x: 153
+    y: 119
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction: []
+  onExitAction:
+  - stand
   condition:
     and: []
