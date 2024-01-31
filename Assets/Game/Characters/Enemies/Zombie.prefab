@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4470635525155046, guid: 908987278249b014f91c9e63dd7174e8, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4470635525155046, guid: 908987278249b014f91c9e63dd7174e8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -84,7 +84,7 @@ PrefabInstance:
     - target: {fileID: 1529116480577178419, guid: 1c2651c51987ba840b7ed43acb5f026f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1529116480577178419, guid: 1c2651c51987ba840b7ed43acb5f026f,
         type: 3}
@@ -161,8 +161,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114695691863666892, guid: 3bdfc06e16b681748a064b5014525e26,
         type: 3}
+      propertyPath: respawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114695691863666892, guid: 3bdfc06e16b681748a064b5014525e26,
+        type: 3}
       propertyPath: healthPoints
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114695691863666892, guid: 3bdfc06e16b681748a064b5014525e26,
+        type: 3}
+      propertyPath: respawnDelay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114695691863666892, guid: 3bdfc06e16b681748a064b5014525e26,
+        type: 3}
+      propertyPath: respawnNumber
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 114695691863666892, guid: 3bdfc06e16b681748a064b5014525e26,
         type: 3}
@@ -297,7 +312,7 @@ PrefabInstance:
     - target: {fileID: 4731550931057295533, guid: 3bdfc06e16b681748a064b5014525e26,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4731550931057295533, guid: 3bdfc06e16b681748a064b5014525e26,
         type: 3}
@@ -390,41 +405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b753f6f2fe38c144588245d7dd36763e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8102506833343911938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3697622704622461409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 162e9c78e12db7d448316d57dbdf227b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aggroDistance: 3
-  chaseDistance: 8
-  susTime: 1
-  aggroCoolDownTime: 10
-  patrolPath: {fileID: 0}
-  wayPointTolerance: 1
-  wayPointDwellTime: 1
-  patrolSpeedFraction: 0.2
-  shoutDistance: 1
---- !u!114 &8411952100204417847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3697622704622461409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2154b366818f8de45bd9358d13d781d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scatterDistance: 1
-  dropLibrary: {fileID: 11400000, guid: 02e29293c0ab3be47bbc032a776fdf21, type: 2}
 --- !u!114 &3272558859210906799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,3 +421,35 @@ MonoBehaviour:
   wayPointTolerance: 1
   wayPointDwellTime: 3
   patrolSpeedFraction: 0.2
+  randomWander: 0
+--- !u!114 &8102506833343911938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3697622704622461409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162e9c78e12db7d448316d57dbdf227b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aggroDistance: 5
+  chaseDistance: 8
+  susTime: 1
+  aggroCoolDownTime: 10
+  shoutDistance: 1
+--- !u!114 &8411952100204417847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3697622704622461409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2154b366818f8de45bd9358d13d781d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scatterDistance: 1
+  dropLibrary: {fileID: 11400000, guid: 02e29293c0ab3be47bbc032a776fdf21, type: 2}

@@ -5,13 +5,20 @@ using RPG.Stats;
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;
 
 namespace RPG.Attributes
 {
     public class Health : MonoBehaviour, ISaveable
     {
+        [SerializeField] bool respawn = false;
+        [Min(-1)]
+        [Tooltip("Number of times to respawn. -1 is infinite")]
+        [SerializeField] int respawnNumber = 0;
+        [SerializeField] float respawnDelay = 1f;
         [SerializeField] TakeDamageEvent takeDamage;
         public UnityEvent onDie;
+        int respawnsRemaining;
 
         [System.Serializable]
         public class TakeDamageEvent : UnityEvent<float>
@@ -24,6 +31,7 @@ namespace RPG.Attributes
         private void OnEnable()
         {
             GetComponent<BaseStats>().onLevelUp += RegenerateHealth;
+            respawnsRemaining = respawnNumber;
         }
 
         private void OnDisable()
@@ -57,9 +65,13 @@ namespace RPG.Attributes
             healthPoints.value = Mathf.Max(healthPoints.value - damage, 0);
 
             if (IsDead())
-            {
+            {                
                 onDie.Invoke();
                 AwardExperience(instigator);
+                if(respawn && (respawnsRemaining > 0 || respawnNumber == -1))
+                {
+                    StartCoroutine(Respawn());
+                }
             }
             else
             {
@@ -73,7 +85,20 @@ namespace RPG.Attributes
             healthPoints.value = Mathf.Min(healthPoints.value + amountToHeal, GetMaxHealthPoints());
             UpdateState();
         }
-       
+
+        private IEnumerator Respawn()
+        {            
+            yield return new WaitForSeconds(respawnDelay);
+
+            // Revive the character
+            Heal(GetMaxHealthPoints());
+
+            if (respawnsRemaining > 0)
+            {
+                respawnsRemaining--;
+            }                            
+        }
+
         public float GetPercentage()
         {
             return 100 * GetFraction();

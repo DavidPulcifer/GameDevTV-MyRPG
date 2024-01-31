@@ -48,10 +48,11 @@ namespace RPG.Combat
         }        
 
         private void Update()
-        {
+        {            
             timeSinceLastAttack += Time.deltaTime;
-
+            
             if (target == null) return;
+            
 
             if (target.IsDead())
             {
@@ -110,8 +111,8 @@ namespace RPG.Combat
 
         private void AttackBehavior()
         {
-            transform.LookAt(target.transform);
-            if (timeSinceLastAttack < timeBetweenAttacks) return;
+            transform.LookAt(target.transform);            
+            if (timeSinceLastAttack < timeBetweenAttacks) return;            
 
             //This animation will trigger Hit() as an animation event
             TriggerAttack();
@@ -136,7 +137,7 @@ namespace RPG.Combat
         }
 
         IEnumerable<Health> FindAllTargetsInRange()
-        {
+        {            
             RaycastHit[] raycastHits = Physics.SphereCastAll(transform.position,
                                                                 autoAttackRange,
                                                                 Vector3.up);
@@ -151,7 +152,7 @@ namespace RPG.Combat
         }
 
         private void TriggerAttack()
-        {
+        {            
             GetComponent<Animator>().ResetTrigger("stopAttack");
             GetComponent<Animator>().SetTrigger("attack");
         }
@@ -207,9 +208,9 @@ namespace RPG.Combat
         }
 
         public void Attack(GameObject combatTarget)
-        {
+        {            
             GetComponent<ActionScheduler>().StartAction(this);
-            target = combatTarget.GetComponent<Health>();
+            target = combatTarget.GetComponent<Health>();            
         }
 
         public void Cancel()

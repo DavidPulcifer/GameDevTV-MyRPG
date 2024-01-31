@@ -56,17 +56,18 @@ namespace RPG.Control
             if (health.IsDead()) return;
 
             GameObject player = GameObject.FindWithTag("Player");
-            if (IsAggrevated() && fighter.CanAttack(player))
-            {                
+            if (IsAggrevated() && fighter.CanAttack(player))            {
+                
                 AttackBehavior(player);
             }
             else if (ShouldChase())
             {
+                Debug.Log("chase");
                 ChaseBehavior();
             }
             else if (timeSinceLastSawPlayer < susTime)
             {
-                SusBehavior();
+                //SusBehavior();
             }
             else
             {
@@ -99,7 +100,7 @@ namespace RPG.Control
         }
 
         void AttackBehavior(GameObject player)
-        {
+        {            
             timeSinceLastSawPlayer = 0;
             fighter.Attack(player);
 
