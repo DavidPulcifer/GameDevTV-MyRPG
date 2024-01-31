@@ -434,8 +434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162e9c78e12db7d448316d57dbdf227b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroDistance: 5
-  chaseDistance: 8
+  aggroDistance: 3
+  chaseDistance: 5
   susTime: 1
   aggroCoolDownTime: 10
   shoutDistance: 1

@@ -49,24 +49,24 @@ namespace RPG.Combat
 
         private void Update()
         {            
-            timeSinceLastAttack += Time.deltaTime;
-            
+            timeSinceLastAttack += Time.deltaTime;            
+
             if (target == null) return;
             
 
             if (target.IsDead())
-            {
-                if(autoAttackActive) target = FindNewTargetInRange();
+            {                
+                if (autoAttackActive) target = FindNewTargetInRange();
                 if (target == null) return;
             }
             
             if (!GetIsInRange())
-            {
+            {                
                 GetComponent<Mover>().MoveTo(target.transform.position, 1f);
             }
             else
             {
-                GetComponent<Mover>().Cancel();
+                GetComponent<Mover>().Cancel();                
                 AttackBehavior();
             }
         }
@@ -110,10 +110,9 @@ namespace RPG.Combat
         }
 
         private void AttackBehavior()
-        {
-            transform.LookAt(target.transform);            
-            if (timeSinceLastAttack < timeBetweenAttacks) return;            
-
+        {            
+            transform.LookAt(target.transform);                        
+            if (timeSinceLastAttack < timeBetweenAttacks) return;
             //This animation will trigger Hit() as an animation event
             TriggerAttack();
             timeSinceLastAttack = 0;
@@ -121,7 +120,7 @@ namespace RPG.Combat
 
         private Health FindNewTargetInRange()
         {
-            Health bestCandiate = null;
+            Health bestCandidate = null;
             float bestCandidateDistance = Mathf.Infinity;
             foreach (var candidate in FindAllTargetsInRange())
             {
@@ -129,15 +128,15 @@ namespace RPG.Combat
                                                             candidate.transform.position);
                 if(candidateDistance < bestCandidateDistance)
                 {
-                    bestCandiate = candidate;
+                    bestCandidate = candidate;
                     bestCandidateDistance = candidateDistance;
                 }
             }
-            return bestCandiate;
+            return bestCandidate;
         }
 
         IEnumerable<Health> FindAllTargetsInRange()
-        {            
+        {
             RaycastHit[] raycastHits = Physics.SphereCastAll(transform.position,
                                                                 autoAttackRange,
                                                                 Vector3.up);
@@ -198,8 +197,9 @@ namespace RPG.Combat
         }
 
         public bool CanAttack(GameObject combatTarget)
-        {
-            if(combatTarget == null) { return false; }
+        {           
+
+            if (combatTarget == null) { return false; }
 
             Health targetToTest = combatTarget.GetComponent<Health>();
 
@@ -214,7 +214,7 @@ namespace RPG.Combat
         }
 
         public void Cancel()
-        {
+        {            
             StopAttack();
             target = null;
             GetComponent<Mover>().Cancel();

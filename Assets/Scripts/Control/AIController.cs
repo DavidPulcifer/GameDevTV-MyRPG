@@ -62,15 +62,14 @@ namespace RPG.Control
             }
             else if (ShouldChase())
             {
-                Debug.Log("chase");
                 ChaseBehavior();
             }
             else if (timeSinceLastSawPlayer < susTime)
             {
-                //SusBehavior();
+                SusBehavior();
             }
             else
-            {
+            {                
                 patroller.PatrolBehavior();
             }
 

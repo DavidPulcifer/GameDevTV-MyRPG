@@ -27,7 +27,7 @@ namespace RPG.Movement
         }
 
         public void StartMoveAction(Vector3 destination, float speedFraction)
-        {
+        {            
             GetComponent<ActionScheduler>().StartAction(this);
             MoveTo(destination, speedFraction);
         }
@@ -40,7 +40,7 @@ namespace RPG.Movement
         }
 
         public void Crouch(bool shouldCrouch)
-        {
+        {            
             Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;

@@ -19,6 +19,7 @@ namespace RPG.Control
         Mover mover;
         PlayerConversant playerConversant;
         AIConversant aiConversant;
+        AIController aiController;
 
         LazyValue<Vector3> aiPosition;
         float timeSinceReachedWaypoint = Mathf.Infinity;
@@ -32,6 +33,7 @@ namespace RPG.Control
             aiConversant = GetComponent<AIConversant>();
             aiPosition = new LazyValue<Vector3>(GetAIPosition);
             aiPosition.ForceInit();
+            aiController = GetComponent<AIController>();
         }
 
         Vector3 GetAIPosition()
@@ -52,8 +54,8 @@ namespace RPG.Control
             {
                 mover.Cancel();
                 return;
-            }
-            PatrolBehavior();
+            }            
+            if(aiController == null) PatrolBehavior();
             UpdateTimers();
         }
 
