@@ -1,4 +1,5 @@
 using GameDevTV.Utils;
+using RPG.Stats;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,10 +9,12 @@ namespace RPG.Dialogue
     public class PlayerReputation : MonoBehaviour, IPredicateEvaluator
     {
         Dictionary<string, int> factionReputation;
+        TraitStore traitStore;
 
         private void Awake()
         {
             factionReputation = new Dictionary<string, int>();
+            traitStore = GetComponent<TraitStore>();
         }
 
         public void ModifyReputation(string factionName, int points)
@@ -41,15 +44,31 @@ namespace RPG.Dialogue
             ModifyReputation(factionName, -100);
         }
 
-        public int GetReputation(string factionName)
+        public int GetReputation(string factionName, bool rawScore)
         {
             if (factionReputation.TryGetValue(factionName, out int rep))
             {
-                return rep;
+                if(rawScore)
+                {
+                    return rep;
+
+                } 
+                else
+                {
+                    return rep + (int)Mathf.Floor(traitStore.GetPoints(Trait.Charisma) / 2);
+                }
             }
             else
-            {                
-                return 0;
+            {
+                if (rawScore)
+                {
+                    return 0;
+
+                }
+                else
+                {
+                    return (int)Mathf.Floor(traitStore.GetPoints(Trait.Charisma) / 2);
+                }
             }
         }
 
@@ -58,12 +77,15 @@ namespace RPG.Dialogue
             switch (predicate)
             {
                 case "HasGoodRep":
-                    return GetReputation(parameters[0]) > 0;
+                    return GetReputation(parameters[0], false) > 0;
+                case "HasGoodRepRaw":
+                    return GetReputation(parameters[0], true) > 0;
                 case "HasBadRep":
-                    return GetReputation(parameters[0]) < 0;
-                case "HasInexcusableRep":
-                    Debug.Log(GetReputation(parameters[0]) < -1);
-                    return GetReputation(parameters[0]) < -1;
+                    return GetReputation(parameters[0], false) < 0;
+                case "HasBadRepRaw":
+                    return GetReputation(parameters[0], true) < 0;
+                case "HasInexcusableRep":                    
+                    return GetReputation(parameters[0], false) < -1;
             }
 
             return null;

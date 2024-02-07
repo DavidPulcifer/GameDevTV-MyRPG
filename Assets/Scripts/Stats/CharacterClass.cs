@@ -8,6 +8,7 @@
         Minion,
         Thug,
         Archer,
-        Knight
+        Knight,
+        Zombie
     }
 }

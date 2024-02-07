@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8572117788906935330
+--- !u!114 &-5978517747237480942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,126 +10,126 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 2e7b08a6-e72f-47bf-b618-ad8f3d768d2c
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: No, just say whatever feels right.
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 1235
-    y: 114
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - GiveQuest
-  condition:
-    and: []
---- !u!114 &-8003121731431677737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 6e0ee18a-318b-40d1-9629-9be6897c0805
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Please talk to Leofe the merchant by the shelf over there.
-  children:
-  - 51f00e8a-fbd9-4555-b1f8-da6216d2de2a
-  rect:
-    serializedVersion: 2
-    x: 735
-    y: 114
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - GiveQuest
-  condition:
-    and: []
---- !u!114 &-3757581838596566047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 81dcc330-789f-4f00-8d29-5fc3ece8d423
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Hello!
-  children:
-  - 9158b70a-7384-4596-843a-d555faa5edf9
-  rect:
-    serializedVersion: 2
-    x: 25
-    y: 54
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &-3455046228673067120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: cbbe2f76-19a5-40cf-9f90-67236a564cc8
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Darn...
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 736
-    y: 7
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - DamageReputation
-  - RejectBethela
-  condition:
-    and: []
---- !u!114 &-190573584033681000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 51f00e8a-fbd9-4555-b1f8-da6216d2de2a
+  m_Name: f3a55b66-8e0b-4a1d-ba74-5cab3b03fe28
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Anything, particular you want me to tell her?
+  text: She said she would like to place an order for some foot cream
   children:
-  - 2e7b08a6-e72f-47bf-b618-ad8f3d768d2c
+  - 306f3ea3-8b7b-4cee-8ac6-3f2f1cb987b4
   rect:
     serializedVersion: 2
-    x: 985
-    y: 114
+    x: 865
+    y: 74
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-5885518557759631340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 1c9e8c96-6e3f-4888-b834-0a996adeaafc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh, yeah? What did she say?
+  children:
+  - 71c20656-bbbb-4652-ab40-5c6e5d82c6ef
+  - f3a55b66-8e0b-4a1d-ba74-5cab3b03fe28
+  rect:
+    serializedVersion: 2
+    x: 616
+    y: 171
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-4020155251467747141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 306f3ea3-8b7b-4cee-8ac6-3f2f1cb987b4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh? Yeah, sure... No problem.
+  children:
+  - ec6f0624-4c41-43b4-b791-0a54f5868ed2
+  rect:
+    serializedVersion: 2
+    x: 1115
+    y: 74
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-1830057925287221702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: ec6f0624-4c41-43b4-b791-0a54f5868ed2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Is something the matter?
+  children:
+  - 3046764e-48a8-4d29-8a1b-a26945ba8a06
+  rect:
+    serializedVersion: 2
+    x: 1365
+    y: 74
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-1465645233849456413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 3046764e-48a8-4d29-8a1b-a26945ba8a06
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: No, I guess I thought... Nevermind. It's fine.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1615
+    y: 74
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - TalkToLeofe
+  - DamageRep
   condition:
     and: []
 --- !u!114 &11400000
@@ -142,19 +142,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: Bethela
+  m_Name: Leofe
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -3757581838596566047}
-  - {fileID: 8813839595591461543}
-  - {fileID: 1175072071381354955}
-  - {fileID: -3455046228673067120}
-  - {fileID: -8003121731431677737}
-  - {fileID: 6084603861818958227}
-  - {fileID: -190573584033681000}
-  - {fileID: -8572117788906935330}
+  - {fileID: 8731054129820386637}
+  - {fileID: 2110327444064391632}
+  - {fileID: -5885518557759631340}
+  - {fileID: 2864314108117619327}
+  - {fileID: -5978517747237480942}
+  - {fileID: -4020155251467747141}
+  - {fileID: -1830057925287221702}
+  - {fileID: -1465645233849456413}
+  - {fileID: 2274700966695472007}
+  - {fileID: 3757841466060261353}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &1175072071381354955
+--- !u!114 &2110327444064391632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,43 +166,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 4421f256-a657-418b-b88b-52db9d197353
+  m_Name: d0072542-280c-402b-b48e-8282c8f24d38
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Sure!
+  text: Bethela asked me to talk to you.
   children:
-  - 6e0ee18a-318b-40d1-9629-9be6897c0805
+  - 1c9e8c96-6e3f-4888-b834-0a996adeaafc
   rect:
     serializedVersion: 2
-    x: 526
-    y: 114
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &6084603861818958227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 9158b70a-7384-4596-843a-d555faa5edf9
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Can you do me a favor?
-  children:
-  - 23ef3712-fc37-4c4d-9d81-29f95d40177c
-  - 4421f256-a657-418b-b88b-52db9d197353
-  rect:
-    serializedVersion: 2
-    x: 277
-    y: 55
+    x: 366
+    y: 171
     width: 200
     height: 100
   onEnterAction: []
@@ -211,13 +186,13 @@ MonoBehaviour:
       - predicate: HasQuest
         parameters:
         - Talk To Leofe
-        negate: 1
+        negate: 0
     - or:
-      - predicate: HasDialogue flag
+      - predicate: HasDialogueFlag
         parameters:
-        - RejectBethela
+        - TalkToLeofe
         negate: 1
---- !u!114 &8813839595591461543
+--- !u!114 &2274700966695472007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -227,16 +202,95 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 23ef3712-fc37-4c4d-9d81-29f95d40177c
+  m_Name: 728a58c8-0d98-40ea-ae4c-6c596380fd9d
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: I'd rather not
+  isPlayerSpeaking: 0
+  text: Oh, really? She's so cute!
   children:
-  - cbbe2f76-19a5-40cf-9f90-67236a564cc8
+  - e5d70c11-c64b-4497-bfdf-76c87bf8b568
   rect:
     serializedVersion: 2
-    x: 525
-    y: 7
+    x: 1116
+    y: 171
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2864314108117619327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 71c20656-bbbb-4652-ab40-5c6e5d82c6ef
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: She didn't actually tell me what to say, just that she wanted me to talk
+    to you.
+  children:
+  - 728a58c8-0d98-40ea-ae4c-6c596380fd9d
+  rect:
+    serializedVersion: 2
+    x: 868
+    y: 171
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3757841466060261353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e5d70c11-c64b-4497-bfdf-76c87bf8b568
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you for passing the message!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1366
+    y: 171
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - TalkToLeofe
+  condition:
+    and: []
+--- !u!114 &8731054129820386637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b80626da-92b1-4556-9eba-99fb569879c8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Feel free to take anything on the table and leave the coin.
+  children:
+  - d0072542-280c-402b-b48e-8282c8f24d38
+  rect:
+    serializedVersion: 2
+    x: 116
+    y: 171
     width: 200
     height: 100
   onEnterAction: []

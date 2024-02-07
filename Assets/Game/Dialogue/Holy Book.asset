@@ -16,6 +16,7 @@ MonoBehaviour:
   text: (A book of holy scriptures and incantations)
   children:
   - 26a49a61-08fb-41dc-898a-6546cbe0fbee
+  - 266587da-19bb-4171-9172-d4abfbfe247c
   rect:
     serializedVersion: 2
     x: 178
@@ -88,6 +89,33 @@ MonoBehaviour:
         parameters:
         - Activate Shrine
         negate: 1
+--- !u!114 &-75874977359346522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 89d6cb74-9628-428b-a6ea-26053247d0b5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (You turn the pages of the ancient tome and find the incantation for activating
+    the shrine of divination)
+  children:
+  - 9079b891-f5f9-45b1-bc6c-5cfb99ee7eff
+  rect:
+    serializedVersion: 2
+    x: 679
+    y: 217
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +133,67 @@ MonoBehaviour:
   - {fileID: -3043726484754768284}
   - {fileID: 5735867815103449218}
   - {fileID: -3473043881690951963}
+  - {fileID: 5647162028511744284}
+  - {fileID: -75874977359346522}
+  - {fileID: 1601995991403466136}
   newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1601995991403466136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 9079b891-f5f9-45b1-bc6c-5cfb99ee7eff
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: '- Witena - Leoma - Spa -'
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 929
+    y: 217
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - Read Sparun Incantation
+  condition:
+    and: []
+--- !u!114 &5647162028511744284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 266587da-19bb-4171-9172-d4abfbfe247c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Turn to page 78
+  children:
+  - 89d6cb74-9628-428b-a6ea-26053247d0b5
+  rect:
+    serializedVersion: 2
+    x: 429
+    y: 217
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - HearSparunIncantation
+        negate: 0
 --- !u!114 &5735867815103449218
 MonoBehaviour:
   m_ObjectHideFlags: 0

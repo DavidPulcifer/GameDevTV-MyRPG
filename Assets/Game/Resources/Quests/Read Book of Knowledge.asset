@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed40d2c9b1a9f2741b6dcaa94ae14d39, type: 3}
-  m_Name: Play Cupid
+  m_Name: Read Book of Knowledge
   m_EditorClassIdentifier: 
   objectives:
-  - reference: walkUp
-    description: Walk over to the shop
-    usesCondition: 0
+  - reference: readBook
+    description: Use the book of Knowledge to learn more about yourself
+    usesCondition: 1
     completionCondition:
-      and: []
-  - reference: talkTo
-    description: Talk to the person
-    usesCondition: 0
-    completionCondition:
-      and: []
+      and:
+      - or:
+        - predicate: HasDialogueFlag
+          parameters:
+          - Read Book of Knowledge
+          negate: 0
   rewards:
-  - number: 1000
-    item: {fileID: 11400000, guid: 65b5b4f1db9fb0344899c1fee4c57ddc, type: 2}
+  - number: 0
+    item: {fileID: 0}
     experience: 100

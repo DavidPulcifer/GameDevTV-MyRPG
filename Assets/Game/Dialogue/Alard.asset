@@ -1,0 +1,434 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8462236928314833041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 4c3c0e48-0d50-45fd-9d5d-a2aa2a11b4c3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh, yeah. I have the Book of Knowledge with me. I bet it can help. What do
+    you want to know?
+  children:
+  - 00a7944a-4768-4ccb-9962-54bdf8c480d1
+  rect:
+    serializedVersion: 2
+    x: 1226
+    y: 240
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - soldiers
+        negate: 0
+--- !u!114 &-6107121769536010913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 00a7944a-4768-4ccb-9962-54bdf8c480d1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I want to find out who I am and where I'm from.
+  children:
+  - 0a987df3-2fa7-43d2-947d-01de0789477c
+  rect:
+    serializedVersion: 2
+    x: 1479
+    y: 240
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-5958147694332802636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 0a987df3-2fa7-43d2-947d-01de0789477c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hmm.... No guarantees, but if you hold your question in mind while you stare
+    at the 42nd page, the book will guide you from there.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1729
+    y: 239
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GiveQuest
+  condition:
+    and: []
+--- !u!114 &-3065826230187245311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 55088821-cfb7-4614-8895-ac4524a557d3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Can't you see I'm reading? I don't want to talk to you.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 713
+    y: 39
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasBadRep
+        parameters:
+        - soldiers
+        negate: 0
+--- !u!114 &-2699905801122471234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: fe4a43bc-ba7e-4303-b8e9-1be7d4078f6f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hey! It's the mystery visitor. Remind me again, how can I help?
+  children:
+  - fc6aa3be-3257-4607-bcf9-95626c46957a
+  rect:
+    serializedVersion: 2
+    x: 713
+    y: 377
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2135256112688550176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 391bade0-d0b4-4906-9056-dc81500f05d0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Who's asking?
+  children:
+  - fc6aa3be-3257-4607-bcf9-95626c46957a
+  rect:
+    serializedVersion: 2
+    x: 713
+    y: 141
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasBadRep
+        parameters:
+        - soldiers
+        negate: 1
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - soldiers
+        negate: 1
+--- !u!114 &-1972945120803253952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6fbdbb5a-91c0-44fe-a03d-4d6973bdafeb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: If you can develop a good reputation with the other soldiers then I'll know
+    I can trust you.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1477
+    y: 133
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-881209521671860836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7af16366-2378-43a0-852f-4cf260217947
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I can, but I don't really know you. How do I know you won't steal the book?
+  children:
+  - 6fbdbb5a-91c0-44fe-a03d-4d6973bdafeb
+  rect:
+    serializedVersion: 2
+    x: 1227
+    y: 135
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - MetAlard
+  condition:
+    and:
+    - or:
+      - predicate: HasBadRep
+        parameters:
+        - soldiers
+        negate: 1
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - soldiers
+        negate: 1
+--- !u!114 &-44100045701267331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f3b4be75-1d8e-4fd8-a2b2-730998e80103
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Hello, are you Alard?
+  children:
+  - 391bade0-d0b4-4906-9056-dc81500f05d0
+  - 55088821-cfb7-4614-8895-ac4524a557d3
+  - e38586c0-f64f-4047-989a-84d638fa2bed
+  rect:
+    serializedVersion: 2
+    x: 453
+    y: 140
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Meet Alard
+        negate: 0
+      - predicate: CompletedQuest
+        parameters:
+        - Meet Alard
+        negate: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Alard
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 2230173245241092291}
+  - {fileID: -44100045701267331}
+  - {fileID: -2135256112688550176}
+  - {fileID: -3065826230187245311}
+  - {fileID: 1975767980934197950}
+  - {fileID: 4583515432481347168}
+  - {fileID: -881209521671860836}
+  - {fileID: -8462236928314833041}
+  - {fileID: -6107121769536010913}
+  - {fileID: -5958147694332802636}
+  - {fileID: -1972945120803253952}
+  - {fileID: 8919957480998427918}
+  - {fileID: -2699905801122471234}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1975767980934197950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e38586c0-f64f-4047-989a-84d638fa2bed
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hey! It's the mystery visitor. Yeah, I'm Alard. How can I help?
+  children:
+  - fc6aa3be-3257-4607-bcf9-95626c46957a
+  rect:
+    serializedVersion: 2
+    x: 713
+    y: 241
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - MetAlard
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - soldiers
+        negate: 0
+--- !u!114 &2230173245241092291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6542e050-e83d-47f1-acdc-fa61c0d38ea9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Reading a book)
+  children:
+  - f3b4be75-1d8e-4fd8-a2b2-730998e80103
+  - 997fe2cd-f879-4006-be17-e5205ce35ba8
+  rect:
+    serializedVersion: 2
+    x: 203
+    y: 140
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4583515432481347168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: fc6aa3be-3257-4607-bcf9-95626c46957a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I don't know who I am, but Eloise told me you might be able to help with
+    that.
+  children:
+  - 7af16366-2378-43a0-852f-4cf260217947
+  - 4c3c0e48-0d50-45fd-9d5d-a2aa2a11b4c3
+  rect:
+    serializedVersion: 2
+    x: 972
+    y: 140
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &8919957480998427918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 997fe2cd-f879-4006-be17-e5205ce35ba8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Hey, I've been helping out the other soldiers and I think I'm ready
+  children:
+  - fe4a43bc-ba7e-4303-b8e9-1be7d4078f6f
+  rect:
+    serializedVersion: 2
+    x: 454
+    y: 377
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MetAlard
+        negate: 0
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Read Book of Knowledge
+        negate: 1
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - soldiers
+        negate: 0
