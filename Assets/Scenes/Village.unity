@@ -2691,6 +2691,34 @@ MonoBehaviour:
           m_StringArgument: HearGeneral
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &201696190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201696182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1502b7b213204f44f89d86238ca14a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: AlardColor
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1113193659}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerConversant, Assembly-CSharp
+        m_MethodName: AddDialogueFlag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AlardColor
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &202386997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21246,7 +21274,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 140880, guid: e9155916723d2f541a53f1db112851c8, type: 3}
       propertyPath: m_Name
-      value: (Book of Knowledge)
+      value: Book of Knowledge
       objectReference: {fileID: 0}
     - target: {fileID: 448148, guid: e9155916723d2f541a53f1db112851c8, type: 3}
       propertyPath: m_RootOrder
@@ -21320,6 +21348,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 893c6f9a0b045214295a5fc83f86145d, type: 2}
   conversantName: Book of Knowledge
+--- !u!114 &1966495121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966495119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1502b7b213204f44f89d86238ca14a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: LearnChoice
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1113193659}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerConversant, Assembly-CSharp
+        m_MethodName: AddDialogueFlag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LearnChoice
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1970497895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24182,12 +24238,12 @@ PrefabInstance:
     - target: {fileID: 466902311121425434, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_FollowOffset.y
-      value: 20.32784
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 466902311121425434, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_FollowOffset.z
-      value: -19.4456
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 530334690586460717, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -24212,7 +24268,7 @@ PrefabInstance:
     - target: {fileID: 530334690586460717, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.06231657
+      value: 0.06231655
       objectReference: {fileID: 0}
     - target: {fileID: 530334690586460717, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -24222,7 +24278,7 @@ PrefabInstance:
     - target: {fileID: 530334690586460717, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.348728
+      value: -0.34872803
       objectReference: {fileID: 0}
     - target: {fileID: 565560761547441029, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -24548,17 +24604,17 @@ PrefabInstance:
     - target: {fileID: 1448860860256688977, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.64993906
+      value: -0.6499391
       objectReference: {fileID: 0}
     - target: {fileID: 1448860860256688977, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.03586443
+      value: 0.035864398
       objectReference: {fileID: 0}
     - target: {fileID: 1448860860256688977, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.659532
+      value: 0.65953195
       objectReference: {fileID: 0}
     - target: {fileID: 1448860860256688977, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -25183,7 +25239,7 @@ PrefabInstance:
     - target: {fileID: 2436084601662705003, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 24.508347
+      value: 0.000000008303566
       objectReference: {fileID: 0}
     - target: {fileID: 2436084601662705003, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -25558,12 +25614,12 @@ PrefabInstance:
     - target: {fileID: 3037961955754752771, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_FollowOffset.y
-      value: 20.32784
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3037961955754752771, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_FollowOffset.z
-      value: -19.4456
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 3066627304892095232, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -26393,7 +26449,7 @@ PrefabInstance:
     - target: {fileID: 5146297038531651319, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.28187233
+      value: 0.28187227
       objectReference: {fileID: 0}
     - target: {fileID: 5146297038531651319, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -26408,7 +26464,7 @@ PrefabInstance:
     - target: {fileID: 5146297038531651319, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.21103038
+      value: -0.21103044
       objectReference: {fileID: 0}
     - target: {fileID: 5217914418277738525, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -26973,17 +27029,17 @@ PrefabInstance:
     - target: {fileID: 7133260231242967532, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.65048397
+      value: -0.6504839
       objectReference: {fileID: 0}
     - target: {fileID: 7133260231242967532, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.024036393
+      value: 0.0240364
       objectReference: {fileID: 0}
     - target: {fileID: 7133260231242967532, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.65258515
+      value: 0.6525852
       objectReference: {fileID: 0}
     - target: {fileID: 7133260231242967532, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -27253,12 +27309,12 @@ PrefabInstance:
     - target: {fileID: 8014339954334687582, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_FollowOffset.y
-      value: 20.32784
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8014339954334687582, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_FollowOffset.z
-      value: -19.4456
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 8024664153174364590, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}

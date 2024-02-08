@@ -80,6 +80,10 @@ namespace RPG.Dialogue
                     return GetReputation(parameters[0], false) > 0;
                 case "HasGoodRepRaw":
                     return GetReputation(parameters[0], true) > 0;
+                case "HasNeutralRep":
+                    return GetReputation(parameters[0], false) == 0;
+                case "HasNeutralRepRaw":
+                    return GetReputation(parameters[0], true) == 0;
                 case "HasBadRep":
                     return GetReputation(parameters[0], false) < 0;
                 case "HasBadRepRaw":

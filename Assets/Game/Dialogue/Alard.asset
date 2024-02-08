@@ -32,6 +32,31 @@ MonoBehaviour:
         parameters:
         - soldiers
         negate: 0
+--- !u!114 &-8438631968785271293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: ec8a0a82-789b-42f8-b961-e29dc31f3d41
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: It's answers aren't always clear, but they are always true.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1979
+    y: 240
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
 --- !u!114 &-6107121769536010913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,11 +98,12 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   text: Hmm.... No guarantees, but if you hold your question in mind while you stare
     at the 42nd page, the book will guide you from there.
-  children: []
+  children:
+  - ec8a0a82-789b-42f8-b961-e29dc31f3d41
   rect:
     serializedVersion: 2
     x: 1729
-    y: 239
+    y: 240
     width: 200
     height: 100
   onEnterAction: []
@@ -231,15 +257,10 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - predicate: HasBadRep
+      - predicate: HasNeutralRep
         parameters:
         - soldiers
-        negate: 1
-    - or:
-      - predicate: HasGoodRep
-        parameters:
-        - soldiers
-        negate: 1
+        negate: 0
 --- !u!114 &-44100045701267331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +324,7 @@ MonoBehaviour:
   - {fileID: -1972945120803253952}
   - {fileID: 8919957480998427918}
   - {fileID: -2699905801122471234}
+  - {fileID: -8438631968785271293}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &1975767980934197950
 MonoBehaviour:

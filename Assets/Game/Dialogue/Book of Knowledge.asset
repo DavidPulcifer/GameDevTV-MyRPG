@@ -13,18 +13,357 @@ MonoBehaviour:
   m_Name: 033ee77a-9f1d-4a0f-bfa3-27005589a5cc
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
-  children: []
+  text: (Cryptic glyphs that almost looks like words melt into and out of view)
+  children:
+  - 383e433a-d968-4f96-b851-28c5c94fdfdc
   rect:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: 95
+    y: 132
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
+--- !u!114 &-7824182479539332641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 152bada2-af17-4758-88f4-e7d631bdd412
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Who am I?
+  children:
+  - c10ca748-4e66-48e4-80d1-337714dcec8f
+  - 2699bebb-180f-4d4e-8f5a-7301bab5c59e
+  - b378ced7-3de4-4818-96b6-8cbe17ff9fee
+  - b92c9506-91ce-4ee5-91e4-19619dd0f401
+  rect:
+    serializedVersion: 2
+    x: 845
+    y: 30
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-6060706422781544282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: a33df61e-70e4-45fd-887d-5ef498320023
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Why am I here?
+  children:
+  - 725c7f36-42c3-4171-88a0-fe41d1882ad6
+  - b378ced7-3de4-4818-96b6-8cbe17ff9fee
+  - 2699bebb-180f-4d4e-8f5a-7301bab5c59e
+  - b92c9506-91ce-4ee5-91e4-19619dd0f401
+  rect:
+    serializedVersion: 2
+    x: 850
+    y: 344
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-5917980376793623276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 33cfe59c-5ad8-4386-8f16-7f52ae40a1ea
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Friend of the village...
+  children:
+  - 117aec01-5755-4ec3-af05-6748ee87e441
+  - f05569a7-d5e1-4103-875f-aac44f82d1b0
+  - aa71c712-cdd6-4ec5-ba05-7a37a3475524
+  rect:
+    serializedVersion: 2
+    x: 1345
+    y: 29
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRepRaw
+        parameters:
+        - villagers
+        negate: 0
+--- !u!114 &-4826473274929051879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 117aec01-5755-4ec3-af05-6748ee87e441
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Friend of the soldiers...
+  children:
+  - de675d22-d422-46d0-9250-81c4b2461166
+  - cfecdfd4-a835-47c5-8a40-20f451815b41
+  - 42bcc8df-f716-4d3c-ba20-e8be06e8e3ac
+  rect:
+    serializedVersion: 2
+    x: 1597
+    y: 28
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRepRaw
+        parameters:
+        - soldiers
+        negate: 0
+--- !u!114 &-4724780092831572431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: c81583fa-8b30-423d-bd76-d9f1be8c5454
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What choice?
+  children:
+  - 0c91d312-ccc7-4eee-ac75-72f4c72be7a2
+  rect:
+    serializedVersion: 2
+    x: 1349
+    y: 344
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2764877548497635660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: aa71c712-cdd6-4ec5-ba05-7a37a3475524
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Enemy of the soldiers...
+  children:
+  - 42bcc8df-f716-4d3c-ba20-e8be06e8e3ac
+  - de675d22-d422-46d0-9250-81c4b2461166
+  - cfecdfd4-a835-47c5-8a40-20f451815b41
+  rect:
+    serializedVersion: 2
+    x: 1599
+    y: 235
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasBadRepRaw
+        parameters:
+        - soldiers
+        negate: 0
+--- !u!114 &-2206977306840021472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7f53f3d4-a4f6-457a-8c5a-159ae9263bfd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Unremarkable to the village...
+  children:
+  - f05569a7-d5e1-4103-875f-aac44f82d1b0
+  - 117aec01-5755-4ec3-af05-6748ee87e441
+  - aa71c712-cdd6-4ec5-ba05-7a37a3475524
+  rect:
+    serializedVersion: 2
+    x: 1345
+    y: 132
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasNeutralRepRaw
+        parameters:
+        - villagers
+        negate: 0
+--- !u!114 &-2112693461943837509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: c10ca748-4e66-48e4-80d1-337714dcec8f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You are the traveler...
+  children:
+  - 33cfe59c-5ad8-4386-8f16-7f52ae40a1ea
+  - 7f53f3d4-a4f6-457a-8c5a-159ae9263bfd
+  - 8904d6c2-d2aa-43a4-96a6-f81a6f815374
+  rect:
+    serializedVersion: 2
+    x: 1095
+    y: 30
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-1490439051850323308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 8904d6c2-d2aa-43a4-96a6-f81a6f815374
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Enemy of the village...
+  children:
+  - aa71c712-cdd6-4ec5-ba05-7a37a3475524
+  - f05569a7-d5e1-4103-875f-aac44f82d1b0
+  - 117aec01-5755-4ec3-af05-6748ee87e441
+  rect:
+    serializedVersion: 2
+    x: 1347
+    y: 235
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasBadRepRaw
+        parameters:
+        - villagers
+        negate: 0
+--- !u!114 &-1283472047946838479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 383e433a-d968-4f96-b851-28c5c94fdfdc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Turn to page 42
+  children:
+  - 5620fe8d-7a48-47ff-9bdd-4aadb4e730a5
+  rect:
+    serializedVersion: 2
+    x: 346
+    y: 132
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Read Book of Knowledge
+        negate: 0
+--- !u!114 &-62943145426708449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: cfecdfd4-a835-47c5-8a40-20f451815b41
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Unremarkable to the outlaws...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1846
+    y: 133
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasNeutralRepRaw
+        parameters:
+        - outlaws
+        negate: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,4 +378,406 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -8631603172652035371}
+  - {fileID: -1283472047946838479}
+  - {fileID: 4924603428608917701}
+  - {fileID: -6060706422781544282}
+  - {fileID: -7824182479539332641}
+  - {fileID: 5039183547158878227}
+  - {fileID: -2112693461943837509}
+  - {fileID: 6887555764584561448}
+  - {fileID: 2160262961249032273}
+  - {fileID: 5886372613772656837}
+  - {fileID: 4407762144480714849}
+  - {fileID: 5535713900032823455}
+  - {fileID: -5917980376793623276}
+  - {fileID: -2206977306840021472}
+  - {fileID: -1490439051850323308}
+  - {fileID: -4826473274929051879}
+  - {fileID: 2632633811855649440}
+  - {fileID: -2764877548497635660}
+  - {fileID: 1088076350488639013}
+  - {fileID: -62943145426708449}
+  - {fileID: 2303689284524490269}
+  - {fileID: -4724780092831572431}
+  - {fileID: 7205252882043958831}
+  - {fileID: 4215227298727690931}
+  - {fileID: 649316620757166306}
   newNodeOffset: {x: 250, y: 0}
+--- !u!114 &649316620757166306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: c8d3b2a4-1d6b-452a-ba32-1fcea3a070b8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: To save the world, or end it.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2099
+    y: 344
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - LearnChoice
+  condition:
+    and: []
+--- !u!114 &1088076350488639013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: de675d22-d422-46d0-9250-81c4b2461166
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Friend of the outlaws...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1845
+    y: 28
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRepRaw
+        parameters:
+        - outlaws
+        negate: 0
+--- !u!114 &2160262961249032273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b3ae9333-3a65-42eb-a7af-e7ca2d88fbae
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (The glyphs rearrange themselves on the page. The resulting symbols look
+    familiar but could have many meanings.)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1096
+    y: 501
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2303689284524490269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 42bcc8df-f716-4d3c-ba20-e8be06e8e3ac
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Enemy of the outlaws...
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1847
+    y: 235
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasBadRepRaw
+        parameters:
+        - outlaws
+        negate: 0
+--- !u!114 &2632633811855649440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f05569a7-d5e1-4103-875f-aac44f82d1b0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Unremarkable to the soldiers...
+  children:
+  - cfecdfd4-a835-47c5-8a40-20f451815b41
+  - de675d22-d422-46d0-9250-81c4b2461166
+  - 42bcc8df-f716-4d3c-ba20-e8be06e8e3ac
+  rect:
+    serializedVersion: 2
+    x: 1598
+    y: 133
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasNeutralRepRaw
+        parameters:
+        - soldiers
+        negate: 0
+--- !u!114 &4215227298727690931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 85573664-a0e4-45d5-a34e-aa0406796da1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: To kill, or let live.
+  children:
+  - c8d3b2a4-1d6b-452a-ba32-1fcea3a070b8
+  rect:
+    serializedVersion: 2
+    x: 1846
+    y: 345
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4407762144480714849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b378ced7-3de4-4818-96b6-8cbe17ff9fee
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (After several moments you lose focus on the question and the glyphs revert
+    to their original position. Increasing your Intelligence would make this easier.)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1096
+    y: 594
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: MinimumTrait
+        parameters:
+        - Intelligence
+        - 3
+        negate: 1
+--- !u!114 &4924603428608917701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 5620fe8d-7a48-47ff-9bdd-4aadb4e730a5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (You see a string of glyphs that slowly drift into a new configuration and
+    then settle. You don't know why, but you get the impression they are telling
+    you to think of a question.)
+  children:
+  - 152bada2-af17-4758-88f4-e7d631bdd412
+  - a33df61e-70e4-45fd-887d-5ef498320023
+  - 8e99b079-6ac9-4325-9514-a2dc14a3c73d
+  rect:
+    serializedVersion: 2
+    x: 596
+    y: 131
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5039183547158878227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 8e99b079-6ac9-4325-9514-a2dc14a3c73d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Where am I from?
+  children:
+  - b3ae9333-3a65-42eb-a7af-e7ca2d88fbae
+  - b378ced7-3de4-4818-96b6-8cbe17ff9fee
+  - 2699bebb-180f-4d4e-8f5a-7301bab5c59e
+  - b92c9506-91ce-4ee5-91e4-19619dd0f401
+  rect:
+    serializedVersion: 2
+    x: 842
+    y: 501
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5535713900032823455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b92c9506-91ce-4ee5-91e4-19619dd0f401
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (After several moments you lose focus on the question and the glyphs revert
+    to their original position. Increasing your Intelligence would make this easier.)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1099
+    y: 779
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: MinimumTrait
+        parameters:
+        - Intelligence
+        - 1
+        negate: 1
+--- !u!114 &5886372613772656837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2699bebb-180f-4d4e-8f5a-7301bab5c59e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (After several moments you lose focus on the question and the glyphs revert
+    to their original position. Increasing your Intelligence would make this easier.)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1098
+    y: 686
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: MinimumTrait
+        parameters:
+        - Intelligence
+        - 2
+        negate: 1
+--- !u!114 &6887555764584561448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 725c7f36-42c3-4171-88a0-fe41d1882ad6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: To make a choice
+  children:
+  - c81583fa-8b30-423d-bd76-d9f1be8c5454
+  rect:
+    serializedVersion: 2
+    x: 1099
+    y: 344
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &7205252882043958831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 0c91d312-ccc7-4eee-ac75-72f4c72be7a2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: To lie, or speak true
+  children:
+  - 85573664-a0e4-45d5-a34e-aa0406796da1
+  rect:
+    serializedVersion: 2
+    x: 1599
+    y: 344
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
