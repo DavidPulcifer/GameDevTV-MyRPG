@@ -493,7 +493,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 1149
-    y: 615
+    y: 616
     width: 200
     height: 100
   onEnterAction: []

@@ -111,6 +111,42 @@ MonoBehaviour:
   - GiveQuest
   condition:
     and: []
+--- !u!114 &-4703578509846243608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 056c709c-5224-4dd4-ac7e-b7fd0afd9672
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I heard that green was your favorite color, is that true?
+  children:
+  - 5dccf847-2480-41a7-8281-b12a4dc85dc9
+  rect:
+    serializedVersion: 2
+    x: 452
+    y: 522
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - SayGreenFlower
+        negate: 1
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - AlardColor
+        negate: 0
 --- !u!114 &-3065826230187245311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +197,32 @@ MonoBehaviour:
     serializedVersion: 2
     x: 713
     y: 377
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2266221101903624703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 5dccf847-2480-41a7-8281-b12a4dc85dc9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh, absolutely!
+  children:
+  - 12fc4aaf-fc4e-4569-a8aa-48d49a8b17b0
+  rect:
+    serializedVersion: 2
+    x: 702
+    y: 522
     width: 200
     height: 100
   onEnterAction: []
@@ -261,6 +323,37 @@ MonoBehaviour:
         parameters:
         - soldiers
         negate: 0
+--- !u!114 &-269934089670856871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 12fc4aaf-fc4e-4569-a8aa-48d49a8b17b0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Over in the Fae garden there is a green flower you might be interested in.
+  children:
+  - bb2b1b5e-76c5-4913-8107-d7260f3ff6b6
+  rect:
+    serializedVersion: 2
+    x: 952
+    y: 522
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GreenFlower
+        negate: 0
 --- !u!114 &-44100045701267331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +418,10 @@ MonoBehaviour:
   - {fileID: 8919957480998427918}
   - {fileID: -2699905801122471234}
   - {fileID: -8438631968785271293}
+  - {fileID: -4703578509846243608}
+  - {fileID: -2266221101903624703}
+  - {fileID: -269934089670856871}
+  - {fileID: 5530098936601215338}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &1975767980934197950
 MonoBehaviour:
@@ -375,6 +472,7 @@ MonoBehaviour:
   children:
   - f3b4be75-1d8e-4fd8-a2b2-730998e80103
   - 997fe2cd-f879-4006-be17-e5205ce35ba8
+  - 056c709c-5224-4dd4-ac7e-b7fd0afd9672
   rect:
     serializedVersion: 2
     x: 203
@@ -411,6 +509,32 @@ MonoBehaviour:
     height: 100
   onEnterAction: []
   onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5530098936601215338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: bb2b1b5e-76c5-4913-8107-d7260f3ff6b6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Wow! I'll have to take a look later. Thank you!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1202
+    y: 522
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - SayGreenFlower
   condition:
     and: []
 --- !u!114 &8919957480998427918
