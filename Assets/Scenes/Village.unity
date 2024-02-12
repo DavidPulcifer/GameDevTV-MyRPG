@@ -23099,7 +23099,7 @@ PrefabInstance:
     - target: {fileID: 6453939673629322765, guid: ce99a60992419c94b888ce34977fb247,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.68346924
       objectReference: {fileID: 0}
     - target: {fileID: 6453939673629322765, guid: ce99a60992419c94b888ce34977fb247,
         type: 3}
@@ -23109,7 +23109,7 @@ PrefabInstance:
     - target: {fileID: 6453939673629322765, guid: ce99a60992419c94b888ce34977fb247,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.72997934
       objectReference: {fileID: 0}
     - target: {fileID: 6453939673629322765, guid: ce99a60992419c94b888ce34977fb247,
         type: 3}
@@ -23124,7 +23124,7 @@ PrefabInstance:
     - target: {fileID: 6453939673629322765, guid: ce99a60992419c94b888ce34977fb247,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -93.769
       objectReference: {fileID: 0}
     - target: {fileID: 6453939673629322765, guid: ce99a60992419c94b888ce34977fb247,
         type: 3}
@@ -23665,7 +23665,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2099270143}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2099270145}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30fd96fe1cd6f0a45acced9fc6875c02, type: 3}
@@ -23744,7 +23744,7 @@ PrefabInstance:
     - target: {fileID: 3697622704622461409, guid: 1a01a212598da224d85f002a1e49bdaf,
         type: 3}
       propertyPath: m_Name
-      value: Grunt Female (4)
+      value: Mathilde
       objectReference: {fileID: 0}
     - target: {fileID: 6453939673629322765, guid: 1a01a212598da224d85f002a1e49bdaf,
         type: 3}
@@ -23814,6 +23814,82 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2099270143}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2099270145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3697622704622461409, guid: 1a01a212598da224d85f002a1e49bdaf,
+    type: 3}
+  m_PrefabInstance: {fileID: 2099270143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2099270146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099270145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1502b7b213204f44f89d86238ca14a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: GeneralKill
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1113193659}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerConversant, Assembly-CSharp
+        m_MethodName: AddDialogueFlag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GeneralKill
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2099270147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099270145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1502b7b213204f44f89d86238ca14a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: HearGeneral
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1113193659}
+        m_TargetAssemblyTypeName: RPG.Dialogue.PlayerConversant, Assembly-CSharp
+        m_MethodName: AddDialogueFlag
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: HearGeneral
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2099270148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099270145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf477a895fa01247ae7b701f1affe60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: da7ae1ff2036c8344b44bd1e575e87e0, type: 2}
+  conversantName: Mathilde
 --- !u!1001 &2101896409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24529,22 +24605,22 @@ PrefabInstance:
     - target: {fileID: 530334690586460717, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.647938
+      value: -0.6479381
       objectReference: {fileID: 0}
     - target: {fileID: 530334690586460717, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.062316537
+      value: 0.062316533
       objectReference: {fileID: 0}
     - target: {fileID: 530334690586460717, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.674301
+      value: 0.67430097
       objectReference: {fileID: 0}
     - target: {fileID: 530334690586460717, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.34872803
+      value: -0.34872806
       objectReference: {fileID: 0}
     - target: {fileID: 565560761547441029, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -24875,17 +24951,17 @@ PrefabInstance:
     - target: {fileID: 1448860860256688977, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.035864387
+      value: 0.035864394
       objectReference: {fileID: 0}
     - target: {fileID: 1448860860256688977, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.65953207
+      value: 0.659532
       objectReference: {fileID: 0}
     - target: {fileID: 1448860860256688977, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.37591296
+      value: -0.375913
       objectReference: {fileID: 0}
     - target: {fileID: 1452372416896482394, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -25505,7 +25581,7 @@ PrefabInstance:
     - target: {fileID: 2436084601662705003, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: -63.127045
+      value: 0.0000000146979104
       objectReference: {fileID: 0}
     - target: {fileID: 2436084601662705003, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
@@ -25640,7 +25716,7 @@ PrefabInstance:
     - target: {fileID: 2809907673919296409, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -570.74976
+      value: -570.7499
       objectReference: {fileID: 0}
     - target: {fileID: 2810127679427545817, guid: 353aef4ee29750c41b6b7f5f30625914,
         type: 3}

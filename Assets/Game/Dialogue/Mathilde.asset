@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6588858417837473504
+--- !u!114 &-5615976450125793271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 85e8b82b-9108-4c34-8451-b471efa688a2
+  m_Name: 1de95aa1-a68a-4aa2-ad4e-d533b9b112ed
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I'm sorry to hear that. I know someone who might be able to help.
-  children:
-  - 7db3200e-e9b5-4307-8636-5ad32b9375d3
+  text: Go away.
+  children: []
   rect:
     serializedVersion: 2
-    x: 1125
-    y: 347
+    x: 468
+    y: 223
     width: 200
     height: 100
   onEnterAction: []
@@ -27,11 +26,11 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - predicate: HasGoodRep
+      - predicate: HasBadRep
         parameters:
         - soldiers
         negate: 0
---- !u!114 &-2276467413089054472
+--- !u!114 &-3730173636681975591
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,23 +40,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 3fd76ab8-b5a1-4b6b-a696-858b23236cf2
+  m_Name: 46b5677f-2b28-419a-ab48-d83b63fed4b9
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hmmm...
-  children:
-  - a6a3d97c-c7b7-4b1b-a8fc-946fcf0a685b
+  text: We're looking for outlaws.
+  children: []
   rect:
     serializedVersion: 2
-    x: 128
-    y: 137
+    x: 1466
+    y: 22
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
---- !u!114 &-2087503713875802640
+--- !u!114 &-2968814740670816022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,21 +65,135 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: eefdba92-d655-42cd-bb25-197a6a4919d0
+  m_Name: 6e753256-b4e2-41ba-afed-76c35b467339
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Where is the General?
+  children:
+  - 8bea6158-6e0a-4728-8542-ce05ee9a9b3b
+  - 9126c735-cab2-4865-9245-f29db8807040
+  rect:
+    serializedVersion: 2
+    x: 715
+    y: 124
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - HearGeneral
+        negate: 0
+--- !u!114 &-2509363588799776927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 26daff41-a6bf-47bf-bac6-9a1624b7e7b6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Who is the General?
+  children:
+  - 3d8dc75a-dfa3-4c44-a096-185263984531
+  rect:
+    serializedVersion: 2
+    x: 716
+    y: 23
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - HearGeneral
+        negate: 1
+--- !u!114 &-498851135916881151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2f20886f-cf18-47a4-b15f-c4dcb33e6c92
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: That's unusual, but you seem honest, so I'll let you get on your way. Don't
-    cause any trouble.
+  text: Anyone who talks to the General and doesn't have anything new to tell him
+    is killed.
   children: []
   rect:
     serializedVersion: 2
-    x: 1125
-    y: 237
+    x: 1458
+    y: 221
     width: 200
     height: 100
   onEnterAction: []
   onExitAction:
-  - Outlaw Inspection
+  - GeneralKill
+  condition:
+    and: []
+--- !u!114 &-432619525184674455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: ec716cf2-86db-4f8a-ade0-2727bf2d0e04
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Why are you here?
+  children:
+  - 46b5677f-2b28-419a-ab48-d83b63fed4b9
+  rect:
+    serializedVersion: 2
+    x: 1216
+    y: 22
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-228019528274109818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 8bea6158-6e0a-4728-8542-ce05ee9a9b3b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I'm not going to tell you that!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 965
+    y: 124
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
   condition:
     and:
     - or:
@@ -99,22 +211,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: Eloise
+  m_Name: Mathilde
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -2276467413089054472}
-  - {fileID: 6706492045556315150}
-  - {fileID: 527416066437928390}
-  - {fileID: 6358910938583061706}
-  - {fileID: 3453954213772275434}
-  - {fileID: 1321402835398654698}
-  - {fileID: 7114024946692482466}
-  - {fileID: 8643352702434787398}
-  - {fileID: -2087503713875802640}
-  - {fileID: -6588858417837473504}
-  - {fileID: 4805922540827528815}
+  - {fileID: 8051380650949259945}
+  - {fileID: 4342609557965140985}
+  - {fileID: -2968814740670816022}
+  - {fileID: -2509363588799776927}
+  - {fileID: 9110778199574814656}
+  - {fileID: -5615976450125793271}
+  - {fileID: -432619525184674455}
+  - {fileID: -3730173636681975591}
+  - {fileID: -228019528274109818}
+  - {fileID: 7430221853376972839}
+  - {fileID: 3704449449910910446}
+  - {fileID: -498851135916881151}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &527416066437928390
+--- !u!114 &3704449449910910446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,17 +237,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: b5808b0d-e06b-4a28-9559-787b3524f14d
+  m_Name: 8d7332c3-a777-4c1a-9e1a-9e1e69614f90
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I don't recognize you. Do you live here?
+  text: Don't go anywhere near the General.
   children:
-  - f5820ce6-4475-45c9-ba86-60526d9f76e2
-  - 8e6a48fc-d7d8-44c3-9f33-e0ba0b896bc8
+  - 2f20886f-cf18-47a4-b15f-c4dcb33e6c92
   rect:
     serializedVersion: 2
-    x: 631
-    y: 138
+    x: 1215
+    y: 222
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4342609557965140985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 999ff9be-58c6-4bef-8a86-0d761637fdf8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Sorry, I can't talk right now. I have to take that to the General as soon
+    as it is done.
+  children:
+  - 6e753256-b4e2-41ba-afed-76c35b467339
+  - 26daff41-a6bf-47bf-bac6-9a1624b7e7b6
+  rect:
+    serializedVersion: 2
+    x: 467
+    y: 125
     width: 200
     height: 100
   onEnterAction: []
@@ -142,11 +282,11 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - predicate: HasGoodRep
+      - predicate: HasBadRep
         parameters:
         - soldiers
         negate: 1
---- !u!114 &1321402835398654698
+--- !u!114 &7430221853376972839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,100 +296,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 8e6a48fc-d7d8-44c3-9f33-e0ba0b896bc8
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: I don't know where I live
-  children:
-  - eefdba92-d655-42cd-bb25-197a6a4919d0
-  - 85e8b82b-9108-4c34-8451-b471efa688a2
-  rect:
-    serializedVersion: 2
-    x: 876
-    y: 237
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &3453954213772275434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: f5820ce6-4475-45c9-ba86-60526d9f76e2
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Yes, I live in the little green house
-  children:
-  - 705f4ccb-bcd0-4b08-9c06-2c465d17b310
-  - 7e7d59d1-d6a0-404b-8f0d-3f3e3d58e386
-  rect:
-    serializedVersion: 2
-    x: 874
-    y: 137
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &4805922540827528815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 7db3200e-e9b5-4307-8636-5ad32b9375d3
+  m_Name: 9126c735-cab2-4865-9245-f29db8807040
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Talk to Alard in town. He used to work in the Hall of Records and can find
-    information on anything.
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 1371
-    y: 347
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - Outlaw Inspection
-  - GiveQuest
-  condition:
-    and: []
---- !u!114 &6358910938583061706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 0c47c231-a00c-4097-819b-899b08fa82ac
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: I've heard good things about you. Sorry for the formality, but I have to
-    ask. Do you live here?
+  text: You've helped us out a lot, so I'm going to give you some advice...
   children:
-  - f5820ce6-4475-45c9-ba86-60526d9f76e2
-  - 8e6a48fc-d7d8-44c3-9f33-e0ba0b896bc8
+  - 8d7332c3-a777-4c1a-9e1a-9e1e69614f90
   rect:
     serializedVersion: 2
-    x: 632
-    y: 236
+    x: 965
+    y: 222
     width: 200
     height: 100
   onEnterAction: []
@@ -261,7 +317,7 @@ MonoBehaviour:
         parameters:
         - soldiers
         negate: 0
---- !u!114 &6706492045556315150
+--- !u!114 &8051380650949259945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -271,29 +327,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: a6a3d97c-c7b7-4b1b-a8fc-946fcf0a685b
+  m_Name: 06ae47f2-b136-4562-b06b-c2f90823785e
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Is something wrong?
+  isPlayerSpeaking: 0
+  text: (Wathcing the other soldier intently)
   children:
-  - b5808b0d-e06b-4a28-9559-787b3524f14d
-  - 0c47c231-a00c-4097-819b-899b08fa82ac
+  - 999ff9be-58c6-4bef-8a86-0d761637fdf8
+  - 1de95aa1-a68a-4aa2-ad4e-d533b9b112ed
   rect:
     serializedVersion: 2
-    x: 376
-    y: 138
+    x: 222
+    y: 126
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
-    and:
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - Outlaw Inspection
-        negate: 1
---- !u!114 &7114024946692482466
+    and: []
+--- !u!114 &9110778199574814656
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,58 +354,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 705f4ccb-bcd0-4b08-9c06-2c465d17b310
+  m_Name: 3d8dc75a-dfa3-4c44-a096-185263984531
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: You're lying, there is no green house. I'm really dissapointed, I thought
-    you were a good person.
-  children: []
+  text: He is in charge of the soldiers in the area.
+  children:
+  - ec716cf2-86db-4f8a-ade0-2727bf2d0e04
   rect:
     serializedVersion: 2
-    x: 1190
-    y: -2
+    x: 966
+    y: 22
     width: 200
     height: 100
   onEnterAction: []
   onExitAction:
-  - DamageRep
-  - Outlaw Inspection
+  - HearGeneral
   condition:
-    and:
-    - or:
-      - predicate: HasGoodRep
-        parameters:
-        - soldiers
-        negate: 0
---- !u!114 &8643352702434787398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 7e7d59d1-d6a0-404b-8f0d-3f3e3d58e386
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: There is no green house. You must be an outlaw! Attack!
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 1189
-    y: 95
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - attack
-  - Outlaw Inspection
-  condition:
-    and:
-    - or:
-      - predicate: HasGoodRep
-        parameters:
-        - soldiers
-        negate: 1
+    and: []
