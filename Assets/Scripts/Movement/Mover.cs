@@ -9,6 +9,8 @@ namespace RPG.Movement
     public class Mover : MonoBehaviour, IAction, ISaveable
     {
         [SerializeField] float maxSpeed = 6f;
+        [SerializeField] float runSpeedFraction = 1f;
+        [SerializeField] float walkSpeedFraction = 0.2f;
 
         
         NavMeshAgent navMeshAgent;
@@ -24,6 +26,16 @@ namespace RPG.Movement
         {
             if(health != null) navMeshAgent.enabled = !health.IsDead();
             UpdateAnimator();
+        }
+
+        public void RunToObject(Transform target)
+        {
+            StartMoveAction(target.position, runSpeedFraction);
+        }
+
+        public void WalkToObject(Transform target)
+        {
+            StartMoveAction(target.position, walkSpeedFraction);
         }
 
         public void StartMoveAction(Vector3 destination, float speedFraction)

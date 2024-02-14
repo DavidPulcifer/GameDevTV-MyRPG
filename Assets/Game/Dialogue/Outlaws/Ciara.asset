@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-347819578239553971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f0facbe4-df8c-4aa8-8e2e-3546577e81ff
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Stares intently)
+  children:
+  - 8b897d2d-8f53-4290-b99c-c9e0d63f714c
+  - 79b5d0c4-2022-4cd8-bce7-6c037e5fbdc7
+  - 46f72b28-b128-4dfd-bbae-2a1816544400
+  rect:
+    serializedVersion: 2
+    x: 150
+    y: 149
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Ciara
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -347819578239553971}
+  - {fileID: 890504350956022301}
+  - {fileID: 8518483025876686294}
+  - {fileID: 2608805688384488201}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &890504350956022301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 8b897d2d-8f53-4290-b99c-c9e0d63f714c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Don't enter this camp without checking in with Rhys.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 397
+    y: 46
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetRhys
+        negate: 1
+--- !u!114 &2608805688384488201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 46f72b28-b128-4dfd-bbae-2a1816544400
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Her gaze hardens severely as she recognizes you.)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 396
+    y: 253
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - outlaws
+        negate: 1
+--- !u!114 &8518483025876686294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 79b5d0c4-2022-4cd8-bce7-6c037e5fbdc7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Her gaze soften's ever so slightly as she recognizes you.)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 396
+    y: 149
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetRhys
+        negate: 0
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - outlaws
+        negate: 0

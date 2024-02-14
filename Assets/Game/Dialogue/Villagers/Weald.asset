@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8075087465822315265
+--- !u!114 &-8772709310183016320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,49 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 6bf86a21-f0dd-4d35-b726-7c1cd04934e0
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Really? Thanks!
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 1586
-    y: 195
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - GiveTalkQuest
-  condition:
-    and: []
---- !u!114 &-6869915079733536399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: b56f09c5-d624-4cf3-ac4f-0fadbaec6236
+  m_Name: 2245eddf-a175-4e2c-a1fe-2ae82d0a4fe4
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I'll talk to them
+  text: I'm honestly not sure, but I'd be happy to try.
   children:
-  - 6bf86a21-f0dd-4d35-b726-7c1cd04934e0
+  - b59122b1-fb49-458b-82ee-96e44304defa
   rect:
     serializedVersion: 2
-    x: 1336
-    y: 195
+    x: 776
+    y: 251
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
---- !u!114 &-6787482888099642122
+--- !u!114 &-8562757785874333615
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,85 +36,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 1adb0254-836e-4bbb-8f15-ef9f09d18576
+  m_Name: 7fee3902-ec76-4718-84b9-55b72286b1fd
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (continues weepeing)
+  text: (grunts)
   children: []
   rect:
     serializedVersion: 2
-    x: 860
-    y: 98
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - IgnoreBlomvarda
-        negate: 0
---- !u!114 &-6299859806187972491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: fa8794f4-0f90-4228-9228-40c279e26188
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: ...
-  children:
-  - 492d103d-6f49-497e-be24-c86e29dcc76f
-  - f35ec7f7-36dc-4fd0-a493-eb2bc6788207
-  rect:
-    serializedVersion: 2
-    x: 45
-    y: 99
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &-4823105184511894983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 4cac8ed9-d512-4edd-be02-ff440c99cb97
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Solgeisl is speaking again! Thank you!
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 577
-    y: 322
+    x: 1524
+    y: 354
     width: 200
     height: 100
   onEnterAction: []
   onExitAction:
-  - HelpBlomvarda
+  - DamageRep
   condition:
-    and:
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - HelpBlomvarda
-        negate: 1
---- !u!114 &-3944771373342596344
+    and: []
+--- !u!114 &-8432928293044410184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,42 +62,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 1052283b-1a88-4d83-8ece-fff423aff78e
+  m_Name: 41e2783f-59d5-47be-a4a1-21bbba76dcb2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: uh... ok...
+  text: Thank you for the help!
   children: []
   rect:
     serializedVersion: 2
-    x: 1586
-    y: 292
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - GiveAttackQuest
-  condition:
-    and: []
---- !u!114 &-2703998405953119213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: f35ec7f7-36dc-4fd0-a493-eb2bc6788207
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: (sounds of leaves rustling)
-  children:
-  - 4cac8ed9-d512-4edd-be02-ff440c99cb97
-  rect:
-    serializedVersion: 2
-    x: 327
-    y: 321
+    x: 533
+    y: 244
     width: 200
     height: 100
   onEnterAction: []
@@ -193,43 +78,16 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - predicate: HasDialogueFlag
+      - predicate: HasQuest
         parameters:
-        - SoothSolgeisl
+        - Sharpen Axe
         negate: 0
---- !u!114 &-737409840857082811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 492d103d-6f49-497e-be24-c86e29dcc76f
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: (weeping)
-  children:
-  - 556867c7-8973-48cf-a4ff-a684fb5390b2
-  - 636c6810-6ddc-4f66-9bc7-15c2f45f2e9d
-  rect:
-    serializedVersion: 2
-    x: 327
-    y: 98
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
     - or:
-      - predicate: HasDialogueFlag
+      - predicate: CompletedQuest
         parameters:
-        - SoothSolgeisl
-        negate: 1
---- !u!114 &-122448015080070008
+        - Sharpen Axe
+        negate: 0
+--- !u!114 &-6878419432516664696
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,22 +97,132 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: dac44e3a-40f2-4fe9-95ac-bcb5eb4aa2d2
+  m_Name: 1328a74e-f8b8-4503-b36d-8d919c4bda25
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I'll beat them up for you
+  text: I just appeared over there across the bridge and I have no idea who I am
+    or what I'm doing here.
   children:
-  - 1052283b-1a88-4d83-8ece-fff423aff78e
+  - 7bbfcf0b-f111-4e2a-8799-d62ed89636af
   rect:
     serializedVersion: 2
-    x: 1336
-    y: 292
+    x: 1276
+    y: 250
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
+--- !u!114 &-2870035837993106382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 665f5278-8fbd-4a83-9771-56163e205826
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Any luck with the axe?
+  children:
+  - 24146453-3145-4655-abf5-970dc99faad8
+  rect:
+    serializedVersion: 2
+    x: 536
+    y: 456
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Sharpen Axe
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Sharpen Axe
+        negate: 1
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - WealdBadNews
+        negate: 1
+--- !u!114 &-2028303884680261667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 100dac82-c8c9-4b00-95b3-3e7255675762
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (grunts)
+  children:
+  - b98d321b-37c8-4906-8f48-a71e11e28a30
+  - 665f5278-8fbd-4a83-9771-56163e205826
+  - 41e2783f-59d5-47be-a4a1-21bbba76dcb2
+  rect:
+    serializedVersion: 2
+    x: 254
+    y: 140
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-1167688399136059410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b98d321b-37c8-4906-8f48-a71e11e28a30
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You know anything about sharpening axes? I turned by back for one second
+    and those jerk soldiers thought it would be funny to chop right into an iron
+    knot.
+  children:
+  - 2245eddf-a175-4e2c-a1fe-2ae82d0a4fe4
+  - 05c65488-ba77-452f-857a-6f2cdd6ff744
+  rect:
+    serializedVersion: 2
+    x: 534
+    y: 138
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - MeetWeald
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Sharpen Axe
+        negate: 1
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - RejectWeald
+        negate: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,25 +233,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: Blomvarda
+  m_Name: Weald
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -6299859806187972491}
-  - {fileID: 3277153432586367726}
-  - {fileID: 4776297864143539264}
-  - {fileID: 9079278967017202881}
-  - {fileID: 7954242978158667331}
-  - {fileID: 5965971053143265478}
-  - {fileID: -737409840857082811}
-  - {fileID: -6869915079733536399}
-  - {fileID: -122448015080070008}
-  - {fileID: -3944771373342596344}
-  - {fileID: -8075087465822315265}
-  - {fileID: -2703998405953119213}
-  - {fileID: -4823105184511894983}
-  - {fileID: -6787482888099642122}
+  - {fileID: -2028303884680261667}
+  - {fileID: -1167688399136059410}
+  - {fileID: -2870035837993106382}
+  - {fileID: -8772709310183016320}
+  - {fileID: 3741113759491032775}
+  - {fileID: 5265604836025698338}
+  - {fileID: 4595053820467156087}
+  - {fileID: -6878419432516664696}
+  - {fileID: 7045339434185154496}
+  - {fileID: 4507814770820081536}
+  - {fileID: -8562757785874333615}
+  - {fileID: -8432928293044410184}
+  - {fileID: 6618054192183400286}
+  - {fileID: 4233111514026745601}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &3277153432586367726
+--- !u!114 &3741113759491032775
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,97 +261,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 636c6810-6ddc-4f66-9bc7-15c2f45f2e9d
+  m_Name: 05c65488-ba77-452f-857a-6f2cdd6ff744
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: What's the matter?
+  text: Sorry, I don't want to do that.
   children:
-  - 0d49cad7-a34b-4c7f-9b05-897ef0fb257f
+  - 6122b94b-cdfb-45da-9a2d-cff3a21366f6
   rect:
     serializedVersion: 2
-    x: 626
-    y: 195
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Beat Up Soldier
-        negate: 1
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Talk to Soldier
-        negate: 1
---- !u!114 &4776297864143539264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 556867c7-8973-48cf-a4ff-a684fb5390b2
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: (ignore)
-  children:
-  - d1969bdd-8ce8-4cd6-b728-73e6f1e94c98
-  - 1adb0254-836e-4bbb-8f15-ef9f09d18576
-  rect:
-    serializedVersion: 2
-    x: 624
-    y: 99
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Beat Up Soldier
-        negate: 1
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Talk to Soldier
-        negate: 1
---- !u!114 &5965971053143265478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: ec3a4646-7026-4bbd-b98d-8f153a40d23a
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: I think she is scared of that soldier who keeps staring at us.
-  children:
-  - b56f09c5-d624-4cf3-ac4f-0fadbaec6236
-  - dac44e3a-40f2-4fe9-95ac-bcb5eb4aa2d2
-  rect:
-    serializedVersion: 2
-    x: 1086
-    y: 195
+    x: 781
+    y: 139
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
---- !u!114 &7954242978158667331
+--- !u!114 &4233111514026745601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -393,51 +287,156 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 0d49cad7-a34b-4c7f-9b05-897ef0fb257f
+  m_Name: 479228b5-efed-4592-8528-667329073e75
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Solgeisl, won't speak to me!
-  children:
-  - ec3a4646-7026-4bbd-b98d-8f153a40d23a
-  rect:
-    serializedVersion: 2
-    x: 854
-    y: 196
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &9079278967017202881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: d1969bdd-8ce8-4cd6-b728-73e6f1e94c98
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: (continues weepeing)
+  text: (grunts)
   children: []
   rect:
     serializedVersion: 2
-    x: 861
-    y: -9
+    x: 1028
+    y: 455
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - WealdBadNews
+  condition:
+    and: []
+--- !u!114 &4507814770820081536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 33227302-c4b2-4ac8-aa75-e625b057d9ce
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: uhh... just joking. Of course I know whether or not I can sharpen an axe...
+  children:
+  - 7fee3902-ec76-4718-84b9-55b72286b1fd
+  rect:
+    serializedVersion: 2
+    x: 1270
+    y: 354
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4595053820467156087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b59122b1-fb49-458b-82ee-96e44304defa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Wow, thanks! But what do you mean you're not sure?
+  children:
+  - 1328a74e-f8b8-4503-b36d-8d919c4bda25
+  - 33227302-c4b2-4ac8-aa75-e625b057d9ce
+  rect:
+    serializedVersion: 2
+    x: 1026
+    y: 249
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GiveQuest
+  condition:
+    and: []
+--- !u!114 &5265604836025698338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6122b94b-cdfb-45da-9a2d-cff3a21366f6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (grunts)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1031
+    y: 139
     width: 200
     height: 100
   onEnterAction: []
   onExitAction:
   - DamageRep
-  - IgnoreBlomvarda
+  - RejectWeald
+  condition:
+    and: []
+--- !u!114 &6618054192183400286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 24146453-3145-4655-abf5-970dc99faad8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm sorry. I tried to sharpen it myself and it got ruined.
+  children:
+  - 479228b5-efed-4592-8528-667329073e75
+  rect:
+    serializedVersion: 2
+    x: 781
+    y: 456
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
   condition:
     and:
     - or:
       - predicate: HasDialogueFlag
         parameters:
-        - IgnoreBlomvarda
-        negate: 1
+        - RuinAxe
+        negate: 0
+--- !u!114 &7045339434185154496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7bbfcf0b-f111-4e2a-8799-d62ed89636af
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: That's crazy, let me know if there is anything I can do to help.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1526
+    y: 249
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []

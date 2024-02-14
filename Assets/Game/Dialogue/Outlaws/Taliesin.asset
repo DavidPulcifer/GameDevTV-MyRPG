@@ -1,0 +1,653 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9137501580413312047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2c5ff77d-1eb6-4ea1-a1ba-7003517ee43a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Ok, I'm convinced.
+  children:
+  - 7f00b658-410d-4a4c-b442-5ae4c26b407c
+  rect:
+    serializedVersion: 2
+    x: 1644
+    y: 464
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - ConvinceTaliesen
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Convince Taliesin
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Convince Taliesin
+        negate: 0
+--- !u!114 &-5325123267555293861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 83360061-04a6-4585-821e-d934824177b2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: A soldier named Tristan told me the General is looking for something else.
+  children:
+  - e01612ad-48c6-4299-ad3c-9aa0f999ec95
+  rect:
+    serializedVersion: 2
+    x: 1396
+    y: 257
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - TristanClue
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GeneralNoOutlaws
+        negate: 0
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - TristanClue
+        negate: 1
+--- !u!114 &-4234147664887498686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6a8b0500-f840-4645-acad-2fda5f28143c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Seems thin, I need more evidence
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1644
+    y: 360
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Convince Taliesin
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Convince Taliesin
+        negate: 1
+--- !u!114 &-3405782067546573688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f575fbc1-1972-492e-8a96-4da38417282b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Are you here to help us fight the soldiers?
+  children:
+  - 43f3d6a3-b74e-40b5-946a-e796afcf4eb9
+  - 2bd16aaa-c1c8-41fb-909f-d45332bb0fb2
+  - 4ee0a16b-d7d7-4dbf-a1f2-a92e56d52f24
+  rect:
+    serializedVersion: 2
+    x: 646
+    y: 258
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - outlaws
+        negate: 0
+--- !u!114 &-3136699729314044344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 222b2d65-4285-472c-acbf-383cd517a921
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Why are you here?
+  children:
+  - b078f041-82f4-4dde-8e4b-30486f47aa18
+  - f575fbc1-1972-492e-8a96-4da38417282b
+  rect:
+    serializedVersion: 2
+    x: 398
+    y: 154
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetRhys
+        negate: 0
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - attackSoldiers
+        negate: 1
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - ConvinceTaliesen
+        negate: 1
+--- !u!114 &-2749007925628442441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2bd16aaa-c1c8-41fb-909f-d45332bb0fb2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yes!
+  children:
+  - adebfd36-c649-4a0b-9a12-2c80eefda5c3
+  rect:
+    serializedVersion: 2
+    x: 898
+    y: 358
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2053398238761173044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: db95e279-e4a5-4c32-bf3b-69e6f073b8dc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Shame, you look like you would be good in a fight.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1148
+    y: 458
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-959910181555614245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 43f3d6a3-b74e-40b5-946a-e796afcf4eb9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Actually it turns out the soldiers are looking for something else
+  children:
+  - 355fb450-fce0-43b7-a6bf-74738eafc861
+  rect:
+    serializedVersion: 2
+    x: 899
+    y: 258
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GeneralNoOutlaws
+        negate: 0
+--- !u!114 &-251925363691530436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d4d14688-fdd5-4f00-8efa-47ce0a132ea5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: That's all I have for you.
+  children:
+  - 6a8b0500-f840-4645-acad-2fda5f28143c
+  - 2c5ff77d-1eb6-4ea1-a1ba-7003517ee43a
+  rect:
+    serializedVersion: 2
+    x: 1398
+    y: 359
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-196780758558884652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e5923b25-3617-44c1-9a4d-c16fec00bc8a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Godwin said your location is known but the soldiers never come here
+  children:
+  - e01612ad-48c6-4299-ad3c-9aa0f999ec95
+  rect:
+    serializedVersion: 2
+    x: 1394
+    y: 155
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GodwinClue
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - OutlawPhrase
+        negate: 0
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GowdinClue
+        negate: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Taliesin
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 23352887053438698}
+  - {fileID: -3136699729314044344}
+  - {fileID: 6233647431680855644}
+  - {fileID: 1557217246898326582}
+  - {fileID: -3405782067546573688}
+  - {fileID: -959910181555614245}
+  - {fileID: -2749007925628442441}
+  - {fileID: 3116027500357815149}
+  - {fileID: -2053398238761173044}
+  - {fileID: 9010988167851166233}
+  - {fileID: 8162436784201792475}
+  - {fileID: -5325123267555293861}
+  - {fileID: 1555774102426343229}
+  - {fileID: -196780758558884652}
+  - {fileID: -251925363691530436}
+  - {fileID: -4234147664887498686}
+  - {fileID: 5740188088627651671}
+  - {fileID: 2887035413871670842}
+  - {fileID: -9137501580413312047}
+  - {fileID: 3730380776271251196}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &23352887053438698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 43863668-a38a-4c45-b57d-53a68735c0bb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Stares curiously)
+  children:
+  - 222b2d65-4285-472c-acbf-383cd517a921
+  - 35779145-9c92-4876-a8d9-847ab3642107
+  rect:
+    serializedVersion: 2
+    x: 148
+    y: 155
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &1555774102426343229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 62f82877-face-41e7-8567-0ad8dbbaf168
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I went to the shrine of Sparun and it told me the General is actually looking
+    for me.
+  children:
+  - e01612ad-48c6-4299-ad3c-9aa0f999ec95
+  rect:
+    serializedVersion: 2
+    x: 1395
+    y: 55
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - ShrineClue
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GeneralTarget
+        negate: 0
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - ShrineClue
+        negate: 1
+--- !u!114 &1557217246898326582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b078f041-82f4-4dde-8e4b-30486f47aa18
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Wait, don't answer that. I don't care.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 648
+    y: 154
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - outlaws
+        negate: 1
+--- !u!114 &2887035413871670842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d8f98d71-df52-4052-9947-4f71a932cf7c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Anything else?
+  children:
+  - 62f82877-face-41e7-8567-0ad8dbbaf168
+  - e5923b25-3617-44c1-9a4d-c16fec00bc8a
+  - 83360061-04a6-4585-821e-d934824177b2
+  - d4d14688-fdd5-4f00-8efa-47ce0a132ea5
+  rect:
+    serializedVersion: 2
+    x: 1143
+    y: 54
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3116027500357815149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 4ee0a16b-d7d7-4dbf-a1f2-a92e56d52f24
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No
+  children:
+  - db95e279-e4a5-4c32-bf3b-69e6f073b8dc
+  rect:
+    serializedVersion: 2
+    x: 898
+    y: 458
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3730380776271251196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7f00b658-410d-4a4c-b442-5ae4c26b407c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: But why is the General after you?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1895
+    y: 465
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5740188088627651671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e01612ad-48c6-4299-ad3c-9aa0f999ec95
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Ok
+  children:
+  - d8f98d71-df52-4052-9947-4f71a932cf7c
+  rect:
+    serializedVersion: 2
+    x: 1644
+    y: 157
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &6233647431680855644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 35779145-9c92-4876-a8d9-847ab3642107
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Don't enter this camp without checking in with Rhys.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 398
+    y: 51
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetRhys
+        negate: 1
+--- !u!114 &8162436784201792475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 355fb450-fce0-43b7-a6bf-74738eafc861
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: How do you know this?
+  children:
+  - 83360061-04a6-4585-821e-d934824177b2
+  - 62f82877-face-41e7-8567-0ad8dbbaf168
+  - e5923b25-3617-44c1-9a4d-c16fec00bc8a
+  - d4d14688-fdd5-4f00-8efa-47ce0a132ea5
+  rect:
+    serializedVersion: 2
+    x: 1148
+    y: 257
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GiveQuest
+  condition:
+    and: []
+--- !u!114 &9010988167851166233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: adebfd36-c649-4a0b-9a12-2c80eefda5c3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Great! Glad to have you on the team!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1149
+    y: 358
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - attackSoldiers
+  condition:
+    and: []

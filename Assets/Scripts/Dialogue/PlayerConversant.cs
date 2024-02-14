@@ -31,6 +31,7 @@ namespace RPG.Dialogue
 
         public void Quit()
         {
+            currentConversant.ResetPosition();
             currentDialogue = null;
             TriggerExitAction();
             currentNode = null;

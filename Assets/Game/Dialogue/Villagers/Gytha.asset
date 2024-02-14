@@ -1,0 +1,530 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7609066115024328494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: cd39a5e8-585c-4511-b587-76ee6ffc2d17
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I'm not going to force you to leave, but please know you are not welcome
+    here.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2095
+    y: 156
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasBadRep
+        parameters:
+        - villagers
+        negate: 0
+--- !u!114 &-6417210066709285947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 952d27c6-4afe-4d4e-894e-e5626f1bc422
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Feel free to stop by later if you change your mind
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2597
+    y: 155
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-5535195500956472116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b47d0bbe-5ccf-474b-83ce-9d73e7109734
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yes, don't you remember me?
+  children:
+  - 642eec3b-999e-42d7-80cb-578e10be4eb3
+  rect:
+    serializedVersion: 2
+    x: 601
+    y: 159
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-5137949706083113414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 042e2c24-506c-45c4-bef9-7d1b14b56f4a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No thanks
+  children:
+  - 952d27c6-4afe-4d4e-894e-e5626f1bc422
+  rect:
+    serializedVersion: 2
+    x: 2346
+    y: 154
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-4591924902600082459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b5046371-5626-457a-88f7-48f802a74cf0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No, I don't think so.
+  children:
+  - a6ef1984-2831-4896-835a-e4614fe70aaa
+  rect:
+    serializedVersion: 2
+    x: 602
+    y: 54
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-3973533388656037127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 70945742-1ad3-44e5-a097-34dd5e167c30
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Humming quietly)
+  children:
+  - bc939d42-ff3a-44b6-a413-720184fe0481
+  - 308428bf-212e-4b71-8c98-12d8ac497b7a
+  - 3b424116-bc75-4fb0-8e61-f87e7802a0a8
+  rect:
+    serializedVersion: 2
+    x: 94
+    y: 258
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-3007191022663193185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 30e6d242-3b37-4453-934d-40a1695690d5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I am the leader of the village, and by tradition I ensure all who live here
+    are fed.
+  children:
+  - 0105f503-3952-4c50-8868-9a9c309f6c83
+  - cd39a5e8-585c-4511-b587-76ee6ffc2d17
+  rect:
+    serializedVersion: 2
+    x: 1847
+    y: 52
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - MeetGytha
+  condition:
+    and: []
+--- !u!114 &-2779376381444862208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 0105f503-3952-4c50-8868-9a9c309f6c83
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Would you like some bread?
+  children:
+  - 360fe8a8-046a-4f0b-bb7d-21769e1d674a
+  - 042e2c24-506c-45c4-bef9-7d1b14b56f4a
+  rect:
+    serializedVersion: 2
+    x: 2096
+    y: 51
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GiveQuest
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - villagers
+        negate: 1
+--- !u!114 &-2758107790005224858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 308428bf-212e-4b71-8c98-12d8ac497b7a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Would you like some bread?
+  children:
+  - 360fe8a8-046a-4f0b-bb7d-21769e1d674a
+  - 042e2c24-506c-45c4-bef9-7d1b14b56f4a
+  rect:
+    serializedVersion: 2
+    x: 2096
+    y: 261
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GiveQuest
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetGytha
+        negate: 0
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - villagers
+        negate: 0
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - ReceiveBread
+        negate: 1
+--- !u!114 &-2114478710122872653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 642eec3b-999e-42d7-80cb-578e10be4eb3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Sorry, I know we haven't met. I just said that to start the conversation.
+  children:
+  - a6ef1984-2831-4896-835a-e4614fe70aaa
+  rect:
+    serializedVersion: 2
+    x: 852
+    y: 159
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - DamageRep
+  condition:
+    and: []
+--- !u!114 &-1488068717116140272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 3b424116-bc75-4fb0-8e61-f87e7802a0a8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I know I promised you some bread, but after your recent actions, you are
+    no longer welcome here.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 353
+    y: 353
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Get Bread
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Get Bread
+        negate: 1
+    - or:
+      - predicate: HasBadRep
+        parameters:
+        - villagers
+        negate: 0
+--- !u!114 &-614196048815745350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: eae1eda9-88f4-4357-b18c-0d8883ad37e9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: It means "Loaf Warden", as in bread.
+  children:
+  - 30e6d242-3b37-4453-934d-40a1695690d5
+  rect:
+    serializedVersion: 2
+    x: 1597
+    y: 52
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Gytha
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -3973533388656037127}
+  - {fileID: 3514274602908808454}
+  - {fileID: -4591924902600082459}
+  - {fileID: -5535195500956472116}
+  - {fileID: -2114478710122872653}
+  - {fileID: 6584584711316079268}
+  - {fileID: 1527424607647889970}
+  - {fileID: -614196048815745350}
+  - {fileID: -3007191022663193185}
+  - {fileID: -7609066115024328494}
+  - {fileID: -2779376381444862208}
+  - {fileID: 2398515587038469102}
+  - {fileID: -5137949706083113414}
+  - {fileID: 8341713461382492138}
+  - {fileID: -2758107790005224858}
+  - {fileID: -6417210066709285947}
+  - {fileID: -1488068717116140272}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1527424607647889970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 92761d8b-c1b2-4024-b10c-5cb28a637999
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What's a Hlafweard?
+  children:
+  - eae1eda9-88f4-4357-b18c-0d8883ad37e9
+  rect:
+    serializedVersion: 2
+    x: 1347
+    y: 52
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2398515587038469102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 360fe8a8-046a-4f0b-bb7d-21769e1d674a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sure, thanks!
+  children:
+  - 871a64b6-5da8-49b5-a12c-c6220741cd46
+  rect:
+    serializedVersion: 2
+    x: 2343
+    y: 50
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3514274602908808454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: bc939d42-ff3a-44b6-a413-720184fe0481
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Have we met?
+  children:
+  - b5046371-5626-457a-88f7-48f802a74cf0
+  - b47d0bbe-5ccf-474b-83ce-9d73e7109734
+  rect:
+    serializedVersion: 2
+    x: 355
+    y: 53
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetGytha
+        negate: 1
+--- !u!114 &6584584711316079268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: a6ef1984-2831-4896-835a-e4614fe70aaa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: My name is Gytha, and I'm the Hlafweard of the village.
+  children:
+  - 92761d8b-c1b2-4024-b10c-5cb28a637999
+  rect:
+    serializedVersion: 2
+    x: 1098
+    y: 51
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &8341713461382492138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 871a64b6-5da8-49b5-a12c-c6220741cd46
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Here you go, enjoy!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2596
+    y: 51
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - ReceiveBread
+  condition:
+    and: []

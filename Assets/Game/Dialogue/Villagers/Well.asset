@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8772709310183016320
+--- !u!114 &-5369728840022181824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 2245eddf-a175-4e2c-a1fe-2ae82d0a4fe4
+  m_Name: 05e16f6b-7772-4f37-b8a1-e403121114c2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I'm honestly not sure, but I'd be happy to try.
+  text: Drink
   children:
-  - b59122b1-fb49-458b-82ee-96e44304defa
+  - 513f2407-c294-4add-8265-9d56986c3281
   rect:
     serializedVersion: 2
-    x: 776
-    y: 251
+    x: 2369
+    y: 81
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
---- !u!114 &-8562757785874333615
+--- !u!114 &-4705380460139673541
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,23 +36,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 7fee3902-ec76-4718-84b9-55b72286b1fd
+  m_Name: 3c27b74b-f6a4-4274-b13f-30d36fb705ab
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: (grunts)
+  isPlayerSpeaking: 1
+  text: Leave
   children: []
   rect:
     serializedVersion: 2
-    x: 1524
-    y: 354
+    x: 1867
+    y: 199
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction:
-  - DamageRep
+  onExitAction: []
   condition:
     and: []
---- !u!114 &-6878419432516664696
+--- !u!114 &-4384924336926645230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,24 +61,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 1328a74e-f8b8-4503-b36d-8d919c4bda25
+  m_Name: f0823868-df58-4ca9-bfd5-60c98b39afb3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I just appeared over there across the bridge and I have no idea who I am
-    or what I'm doing here.
+  text: Lower the bucket
   children:
-  - 7bbfcf0b-f111-4e2a-8799-d62ed89636af
+  - 44da6070-c968-4b00-8fe8-c3b1ad94e716
   rect:
     serializedVersion: 2
-    x: 1276
-    y: 250
+    x: 864
+    y: 83
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
---- !u!114 &-2870035837993106382
+--- !u!114 &-3991347671644822160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,98 +87,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 665f5278-8fbd-4a83-9771-56163e205826
+  m_Name: 780d2f98-3902-4fe5-a5f2-98abbf721267
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Any luck with the axe?
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 534
-    y: 250
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Sharpen Axe
-        negate: 0
-    - or:
-      - predicate: CompletedQuest
-        parameters:
-        - Sharpen Axe
-        negate: 1
---- !u!114 &-2028303884680261667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 100dac82-c8c9-4b00-95b3-3e7255675762
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: (grunts)
+  isPlayerSpeaking: 1
+  text: Pour the water into water skin
   children:
-  - b98d321b-37c8-4906-8f48-a71e11e28a30
-  - 665f5278-8fbd-4a83-9771-56163e205826
+  - e6345df6-1bfd-404e-8950-09f9de6c578d
   rect:
     serializedVersion: 2
-    x: 254
-    y: 140
+    x: 1869
+    y: 81
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
---- !u!114 &-1167688399136059410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: b98d321b-37c8-4906-8f48-a71e11e28a30
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: You know anything about sharpening axes? I turned by back for one second
-    and those jerk soldiers thought it would be funny to chop right into an iron
-    knot.
-  children:
-  - 2245eddf-a175-4e2c-a1fe-2ae82d0a4fe4
-  - 05c65488-ba77-452f-857a-6f2cdd6ff744
-  rect:
-    serializedVersion: 2
-    x: 534
-    y: 138
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - MeetWeald
-  condition:
-    and:
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Sharpen Axe
-        negate: 1
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - RejectWeald
-        negate: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,22 +113,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: Weald
+  m_Name: Well
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -2028303884680261667}
-  - {fileID: -1167688399136059410}
-  - {fileID: -2870035837993106382}
-  - {fileID: -8772709310183016320}
-  - {fileID: 3741113759491032775}
-  - {fileID: 5265604836025698338}
-  - {fileID: 4595053820467156087}
-  - {fileID: -6878419432516664696}
-  - {fileID: 7045339434185154496}
-  - {fileID: 4507814770820081536}
-  - {fileID: -8562757785874333615}
+  - {fileID: 4839378175934994468}
+  - {fileID: 6440820687345058060}
+  - {fileID: -4705380460139673541}
+  - {fileID: 8865411845193787905}
+  - {fileID: -4384924336926645230}
+  - {fileID: 5386287038924044535}
+  - {fileID: 6318600308382589906}
+  - {fileID: 49113483624906351}
+  - {fileID: -3991347671644822160}
+  - {fileID: 1500042206704859499}
+  - {fileID: -5369728840022181824}
+  - {fileID: 5945662167951225990}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &3741113759491032775
+--- !u!114 &49113483624906351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,23 +139,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 05c65488-ba77-452f-857a-6f2cdd6ff744
+  m_Name: 0c30c8bb-5ddf-4c00-9a81-368e46d835ee
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Sorry, I don't want to do that.
+  isPlayerSpeaking: 0
+  text: (You raise the bucket. It's impolite to drink directly from the bucket, that's
+    how diseases get spread. You should pour the water into your water skin.)
   children:
-  - 6122b94b-cdfb-45da-9a2d-cff3a21366f6
+  - 780d2f98-3902-4fe5-a5f2-98abbf721267
+  - 3c27b74b-f6a4-4274-b13f-30d36fb705ab
   rect:
     serializedVersion: 2
-    x: 781
-    y: 139
+    x: 1618
+    y: 82
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
---- !u!114 &4507814770820081536
+--- !u!114 &1500042206704859499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,23 +167,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 33227302-c4b2-4ac8-aa75-e625b057d9ce
+  m_Name: e6345df6-1bfd-404e-8950-09f9de6c578d
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: uhh... just joking. Of course I know whether or not I can sharpen an axe...
+  isPlayerSpeaking: 0
+  text: Now you can drink the water
   children:
-  - 7fee3902-ec76-4718-84b9-55b72286b1fd
+  - 05e16f6b-7772-4f37-b8a1-e403121114c2
   rect:
     serializedVersion: 2
-    x: 1270
-    y: 354
+    x: 2119
+    y: 81
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
---- !u!114 &4595053820467156087
+--- !u!114 &4839378175934994468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,25 +193,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: b59122b1-fb49-458b-82ee-96e44304defa
+  m_Name: 501ab95e-e29a-4c7c-ac35-44a90850bae6
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Wow, thanks! But what do you mean you're not sure?
+  text: (You see cool refreshing spring water)
   children:
-  - 1328a74e-f8b8-4503-b36d-8d919c4bda25
-  - 33227302-c4b2-4ac8-aa75-e625b057d9ce
+  - 1c9d9c35-cae2-4f7b-a393-a47efbb84437
+  - 3c27b74b-f6a4-4274-b13f-30d36fb705ab
   rect:
     serializedVersion: 2
-    x: 1026
-    y: 249
+    x: 114
+    y: 84
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction:
-  - GiveQuest
+  onExitAction: []
   condition:
     and: []
---- !u!114 &5265604836025698338
+--- !u!114 &5386287038924044535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,24 +220,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 6122b94b-cdfb-45da-9a2d-cff3a21366f6
+  m_Name: 44da6070-c968-4b00-8fe8-c3b1ad94e716
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (grunts)
-  children: []
+  text: (You lower the bucket and wait for it to fill with water. Now you need to
+    raise the bucket back up)
+  children:
+  - 9e1e9e1a-de87-4e79-a3e7-fa0060a5fe44
+  - 3c27b74b-f6a4-4274-b13f-30d36fb705ab
   rect:
     serializedVersion: 2
-    x: 1031
-    y: 139
+    x: 1114
+    y: 82
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction:
-  - DamageRep
-  - RejectWeald
+  onExitAction: []
   condition:
     and: []
---- !u!114 &7045339434185154496
+--- !u!114 &5945662167951225990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,15 +248,95 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 7bbfcf0b-f111-4e2a-8799-d62ed89636af
+  m_Name: 513f2407-c294-4add-8265-9d56986c3281
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: That's crazy, let me know if there is anything I can do to help.
+  text: You drink the water and feel refreshed.
   children: []
   rect:
     serializedVersion: 2
-    x: 1526
-    y: 249
+    x: 2619
+    y: 81
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - DrinkWater
+  condition:
+    and: []
+--- !u!114 &6318600308382589906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 9e1e9e1a-de87-4e79-a3e7-fa0060a5fe44
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Raise the bucket
+  children:
+  - 0c30c8bb-5ddf-4c00-9a81-368e46d835ee
+  rect:
+    serializedVersion: 2
+    x: 1365
+    y: 81
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &6440820687345058060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 1c9d9c35-cae2-4f7b-a393-a47efbb84437
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Get a drink of water
+  children:
+  - bf627757-d15d-45d5-8723-3dbca9c8d8bd
+  rect:
+    serializedVersion: 2
+    x: 364
+    y: 84
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &8865411845193787905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: bf627757-d15d-45d5-8723-3dbca9c8d8bd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (First you need to lower the bucket)
+  children:
+  - f0823868-df58-4ca9-bfd5-60c98b39afb3
+  - 3c27b74b-f6a4-4274-b13f-30d36fb705ab
+  rect:
+    serializedVersion: 2
+    x: 614
+    y: 83
     width: 200
     height: 100
   onEnterAction: []

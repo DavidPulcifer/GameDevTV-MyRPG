@@ -1,0 +1,338 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8094795959911011365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 01fd4637-165e-4130-8a85-27e467088270
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh, it's you.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 340
+    y: 299
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetRhys
+        negate: 0
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - outlaws
+        negate: 1
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GiveOutlawPhrase
+        negate: 1
+--- !u!114 &-6485822147003333928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: bb06c159-816e-44d7-90d5-c06d3ee5a906
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I mean no harm
+  children:
+  - 63000a2d-34ce-47d4-8b2e-5f3b815992e3
+  rect:
+    serializedVersion: 2
+    x: 583
+    y: 103
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - OutlawPhrase
+        negate: 1
+--- !u!114 &-5697404736944247885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f36ac61f-4d39-4789-b492-62f4a5f41bc3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm supposed to say "Manna Frith".
+  children:
+  - e873829f-75c2-472f-a8a8-0f85428dd519
+  rect:
+    serializedVersion: 2
+    x: 584
+    y: 198
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GiveOutlawPhrase
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - OutlawPhrase
+        negate: 0
+--- !u!114 &-3527521100235141771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 88fc460b-dddd-4056-8eef-ec0ede87f835
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hey, welcome to camp!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 340
+    y: 401
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetRhys
+        negate: 0
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - outlaws
+        negate: 0
+    - or:
+      - predicate: HasGoodRep
+        parameters:
+        - outlaws
+        negate: 0
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GiveOutlawPhrase
+        negate: 0
+--- !u!114 &-630103106831704116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 0457e763-7b67-4c3d-a279-61c6a1820167
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Everyone attack!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 834
+    y: 8
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - attack
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Rhys
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 5587400557185166187}
+  - {fileID: 1627410849190006217}
+  - {fileID: -6485822147003333928}
+  - {fileID: 8803626522508099646}
+  - {fileID: -5697404736944247885}
+  - {fileID: -630103106831704116}
+  - {fileID: 6768197009102351053}
+  - {fileID: -8094795959911011365}
+  - {fileID: -3527521100235141771}
+  - {fileID: 3313404229373787507}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1627410849190006217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2b94b2be-e66f-4f6a-9532-e63e6838160f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: 'I don''t know who I am, but... '
+  children:
+  - bb06c159-816e-44d7-90d5-c06d3ee5a906
+  - f35c5c95-d15b-416c-bd1b-4fb23c8da120
+  - f36ac61f-4d39-4789-b492-62f4a5f41bc3
+  rect:
+    serializedVersion: 2
+    x: 340
+    y: 104
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetRhys
+        negate: 1
+--- !u!114 &3313404229373787507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e873829f-75c2-472f-a8a8-0f85428dd519
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: In that case, come right in!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 834
+    y: 198
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5587400557185166187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: ec1f78d8-c23c-49b7-a3fe-40850260799e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Who goes there?
+  children:
+  - 2b94b2be-e66f-4f6a-9532-e63e6838160f
+  - 01fd4637-165e-4130-8a85-27e467088270
+  - 88fc460b-dddd-4056-8eef-ec0ede87f835
+  rect:
+    serializedVersion: 2
+    x: 92
+    y: 105
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &6768197009102351053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 63000a2d-34ce-47d4-8b2e-5f3b815992e3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hmm... That remains to be seen, but you may enter.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 833
+    y: 103
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - MeetRhys
+  condition:
+    and: []
+--- !u!114 &8803626522508099646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f35c5c95-d15b-416c-bd1b-4fb23c8da120
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm here to rid this vilage of its outlaw problem!
+  children:
+  - 0457e763-7b67-4c3d-a279-61c6a1820167
+  rect:
+    serializedVersion: 2
+    x: 584
+    y: 8
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []

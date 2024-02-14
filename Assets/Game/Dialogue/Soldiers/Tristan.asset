@@ -898,7 +898,8 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction: []
+  onExitAction:
+  - SuspectBlacksmith
   condition:
     and:
     - or:
@@ -1164,7 +1165,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 1890
-    y: 809
+    y: 808
     width: 200
     height: 100
   onEnterAction: []

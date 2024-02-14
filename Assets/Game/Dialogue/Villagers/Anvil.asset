@@ -1,0 +1,532 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8928641553325939403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f05ad203-9cba-43c1-b45a-51b67c2b7d1c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: (Attempt to sharpen Weald's Axe)
+  children:
+  - f4030681-f0db-436f-ae52-c021776ccee6
+  - 485ee292-9480-4cff-85df-77484b32ef04
+  rect:
+    serializedVersion: 2
+    x: 384
+    y: 104
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Sharpen Axe
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Sharpen Axe
+        negate: 1
+--- !u!114 &-7497570933619420782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 0f4daeba-631b-40c7-9618-ef9b2e4eb2b0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (A sturdy anvil that has been well cared for.)
+  children:
+  - f05ad203-9cba-43c1-b45a-51b67c2b7d1c
+  rect:
+    serializedVersion: 2
+    x: 134
+    y: 104
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-7279108411838849742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 3fc9d74f-2f99-448d-88b0-5167618a75e2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (The axe is sharpened)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2634
+    y: 314
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - SharpenAxe
+  condition:
+    and: []
+--- !u!114 &-6244744610214270027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 97b78958-aba7-44eb-a4f6-976b8ff6bc4c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (You leave everything as it is)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1135
+    y: 6
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-5565255455480682691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f950e6d3-3351-4c8e-931d-2f1f0a39757e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (You brace the axe against the anvil which makes the job much easier)
+  children:
+  - 3fc9d74f-2f99-448d-88b0-5167618a75e2
+  rect:
+    serializedVersion: 2
+    x: 2382
+    y: 314
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-4888474082709086126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 4382ad7c-34a1-46c4-a8da-29cd7825e02e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Anvils are for hammering stuff with, right? Let's try that
+  children:
+  - 168f4dec-954a-46a7-bb15-992f309cf917
+  rect:
+    serializedVersion: 2
+    x: 1136
+    y: 108
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-3202694979616805189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: ac3ff389-686a-4903-ad56-c1918133d0e1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Try anyway
+  children:
+  - 4382ad7c-34a1-46c4-a8da-29cd7825e02e
+  rect:
+    serializedVersion: 2
+    x: 886
+    y: 108
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2579365089648285932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 85f1bd41-3889-4fa6-a509-ed875dd70889
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Use it to sharpen the axe
+  children:
+  - 08937295-48f1-420b-aeba-98156153e8e8
+  rect:
+    serializedVersion: 2
+    x: 1634
+    y: 316
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2499314147340273840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 08937295-48f1-420b-aeba-98156153e8e8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (You try to scrape the stone against the blade of the axe but it's a bit
+    unweildy)
+  children:
+  - 51add29c-1e98-425d-aa73-1215a865eba7
+  rect:
+    serializedVersion: 2
+    x: 1884
+    y: 315
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-1906985394180238976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f4030681-f0db-436f-ae52-c021776ccee6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (None of the equipment looks familiar but you are certain you could figure
+    it out.)
+  children:
+  - 5a56cae2-b2bc-4f09-89e1-1502905150ab
+  - d85076d6-daa8-48b4-954b-8aba9d3bee88
+  rect:
+    serializedVersion: 2
+    x: 634
+    y: 212
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: MinimumTrait
+        parameters:
+        - Intelligence
+        - 3
+        negate: 0
+--- !u!114 &-667579573236780873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 45f47d8a-2aa5-4473-9159-1997df2cad32
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Clearly sharpening an axe doesn't involve hammering, so let's see what else
+    is here.
+  children:
+  - dc03b2df-a1b1-451b-aa7f-4865222ebd6d
+  rect:
+    serializedVersion: 2
+    x: 1134
+    y: 316
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Anvil
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7497570933619420782}
+  - {fileID: -8928641553325939403}
+  - {fileID: -1906985394180238976}
+  - {fileID: 1960911352313703798}
+  - {fileID: -3202694979616805189}
+  - {fileID: 1995940495312888990}
+  - {fileID: -6244744610214270027}
+  - {fileID: -4888474082709086126}
+  - {fileID: 5139215636601419309}
+  - {fileID: 1310912885465091218}
+  - {fileID: 8415155077800145237}
+  - {fileID: -667579573236780873}
+  - {fileID: 4541706824119414186}
+  - {fileID: -2579365089648285932}
+  - {fileID: -2499314147340273840}
+  - {fileID: 7697271306962119807}
+  - {fileID: -5565255455480682691}
+  - {fileID: -7279108411838849742}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1310912885465091218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 5a56cae2-b2bc-4f09-89e1-1502905150ab
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I still prefer to leave it to an expert
+  children:
+  - 97b78958-aba7-44eb-a4f6-976b8ff6bc4c
+  rect:
+    serializedVersion: 2
+    x: 884
+    y: 212
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &1960911352313703798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 485ee292-9480-4cff-85df-77484b32ef04
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (None of the equipment looks familiar and you don't think you can figure
+    it out.)
+  children:
+  - ac3ff389-686a-4903-ad56-c1918133d0e1
+  - 56010143-57d3-47a6-b4a3-0d330a175df2
+  rect:
+    serializedVersion: 2
+    x: 635
+    y: 4
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: MinimumTrait
+        parameters:
+        - Intelligence
+        - 3
+        negate: 1
+--- !u!114 &1995940495312888990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 56010143-57d3-47a6-b4a3-0d330a175df2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Let's go find someone who knows what they are doing
+  children:
+  - 97b78958-aba7-44eb-a4f6-976b8ff6bc4c
+  rect:
+    serializedVersion: 2
+    x: 886
+    y: 6
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4541706824119414186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: dc03b2df-a1b1-451b-aa7f-4865222ebd6d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (You find a rough rectangular stone nearby. Looks like it could be used to
+    scrape away metal)
+  children:
+  - 85f1bd41-3889-4fa6-a509-ed875dd70889
+  rect:
+    serializedVersion: 2
+    x: 1384
+    y: 315
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5139215636601419309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 168f4dec-954a-46a7-bb15-992f309cf917
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (The axe is completely and permanently ruined. No amount of sharpening will
+    fix it now.)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1386
+    y: 108
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - RuinAxe
+  condition:
+    and: []
+--- !u!114 &7697271306962119807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 51add29c-1e98-425d-aa73-1215a865eba7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Brace the axe against the anvil for support
+  children:
+  - f950e6d3-3351-4c8e-931d-2f1f0a39757e
+  rect:
+    serializedVersion: 2
+    x: 2135
+    y: 314
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &8415155077800145237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d85076d6-daa8-48b4-954b-8aba9d3bee88
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Let's do this!
+  children:
+  - 45f47d8a-2aa5-4473-9159-1997df2cad32
+  rect:
+    serializedVersion: 2
+    x: 884
+    y: 316
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
