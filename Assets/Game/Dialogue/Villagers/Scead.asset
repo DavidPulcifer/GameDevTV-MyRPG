@@ -1,0 +1,430 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9166591511575620825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: f751e288-3456-4abf-a792-8365ac745bb7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Welcome to Scead's Smithy. We can take care of all your sharpening and weapon
+    repair needs.
+  children:
+  - de76e1ab-343c-4918-9db5-4d9d829e9c05
+  rect:
+    serializedVersion: 2
+    x: 447
+    y: 54
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - UncoverFraud
+        negate: 1
+--- !u!114 &-9014804107888900848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2311f60f-079e-4618-8ebd-968437866fd4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: How much does it cost?
+  children:
+  - a02128a5-16f3-4454-a452-24ce085cf24a
+  rect:
+    serializedVersion: 2
+    x: 1206
+    y: 155
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-8645778939842494156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d4ef1862-018a-4b01-b073-0f9187dc8fdc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Here you go!
+  children:
+  - 7635ba92-5c22-4770-8d9b-28463c68c8c0
+  rect:
+    serializedVersion: 2
+    x: 1707
+    y: 251
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: MinimumBalance
+        parameters:
+        - 50
+        negate: 0
+--- !u!114 &-7340001990886164957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: de76e1ab-343c-4918-9db5-4d9d829e9c05
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Can you sharpen this axe?
+  children:
+  - ab4878a3-4fd1-49e5-8651-795390d1bbb5
+  rect:
+    serializedVersion: 2
+    x: 705
+    y: 54
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasQuest
+        parameters:
+        - Sharpen Axe
+        negate: 0
+    - or:
+      - predicate: CompletedQuest
+        parameters:
+        - Sharpen Axe
+        negate: 1
+--- !u!114 &-6983283121826768768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 80d57179-4a18-45e2-870e-768740d8249f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Better hurry, this deal only lasts for... another half hour or so.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1956
+    y: 155
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-4495496931223514094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7635ba92-5c22-4770-8d9b-28463c68c8c0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thanks! Just wait right here and I'll be right back to take care of this.
+  children:
+  - 978c219e-6002-40e8-88cf-79de076e8736
+  rect:
+    serializedVersion: 2
+    x: 1957
+    y: 252
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - Spend50
+  condition:
+    and: []
+--- !u!114 &-3567396719027120351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 32b9ee50-4fad-4c9d-b89f-84c24ce84ebe
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You know what, I completely forgot that I'm currently dying of consumption
+    and need to go to the doctor. Wait right here.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1705
+    y: 54
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - UncoverFraud
+  condition:
+    and: []
+--- !u!114 &-2344042484546283121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 1ca4b302-8222-49bd-b155-dddae4e7c575
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You're in luck!
+  children:
+  - f751e288-3456-4abf-a792-8365ac745bb7
+  rect:
+    serializedVersion: 2
+    x: 187
+    y: 152
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-126493238265584357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 5238c8bb-aeb9-4477-b5c5-2715428342b2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Let me think about it
+  children:
+  - 80d57179-4a18-45e2-870e-768740d8249f
+  rect:
+    serializedVersion: 2
+    x: 1706
+    y: 155
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Scead
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -2344042484546283121}
+  - {fileID: -9166591511575620825}
+  - {fileID: -7340001990886164957}
+  - {fileID: 8820275415712898219}
+  - {fileID: 9083283370986534947}
+  - {fileID: 3937077325129518913}
+  - {fileID: -3567396719027120351}
+  - {fileID: -9014804107888900848}
+  - {fileID: 2186446973793062556}
+  - {fileID: -126493238265584357}
+  - {fileID: -8645778939842494156}
+  - {fileID: -6983283121826768768}
+  - {fileID: -4495496931223514094}
+  - {fileID: 7436843046897897018}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2186446973793062556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: a02128a5-16f3-4454-a452-24ce085cf24a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: The low low price of 50 gold
+  children:
+  - 5238c8bb-aeb9-4477-b5c5-2715428342b2
+  - d4ef1862-018a-4b01-b073-0f9187dc8fdc
+  rect:
+    serializedVersion: 2
+    x: 1456
+    y: 155
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3937077325129518913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 8ca51052-e2b7-46d0-9dc5-2e73dc90da88
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Quite right! Just a little test.
+  children:
+  - 32b9ee50-4fad-4c9d-b89f-84c24ce84ebe
+  rect:
+    serializedVersion: 2
+    x: 1455
+    y: 54
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &7436843046897897018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 978c219e-6002-40e8-88cf-79de076e8736
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Scead runs off and dissapears. You are starting to suspect he is not a real
+    blacksmith)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2207
+    y: 252
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - UncoverFraud
+  condition:
+    and: []
+--- !u!114 &8820275415712898219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: ab4878a3-4fd1-49e5-8651-795390d1bbb5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Absolutely! I'll just hammer this into shape on the anvil here, and it'll
+    be good as new!
+  children:
+  - cd921765-cc6d-45f7-bdeb-43d56c2a8e41
+  - 2311f60f-079e-4618-8ebd-968437866fd4
+  rect:
+    serializedVersion: 2
+    x: 955
+    y: 54
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &9083283370986534947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: cd921765-cc6d-45f7-bdeb-43d56c2a8e41
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I don't think that's how you sharpen an axe.
+  children:
+  - 8ca51052-e2b7-46d0-9dc5-2e73dc90da88
+  rect:
+    serializedVersion: 2
+    x: 1205
+    y: 54
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - SuspectBlacksmith
+        negate: 0
+      - predicate: MinimumTrait
+        parameters:
+        - Intelligence
+        - 3
+        negate: 0

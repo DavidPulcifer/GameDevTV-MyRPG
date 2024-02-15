@@ -1,10 +1,11 @@
 using GameDevTV.Inventories;
 using GameDevTV.Saving;
+using GameDevTV.Utils;
 using System;
 using UnityEngine;
 
 namespace RPG.Inventories { 
-    public class Purse : MonoBehaviour, ISaveable, IItemStore
+    public class Purse : MonoBehaviour, ISaveable, IItemStore, IPredicateEvaluator
     {
         [SerializeField] float startingBalance = 400f;
 
@@ -49,6 +50,15 @@ namespace RPG.Inventories {
                 return number;
             }
             return 0;
+        }
+
+        public bool? Evaluate(string predicate, string[] parameters)
+        {
+            if (predicate == "MinimumBalance")
+            {
+                return GetBalance() >= Int32.Parse(parameters[0]);
+            }
+            return null;
         }
     }
 }
