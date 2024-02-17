@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9010716790673234287
+--- !u!114 &-6517650398310174902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,175 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: e8d288f3-f8f4-4cf5-b2bc-72e7aff91d93
+  m_Name: 61d22708-1f9d-4644-afe5-9281638591ad
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: How so? Aren't they just looking for outlaws?
+  text: (No)
   children:
-  - 2d20a58d-c743-471c-bdee-6ddd5633a058
-  - 85acb135-8a29-4180-b55b-766e91c4f53c
+  - b3296b7b-467f-440a-8fb3-dd23154a61d6
   rect:
     serializedVersion: 2
-    x: 1653
-    y: 119
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &-7583112653451873109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 4c7d0990-c5ef-4606-b1f6-7a3efdaac42f
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Follow the road through town, then turn right at the fork and up the hill
-    to the shrine of Sparun the diviner.
-  children:
-  - 5f2d6847-6763-4cb5-9086-77c1fb22f087
-  rect:
-    serializedVersion: 2
-    x: 2899
-    y: 121
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &-3943073619238127030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 9d1da3b6-d15d-4c2d-abff-dfcfba15fe38
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Please help! These monsters trapped me back here.
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 404
-    y: 119
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Activate Shrine
-        negate: 0
-    - or:
-      - predicate: CompletedQuest
-        parameters:
-        - Activate Shrine
-        negate: 1
---- !u!114 &-2963027650932910606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 36921817-ffc6-4e9f-bd4f-29e7a5fe7146
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Do you think it could be connected to the soldiers?
-  children:
-  - e8d288f3-f8f4-4cf5-b2bc-72e7aff91d93
-  rect:
-    serializedVersion: 2
-    x: 1401
-    y: 213
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &-2263180065385448733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 179c2410-5c2a-4e02-aa72-43c46f12f225
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: What could the General be looking for?
-  children:
-  - 8853486b-6f50-4fec-86b1-a580eb6c8cdd
-  rect:
-    serializedVersion: 2
-    x: 2400
-    y: 121
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - HearSparunIncantation
-        negate: 1
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - GeneralNoOutlaws
-        negate: 0
---- !u!114 &-2251912863963793887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: f49af975-4022-46aa-aa2d-026204c78a1c
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Go down main street where the road turns right and they are to the left.
-  children:
-  - 4735604c-ab78-47ef-b7b4-12f85e84b981
-  rect:
-    serializedVersion: 2
-    x: 2649
-    y: 24
+    x: 1363
+    y: 322
     width: 200
     height: 100
   onEnterAction: []
   onExitAction:
-  - OutlawLocation
+  - DarknessNotGeneral
   condition:
     and: []
---- !u!114 &-1405241476352089252
+--- !u!114 &-6135215123748149066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,16 +37,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 9480d571-604f-4fb2-b5d7-215080db7c3d
+  m_Name: c5caee77-2b60-49c5-838d-72b704012b7d
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Where do they live?
+  isPlayerSpeaking: 0
+  text: (The eyes of the statue look at you with an unusual sentience)
   children:
-  - f49af975-4022-46aa-aa2d-026204c78a1c
+  - 87068921-aea5-4a48-ba27-526c9e4d80b7
   rect:
     serializedVersion: 2
-    x: 2400
-    y: 25
+    x: 110
+    y: 127
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-5567382276225701653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 9de4c0b0-8397-4573-96b4-e25d6342b8fd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What is causing the darkness?
+  children:
+  - 23da8182-bd13-4234-8351-b753faffadc1
+  rect:
+    serializedVersion: 2
+    x: 1113
+    y: 415
     width: 200
     height: 100
   onEnterAction: []
@@ -207,9 +82,9 @@ MonoBehaviour:
     - or:
       - predicate: HasDialogueFlag
         parameters:
-        - OutlawPhrase
-        negate: 1
---- !u!114 &-821135311818624496
+        - DarknessNotGeneral
+        negate: 0
+--- !u!114 &-5507561471018289942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,18 +94,157 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: b5bcdd42-c7c9-4b15-b436-a6335152c93e
+  m_Name: ab64504b-2035-4f37-a1ea-4a2f80c97e05
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: That definitely makes sense. It's no secret where the outlaws live, but I've
-    never seen the soldiers going there.
+  isPlayerSpeaking: 1
+  text: Why is the General looking for me?
   children:
-  - 9480d571-604f-4fb2-b5d7-215080db7c3d
-  - 179c2410-5c2a-4e02-aa72-43c46f12f225
+  - 4cc08af1-8a91-431b-8188-98f2d193e6c7
   rect:
     serializedVersion: 2
-    x: 2150
-    y: 25
+    x: 1111
+    y: 225
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GeneralLookYou
+        negate: 0
+--- !u!114 &-4370380125837738036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 4cc08af1-8a91-431b-8188-98f2d193e6c7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (He believes you will end the world)
+  children:
+  - b3296b7b-467f-440a-8fb3-dd23154a61d6
+  rect:
+    serializedVersion: 2
+    x: 1361
+    y: 225
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - GeneralFear
+  condition:
+    and: []
+--- !u!114 &-3545866127177710502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6c738583-14c6-450b-81ea-81712c3676db
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (It is the demon Zmorodok)
+  children:
+  - b3296b7b-467f-440a-8fb3-dd23154a61d6
+  rect:
+    serializedVersion: 2
+    x: 1613
+    y: 415
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - HearZmorodok
+  condition:
+    and: []
+--- !u!114 &-3292679161074741793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 06649420-b0d3-40bf-bf34-d2be30a01076
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What is the General looking for?
+  children:
+  - 61bb9c0a-f922-48c2-a099-5ace05706b19
+  rect:
+    serializedVersion: 2
+    x: 1111
+    y: 127
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-1780343221188577496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: a1aa48e8-9212-4c3c-88f1-3c1250f86ac6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (A voice enters your thoughts)
+  children:
+  - b58ceff1-ce53-4636-9e82-da92916f32bc
+  rect:
+    serializedVersion: 2
+    x: 611
+    y: 127
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasGoodRepRaw
+        parameters:
+        - villagers
+        negate: 0
+--- !u!114 &-1599680793703151917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 944162cb-65ef-4dc3-80ad-c25c7f951080
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Very Well)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1362
+    y: 624
     width: 200
     height: 100
   onEnterAction: []
@@ -247,31 +261,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: Godwin
+  m_Name: Shrine of Sparun
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 3072407503481106755}
-  - {fileID: -3943073619238127030}
-  - {fileID: 5652170205779508092}
-  - {fileID: 7115465812662168066}
-  - {fileID: 4542942498502833123}
-  - {fileID: 6670851384288786103}
-  - {fileID: 4260883537331553791}
-  - {fileID: -2963027650932910606}
-  - {fileID: 9218814273405249652}
-  - {fileID: -9010716790673234287}
-  - {fileID: 5900901261421142428}
-  - {fileID: 2165630076144971718}
-  - {fileID: -821135311818624496}
-  - {fileID: -1405241476352089252}
-  - {fileID: -2251912863963793887}
-  - {fileID: -2263180065385448733}
-  - {fileID: 5399579927503312924}
-  - {fileID: 354799821039918262}
-  - {fileID: -7583112653451873109}
-  - {fileID: 3326401369968378445}
+  - {fileID: -6135215123748149066}
+  - {fileID: 5284510322982402818}
+  - {fileID: -1780343221188577496}
+  - {fileID: 8611765775263177045}
+  - {fileID: -3292679161074741793}
+  - {fileID: 1017551364119964984}
+  - {fileID: -5507561471018289942}
+  - {fileID: 1315926565400665171}
+  - {fileID: -4370380125837738036}
+  - {fileID: 5342749978302641165}
+  - {fileID: 6334211572368103251}
+  - {fileID: -1599680793703151917}
+  - {fileID: 1157354965129177852}
+  - {fileID: -6517650398310174902}
+  - {fileID: -5567382276225701653}
+  - {fileID: 1442412314604060845}
+  - {fileID: -3545866127177710502}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &354799821039918262
+--- !u!114 &1017551364119964984
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -281,83 +292,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 8853486b-6f50-4fec-86b1-a580eb6c8cdd
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: I don't know, but I know a way you can find out.
-  children:
-  - 4c7d0990-c5ef-4606-b1f6-7a3efdaac42f
-  rect:
-    serializedVersion: 2
-    x: 2649
-    y: 121
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &2165630076144971718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 85acb135-8a29-4180-b55b-766e91c4f53c
+  m_Name: 625ee796-c45d-4476-85f8-72a8aff2bf1e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I heard from one of the soldiers that the general isn't looking for outlaws
-    at all, but something else.
+  text: Is the General causing the darkness at the Shrine of Protection?
   children:
-  - b5bcdd42-c7c9-4b15-b436-a6335152c93e
+  - 61d22708-1f9d-4644-afe5-9281638591ad
   rect:
     serializedVersion: 2
-    x: 1902
-    y: 25
+    x: 1113
+    y: 322
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
-    and:
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - GeneralNoOutlaws
-        negate: 0
---- !u!114 &3072407503481106755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: a72bf508-9e2a-48d2-9412-768de4d67209
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: (Praying)
-  children:
-  - 9d1da3b6-d15d-4c2d-abff-dfcfba15fe38
-  - 65d46933-40d7-442e-8127-5f416497f3d6
-  rect:
-    serializedVersion: 2
-    x: 153
-    y: 119
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - stand
-  condition:
     and: []
---- !u!114 &3326401369968378445
+--- !u!114 &1157354965129177852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -367,83 +318,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 5f2d6847-6763-4cb5-9086-77c1fb22f087
+  m_Name: 2183f860-4acf-472b-bd8c-ab5a9470f503
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: There is an incantation in the holy book, page 78. If you say it, and you
-    are in harmony with the village, Sparun will answer.
+  text: (the shrine refuses your call)
   children: []
   rect:
     serializedVersion: 2
-    x: 3149
-    y: 121
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - HearSparunIncantation
-  condition:
-    and: []
---- !u!114 &4260883537331553791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 886e4263-a3ef-455c-8734-95254424b11f
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: I do. Luckily it's still keeping the dead away, but something is wrong.
-  children:
-  - 36921817-ffc6-4e9f-bd4f-29e7a5fe7146
-  - 1f799a96-da8d-4afa-920e-a6c98ab9a415
-  rect:
-    serializedVersion: 2
-    x: 1150
-    y: 261
+    x: 612
+    y: 231
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
-    and: []
---- !u!114 &4542942498502833123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: ecc53df1-895f-4e85-bcc9-23319a927553
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Are you seeing what I'm seeing? That dark energy bubbling up from the shrine?
-  children:
-  - 886e4263-a3ef-455c-8734-95254424b11f
-  rect:
-    serializedVersion: 2
-    x: 902
-    y: 214
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction:
-  - CommentShrine
-  condition:
     and:
     - or:
-      - predicate: HasDialogueFlag
+      - predicate: HasGoodRepRaw
         parameters:
-        - CommentShrine
+        - villagers
         negate: 1
---- !u!114 &5399579927503312924
+--- !u!114 &1315926565400665171
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -453,23 +348,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 4735604c-ab78-47ef-b7b4-12f85e84b981
+  m_Name: 61bb9c0a-f922-48c2-a099-5ace05706b19
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Give the phrase "Manna Frith" and they will know you have my support.
-  children: []
+  text: (You)
+  children:
+  - b3296b7b-467f-440a-8fb3-dd23154a61d6
   rect:
     serializedVersion: 2
-    x: 2900
-    y: 24
+    x: 1361
+    y: 127
     width: 200
     height: 100
   onEnterAction: []
   onExitAction:
-  - OutlawPhrase
+  - GeneralLookYou
   condition:
     and: []
---- !u!114 &5652170205779508092
+--- !u!114 &1442412314604060845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -479,128 +375,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 65d46933-40d7-442e-8127-5f416497f3d6
+  m_Name: 23da8182-bd13-4234-8351-b753faffadc1
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Thank you for saving me!
+  text: (A great evil is rising that will dominate all life if it is allowed to escape)
   children:
-  - c52fee40-8755-45d3-bd60-d8dd1fe3b26a
+  - 6c738583-14c6-450b-81ea-81712c3676db
   rect:
     serializedVersion: 2
-    x: 402
-    y: 214
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Activate Shrine
-        negate: 0
-    - or:
-      - predicate: CompletedQuest
-        parameters:
-        - Activate Shrine
-        negate: 0
---- !u!114 &5900901261421142428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 2d20a58d-c743-471c-bdee-6ddd5633a058
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: I heard they may be looking for something else.
-  children:
-  - b5bcdd42-c7c9-4b15-b436-a6335152c93e
-  rect:
-    serializedVersion: 2
-    x: 1902
-    y: 119
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - SuspectSoldiers
-        negate: 0
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - GeneralNoOutlaws
-        negate: 1
---- !u!114 &6670851384288786103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 46b271c8-7ac1-4924-a01b-bead04c94e6e
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: About that shrine...
-  children:
-  - 1f799a96-da8d-4afa-920e-a6c98ab9a415
-  - 36921817-ffc6-4e9f-bd4f-29e7a5fe7146
-  rect:
-    serializedVersion: 2
-    x: 904
-    y: 119
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - CommentShrine
-        negate: 0
---- !u!114 &7115465812662168066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: c52fee40-8755-45d3-bd60-d8dd1fe3b26a
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Is there anything I can do to help?
-  children:
-  - ecc53df1-895f-4e85-bcc9-23319a927553
-  - 46b271c8-7ac1-4924-a01b-bead04c94e6e
-  rect:
-    serializedVersion: 2
-    x: 652
-    y: 214
+    x: 1363
+    y: 415
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
     and: []
---- !u!114 &9218814273405249652
+--- !u!114 &5284510322982402818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -610,24 +401,112 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 1f799a96-da8d-4afa-920e-a6c98ab9a415
+  m_Name: 87068921-aea5-4a48-ba27-526c9e4d80b7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Do you think it could be connected to the general and his army?
+  text: Witena, Leoma, Spa
   children:
-  - e8d288f3-f8f4-4cf5-b2bc-72e7aff91d93
+  - a1aa48e8-9212-4c3c-88f1-3c1250f86ac6
+  - 2183f860-4acf-472b-bd8c-ab5a9470f503
   rect:
     serializedVersion: 2
-    x: 1401
-    y: 119
+    x: 361
+    y: 127
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction: []
+  onExitAction:
+  - SpeakSparunIncantation
   condition:
     and:
     - or:
       - predicate: HasDialogueFlag
         parameters:
-        - HearGeneral
+        - Read Sparun Incantation
         negate: 0
+--- !u!114 &5342749978302641165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 8597cba3-df34-47c0-b634-964fc54d612c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: That is all for now
+  children:
+  - 944162cb-65ef-4dc3-80ad-c25c7f951080
+  rect:
+    serializedVersion: 2
+    x: 1112
+    y: 624
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &6334211572368103251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b3296b7b-467f-440a-8fb3-dd23154a61d6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Is there another question?)
+  children:
+  - 06649420-b0d3-40bf-bf34-d2be30a01076
+  - ab64504b-2035-4f37-a1ea-4a2f80c97e05
+  - 625ee796-c45d-4476-85f8-72a8aff2bf1e
+  - 8597cba3-df34-47c0-b634-964fc54d612c
+  - 9de4c0b0-8397-4573-96b4-e25d6342b8fd
+  rect:
+    serializedVersion: 2
+    x: 861
+    y: 21
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &8611765775263177045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b58ceff1-ce53-4636-9e82-da92916f32bc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (What is your question?)
+  children:
+  - 06649420-b0d3-40bf-bf34-d2be30a01076
+  - 625ee796-c45d-4476-85f8-72a8aff2bf1e
+  - ab64504b-2035-4f37-a1ea-4a2f80c97e05
+  - 8597cba3-df34-47c0-b634-964fc54d612c
+  - 9de4c0b0-8397-4573-96b4-e25d6342b8fd
+  rect:
+    serializedVersion: 2
+    x: 861
+    y: 127
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []

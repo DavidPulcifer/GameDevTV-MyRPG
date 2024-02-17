@@ -130,6 +130,11 @@ namespace RPG.Dialogue
             }
         }
 
+        public bool HasDialogueFlag(string flag)
+        {
+            return dialogueFlags.Contains(flag);
+        }
+
         private IEnumerable<DialogueNode> FilterOnCondition(IEnumerable<DialogueNode> inputNode)
         {
             foreach (var node in inputNode)

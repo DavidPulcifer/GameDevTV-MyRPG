@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: Shrine
+  m_Name: Shrine of Protection
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 8877899003809417917}
@@ -497,7 +497,8 @@ MonoBehaviour:
   m_Name: a4c8993f-202c-42b8-89a2-7a83bfa60bc9
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (The shrine radiates holy energy. Yet something doesn't seem quite right.)
+  text: (The Shrine of Protection radiates holy energy. Yet something doesn't seem
+    quite right.)
   children:
   - 28fdad51-8c3a-4368-b7dd-bc19093a3a8d
   rect:

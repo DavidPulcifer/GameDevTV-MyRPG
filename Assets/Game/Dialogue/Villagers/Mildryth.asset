@@ -1,0 +1,229 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4950130300620892248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b64a67ae-2c2f-4824-8e0f-0c2a9864f642
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I believe the village is in grave danger, but I don't know how to help. So,
+    I came to Sparun to ask for guidance.
+  children:
+  - 03fb45a0-08e4-4842-b701-929e4c6ad985
+  rect:
+    serializedVersion: 2
+    x: 600
+    y: 104
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-3325609662814915137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 03fb45a0-08e4-4842-b701-929e4c6ad985
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I'm trying to figure out what questions I should ask.
+  children:
+  - 34338fa1-e327-471a-80c0-c3b74086ea65
+  rect:
+    serializedVersion: 2
+    x: 853
+    y: 104
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - MeetMildryth
+  - GiveQuest
+  condition:
+    and: []
+--- !u!114 &-1620457011873987951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: acfbd2e5-795e-45dd-9618-71c92b723b98
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I know the danger you are worried about
+  children:
+  - 34338fa1-e327-471a-80c0-c3b74086ea65
+  rect:
+    serializedVersion: 2
+    x: 351
+    y: 217
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetMildryth
+        negate: 0
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - HearZmorodok
+        negate: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Mildryth
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1235150924741880428}
+  - {fileID: 4517173823812800467}
+  - {fileID: -4950130300620892248}
+  - {fileID: -3325609662814915137}
+  - {fileID: -1620457011873987951}
+  - {fileID: 5463568206348360636}
+  - {fileID: 4162539544462067698}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1235150924741880428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 4b8328bb-48ce-4b5c-b503-65eb82b1e5c8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Muttering to herself)
+  children:
+  - edaad590-98fe-413b-8f65-c848a7b2c8d6
+  - acfbd2e5-795e-45dd-9618-71c92b723b98
+  rect:
+    serializedVersion: 2
+    x: 100
+    y: 105
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4162539544462067698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 5222e157-36ab-4a0e-b4c4-91349702cd3c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Thank you! I knew something sinister was going on.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1354
+    y: 218
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4517173823812800467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: edaad590-98fe-413b-8f65-c848a7b2c8d6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Do you need help?
+  children:
+  - b64a67ae-2c2f-4824-8e0f-0c2a9864f642
+  rect:
+    serializedVersion: 2
+    x: 350
+    y: 104
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - MeetMildryth
+        negate: 1
+--- !u!114 &5463568206348360636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 34338fa1-e327-471a-80c0-c3b74086ea65
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Ask about Zmorodok, a demon trying to raise the dead
+  children:
+  - 5222e157-36ab-4a0e-b4c4-91349702cd3c
+  rect:
+    serializedVersion: 2
+    x: 1104
+    y: 218
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - TellMildrythZmorodok
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - HearZmorodok
+        negate: 0

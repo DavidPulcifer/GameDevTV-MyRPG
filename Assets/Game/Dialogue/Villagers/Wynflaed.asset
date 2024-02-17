@@ -260,8 +260,8 @@ MonoBehaviour:
   m_Name: 22567374-6118-42fa-8c82-ebd2356c48a6
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I can't explain it, but something deativated the shrine that protects the
-    town. And now the dead are rising.
+  text: I can't explain it, but something deativated the Shrine of Protection, and
+    now the dead are rising.
   children:
   - 19d786ed-46f2-43af-8e67-1d84bf283b09
   rect:
