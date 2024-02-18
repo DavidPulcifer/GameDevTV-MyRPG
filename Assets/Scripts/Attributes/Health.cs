@@ -17,6 +17,9 @@ namespace RPG.Attributes
         [SerializeField] int respawnNumber = 0;
         [SerializeField] float respawnDelay = 1f;
         [SerializeField] TakeDamageEvent takeDamage;
+        [SerializeField] float currentHP = 0;
+        [SerializeField] float maxHP = 0;
+
         public UnityEvent onDie;
         int respawnsRemaining;
 
@@ -41,7 +44,7 @@ namespace RPG.Attributes
 
         private void Awake()
         {
-            healthPoints = new LazyValue<float>(GetInitialHealth);
+            healthPoints = new LazyValue<float>(GetInitialHealth);            
         }
 
         float GetInitialHealth()
@@ -52,11 +55,14 @@ namespace RPG.Attributes
         private void Start()
         {
             healthPoints.ForceInit();            
-        }
+        }        
 
         public bool IsDead() { return healthPoints.value <= 0; }
 
-        public float GetHealthPoints() { return healthPoints.value; }
+        public float GetHealthPoints() 
+        {
+            return healthPoints.value; 
+        }
 
         public float GetMaxHealthPoints() { return GetComponent<BaseStats>().GetStat(Stat.Health); }
 
