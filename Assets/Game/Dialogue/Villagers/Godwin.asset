@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 179c2410-5c2a-4e02-aa72-43c46f12f225
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: What could the General be looking for?
+  text: What else could the General be doing?
   children:
   - 8853486b-6f50-4fec-86b1-a580eb6c8cdd
   rect:
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
   text: That definitely makes sense. It's no secret where the outlaws live, but I've
-    never seen the soldiers going there.
+    never seen the soldiers going there. Maybe the General is behind this!
   children:
   - 9480d571-604f-4fb2-b5d7-215080db7c3d
   - 179c2410-5c2a-4e02-aa72-43c46f12f225
@@ -284,7 +284,8 @@ MonoBehaviour:
   m_Name: 8853486b-6f50-4fec-86b1-a580eb6c8cdd
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I don't know, but I know a way you can find out.
+  text: I don't know, this must be the General's doing, but I know a way you can
+    find out for sure.
   children:
   - 4c7d0990-c5ef-4606-b1f6-7a3efdaac42f
   rect:

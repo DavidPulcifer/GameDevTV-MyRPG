@@ -38,6 +38,13 @@ namespace RPG.Movement
             StartMoveAction(target.position, walkSpeedFraction);
         }
 
+        public void NavMeshWalkToTarget(Transform target)
+        {
+            navMeshAgent.destination = target.position;
+            navMeshAgent.speed = maxSpeed * walkSpeedFraction;
+            navMeshAgent.isStopped = false;
+        }
+
         public void StartMoveAction(Vector3 destination, float speedFraction)
         {            
             GetComponent<ActionScheduler>().StartAction(this);

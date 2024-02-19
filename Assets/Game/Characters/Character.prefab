@@ -297,6 +297,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85a480db295c1c24881b4583560622fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawn: 0
+  respawnNumber: 0
+  respawnDelay: 1
   takeDamage:
     m_PersistentCalls:
       m_Calls:
@@ -324,6 +327,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  currentHP: 0
+  maxHP: 0
   onDie:
     m_PersistentCalls:
       m_Calls:
@@ -364,6 +369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 6
+  runSpeedFraction: 1
+  walkSpeedFraction: 0.2
 --- !u!114 &7118751742799251759
 MonoBehaviour:
   m_ObjectHideFlags: 0

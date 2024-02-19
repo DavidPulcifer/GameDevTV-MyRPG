@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: b64a67ae-2c2f-4824-8e0f-0c2a9864f642
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I believe the village is in grave danger, but I don't know how to help. So,
-    I came to Sparun to ask for guidance.
+  text: The village is in grave danger, but I don't know how to help. So, I came
+    to Sparun to ask for guidance.
   children:
   - 03fb45a0-08e4-4842-b701-929e4c6ad985
   rect:
@@ -40,7 +40,9 @@ MonoBehaviour:
   m_Name: 03fb45a0-08e4-4842-b701-929e4c6ad985
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: I'm trying to figure out what questions I should ask.
+  text: I know it's crazy, but I believe the General who controls these soldiers
+    is trying to summon an army of the dead so he can take over the world. I need
+    to consider my questions carefully though.
   children:
   - 34338fa1-e327-471a-80c0-c3b74086ea65
   rect:
@@ -53,6 +55,7 @@ MonoBehaviour:
   onExitAction:
   - MeetMildryth
   - GiveQuest
+  - HearGeneral
   condition:
     and: []
 --- !u!114 &-1620457011873987951
@@ -68,7 +71,7 @@ MonoBehaviour:
   m_Name: acfbd2e5-795e-45dd-9618-71c92b723b98
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I know the danger you are worried about
+  text: I know the danger you are worried about. It's not the General
   children:
   - 34338fa1-e327-471a-80c0-c3b74086ea65
   rect:
@@ -152,7 +155,7 @@ MonoBehaviour:
   m_Name: 5222e157-36ab-4a0e-b4c4-91349702cd3c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Thank you! I knew something sinister was going on.
+  text: Thank you!
   children: []
   rect:
     serializedVersion: 2
@@ -208,7 +211,7 @@ MonoBehaviour:
   m_Name: 34338fa1-e327-471a-80c0-c3b74086ea65
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: Ask about Zmorodok, a demon trying to raise the dead
+  text: Ask about Zmorodok
   children:
   - 5222e157-36ab-4a0e-b4c4-91349702cd3c
   rect:

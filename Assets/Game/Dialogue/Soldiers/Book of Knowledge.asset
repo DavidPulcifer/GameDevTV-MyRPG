@@ -267,7 +267,8 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction: []
+  onExitAction:
+  - HearTraveler
   condition:
     and: []
 --- !u!114 &-1490439051850323308

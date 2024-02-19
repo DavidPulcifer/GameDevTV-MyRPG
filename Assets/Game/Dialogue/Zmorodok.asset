@@ -35,7 +35,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: Zmolodok
+  m_Name: Zmorodok
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -5899956478386513644}

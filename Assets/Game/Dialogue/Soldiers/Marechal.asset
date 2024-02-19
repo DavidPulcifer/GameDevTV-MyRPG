@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
+  m_Name: Marechal
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 4793279665970562852}
+  - {fileID: 5298262886214228712}
+  - {fileID: 2836867999717752882}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &2836867999717752882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 5779a2bd-31d4-4b06-9cc7-510915add427
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: And there is a reason he has no other guards.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 677
+    y: 133
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4793279665970562852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 93ede863-2c98-47f1-a659-8ac2ac85f674
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: If you are here to see the General make sure you are ready.
+  children:
+  - e4e5e7ce-aa30-4e38-a6ac-00f7cbd1f0b3
+  rect:
+    serializedVersion: 2
+    x: 177
+    y: 133
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5298262886214228712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e4e5e7ce-aa30-4e38-a6ac-00f7cbd1f0b3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: He suffers no fools or time wasters.
+  children:
+  - 5779a2bd-31d4-4b06-9cc7-510915add427
+  rect:
+    serializedVersion: 2
+    x: 427
+    y: 133
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
