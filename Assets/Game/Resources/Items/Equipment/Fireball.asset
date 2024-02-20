@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Fireball
   m_EditorClassIdentifier: 
   itemID: e5946235-ab11-461d-8601-067f9c0a56af
-  displayName: Fireball
-  description: 
+  displayName: Fireball Glove
+  description: 'Weapon - Range: 18 - Damage: (Base + 5) * 1.25 - Homing'
   icon: {fileID: 21300000, guid: 09673a720fdcba64bb8f80ea403f99cf, type: 3}
   pickup: {fileID: 5993204380614889627, guid: 4a81a79b2f73139468ab6799ec0697e3, type: 3}
   stackable: 0
   price: 0
   category: 2
   allowedEquipLocation: 5
+  equipCondition:
+    and: []
   animatorOverride: {fileID: 22100000, guid: 89d5d86088cf6f7418fb3058bc81aeea, type: 2}
   equippedPrefab: {fileID: 0}
   weaponRange: 18

@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: Food Effect
   m_EditorClassIdentifier: 
   healthChange: 20
+  modifyingTrait: 2
+  additiveTraitModifier: 0
+  percentageTraitModifier: 5

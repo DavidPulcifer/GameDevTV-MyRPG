@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 5b1ba2da-8c92-48dd-b651-34a6b3cf8653
   displayName: Homing Bow
-  description: 
+  description: 'Weapon - Range: 20 - Damage: (Base) - Homing'
   icon: {fileID: 21300000, guid: 63e63df8f987de54eb2396a0d0d0e81f, type: 3}
   pickup: {fileID: 4604097103382733173, guid: 27aab6de2e6d98946866c65acb60ef2b, type: 3}
   stackable: 0

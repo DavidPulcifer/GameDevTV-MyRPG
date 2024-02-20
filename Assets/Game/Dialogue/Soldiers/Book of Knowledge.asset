@@ -417,12 +417,12 @@ MonoBehaviour:
   m_Name: c8d3b2a4-1d6b-452a-ba32-1fcea3a070b8
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: To save the world, or end it.
+  text: To save the world, or help destroy it.
   children: []
   rect:
     serializedVersion: 2
     x: 2099
-    y: 344
+    y: 345
     width: 200
     height: 100
   onEnterAction: []

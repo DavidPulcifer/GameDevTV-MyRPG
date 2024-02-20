@@ -85,6 +85,25 @@ namespace RPG.Attributes
             }
             UpdateState();
         }
+
+        public void TakeEnvironmentDamage(float damage)
+        {
+            healthPoints.value = Mathf.Max(healthPoints.value - damage, 0);
+
+            if (IsDead())
+            {
+                onDie.Invoke();                
+                if (respawn && (respawnsRemaining > 0 || respawnNumber == -1))
+                {
+                    StartCoroutine(Respawn());
+                }
+            }
+            else
+            {
+                takeDamage.Invoke(damage);
+            }
+            UpdateState();
+        }
         
         public void Heal(float amountToHeal)
         {

@@ -9,7 +9,7 @@ namespace RPG.Dialogue
 {
     public class PlayerConversant : MonoBehaviour, IPredicateEvaluator
     {
-        [SerializeField] string playerName;
+        public string playerName;
         [SerializeField] List<string> dialogueFlags = new List<string>();
 
         Dialogue currentDialogue;

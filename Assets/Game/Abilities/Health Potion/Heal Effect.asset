@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: Heal Effect
   m_EditorClassIdentifier: 
   healthChange: 100
+  modifyingTrait: 2
+  additiveTraitModifier: 0
+  percentageTraitModifier: 10

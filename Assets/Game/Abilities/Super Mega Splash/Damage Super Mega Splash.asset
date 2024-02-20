@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: Damage Super Mega Splash
   m_EditorClassIdentifier: 
   healthChange: -10
+  modifyingTrait: 3
+  additiveTraitModifier: -2
+  percentageTraitModifier: 0

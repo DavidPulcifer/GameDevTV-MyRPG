@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6279683055275658833
+--- !u!114 &-7655248470621439900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,24 +10,55 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 33e503aa-c748-4e5d-b020-912febd0193e
+  m_Name: 41f43a4c-cba6-45ec-88df-7b99e824178c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (The magical light causes another flower to bloom in the garden. You get
-    a sense that Solgeisl would like you to have it.)
+  text: (Your Toughness overcomes it, leaving you unharmed)
+  children:
+  - eda545e6-a0e1-43aa-9877-e02e1106d3b4
+  rect:
+    serializedVersion: 2
+    x: 948
+    y: 145
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: MinimumTrait
+        parameters:
+        - Constitution
+        - 3
+        negate: 0
+--- !u!114 &-5402792569562458343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: eda545e6-a0e1-43aa-9877-e02e1106d3b4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (The chest opens, revealing a scroll for a powerful spell)
   children: []
   rect:
     serializedVersion: 2
-    x: 1663
-    y: 208
+    x: 1270
+    y: 287
     width: 200
     height: 100
   onEnterAction: []
   onExitAction:
-  - SoothSolgeisl
+  - OpenLockedChest
   condition:
     and: []
---- !u!114 &-5468936694399510681
+--- !u!114 &-5343779295168096665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,24 +68,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 5a220d36-b99d-46f5-bda0-4f3f656d3900
+  m_Name: 3cd118c9-c03c-4d4d-84a3-20a990dbfa6b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (the flower visibly relaxes and beams with joy)
+  text: (You find a key hidden beneath a rock nearby. When you use it on the lock
+    you hear a mechanism deactivate inside. There must have been a trap.)
   children:
-  - 33e503aa-c748-4e5d-b020-912febd0193e
+  - eda545e6-a0e1-43aa-9877-e02e1106d3b4
   rect:
     serializedVersion: 2
-    x: 1413
-    y: 208
+    x: 707
+    y: 291
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction:
-  - SoothSolgeisl
+  onExitAction: []
   condition:
     and: []
---- !u!114 &-5057960235442364846
+--- !u!114 &-5273477294903936982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,23 +95,56 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: b06c33f7-6bdf-412d-bd6c-4c6ca48ce83f
+  m_Name: f7fffe0f-ef71-41db-86e1-364b89909581
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (The chest opens, revealing a scroll for a powerful spell)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1273
+    y: 35
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - OpenLockedChest
+  - PoisonDamage
+  condition:
+    and: []
+--- !u!114 &-663250013422135082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 02a14fbc-d6c2-49d6-ba94-b6169cb1ed17
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I don't know if you can understand me but...
+  text: Maybe there is a key nearby
   children:
-  - a75c22ad-8da7-4025-a76d-0f4bae98a6e3
+  - 3cd118c9-c03c-4d4d-84a3-20a990dbfa6b
   rect:
     serializedVersion: 2
-    x: 661
-    y: 209
+    x: 457
+    y: 291
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
-    and: []
---- !u!114 &-4631933088559682455
+    and:
+    - or:
+      - predicate: MinimumTrait
+        parameters:
+        - Intelligence
+        - 5
+        negate: 0
+--- !u!114 &-199107921485646211
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,46 +154,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: decf89f6-59e1-4042-bce6-947e2d9c8fc4
+  m_Name: 22042a55-8d31-4dae-ba9c-b5ece3fb0e18
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: (You're not sure how you know this, but the flower looks scared)
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 413
-    y: 108
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and:
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - HandleRosamund
-        negate: 1
---- !u!114 &-1978167577938382610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 23aadf9b-a81d-420a-97a5-60f818ff1c6a
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: (The flower is still hesitant, but doesn't appear scared like before)
+  isPlayerSpeaking: 1
+  text: Pick the lock
   children:
-  - b06c33f7-6bdf-412d-bd6c-4c6ca48ce83f
+  - 62a7513d-8646-4d8f-90ec-fe3ff9eaffdb
   rect:
     serializedVersion: 2
-    x: 411
-    y: 209
+    x: 455
+    y: 158
     width: 200
     height: 100
   onEnterAction: []
@@ -137,9 +171,10 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - predicate: HasDialogueFlag
+      - predicate: MinimumTrait
         parameters:
-        - HandleRosamund
+        - Dexterity
+        - 3
         negate: 0
 --- !u!114 &11400000
 MonoBehaviour:
@@ -151,20 +186,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36f2b535cc7a46c40afd739af58b7209, type: 3}
-  m_Name: Solgeisl
+  m_Name: Locked Chest
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 2832526454551406133}
-  - {fileID: -4631933088559682455}
-  - {fileID: -1978167577938382610}
-  - {fileID: -5057960235442364846}
-  - {fileID: 3160255896328146922}
-  - {fileID: 337350781499507943}
-  - {fileID: -5468936694399510681}
-  - {fileID: 4933047765653274716}
-  - {fileID: -6279683055275658833}
+  - {fileID: 6907789913779571150}
+  - {fileID: 2981527452012077723}
+  - {fileID: -199107921485646211}
+  - {fileID: -663250013422135082}
+  - {fileID: 6213593187887568350}
+  - {fileID: -7655248470621439900}
+  - {fileID: 2847048288898163105}
+  - {fileID: -5402792569562458343}
+  - {fileID: -5343779295168096665}
+  - {fileID: -5273477294903936982}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &337350781499507943
+--- !u!114 &2847048288898163105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,95 +210,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: 79f07551-dc1b-466c-8d71-be57a49517f7
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: She thinks you are beautiful
-  children:
-  - 5a220d36-b99d-46f5-bda0-4f3f656d3900
-  rect:
-    serializedVersion: 2
-    x: 1163
-    y: 207
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &2832526454551406133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: d4e7a68b-f386-4537-af2d-82ed5cc6f05b
+  m_Name: 973dc64a-8bfc-44e7-bf98-8db2d30f3fd4
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: ...
+  text: (The poison courses through your veins, burning from the inside)
   children:
-  - decf89f6-59e1-4042-bce6-947e2d9c8fc4
-  - 23aadf9b-a81d-420a-97a5-60f818ff1c6a
-  - e0d0c74c-c256-46d4-9f26-24c1b9b3b73f
+  - f7fffe0f-ef71-41db-86e1-364b89909581
   rect:
     serializedVersion: 2
-    x: 164
-    y: 107
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &3160255896328146922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: a75c22ad-8da7-4025-a76d-0f4bae98a6e3
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: That soldier over there is Rosamund and she doesn't mean any harm
-  children:
-  - 79f07551-dc1b-466c-8d71-be57a49517f7
-  rect:
-    serializedVersion: 2
-    x: 914
-    y: 208
-    width: 200
-    height: 100
-  onEnterAction: []
-  onExitAction: []
-  condition:
-    and: []
---- !u!114 &4933047765653274716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
-  m_Name: e0d0c74c-c256-46d4-9f26-24c1b9b3b73f
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: (Beaming with joy)
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 407
-    y: 316
+    x: 948
+    y: 34
     width: 200
     height: 100
   onEnterAction: []
@@ -270,7 +227,95 @@ MonoBehaviour:
   condition:
     and:
     - or:
-      - predicate: HasDialogueFlag
+      - predicate: MinimumTrait
         parameters:
-        - SoothSolgeisl
+        - Constitution
+        - 3
+        negate: 1
+--- !u!114 &2981527452012077723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 56ed4cdf-4e3e-48d7-b131-580946195ccb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Smash it open
+  children:
+  - 62a7513d-8646-4d8f-90ec-fe3ff9eaffdb
+  rect:
+    serializedVersion: 2
+    x: 455
+    y: 13
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: MinimumTrait
+        parameters:
+        - Strength
+        - 3
         negate: 0
+--- !u!114 &6213593187887568350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 62a7513d-8646-4d8f-90ec-fe3ff9eaffdb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (A poison dart launches into your neck)
+  children:
+  - 41f43a4c-cba6-45ec-88df-7b99e824178c
+  - 973dc64a-8bfc-44e7-bf98-8db2d30f3fd4
+  rect:
+    serializedVersion: 2
+    x: 704
+    y: 83
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &6907789913779571150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 5ba64cb0-3dd4-4239-88e5-2c899c2594b6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (A locked chest sits alone in the wilderness)
+  children:
+  - 56ed4cdf-4e3e-48d7-b131-580946195ccb
+  - 22042a55-8d31-4dae-ba9c-b5ece3fb0e18
+  - 02a14fbc-d6c2-49d6-ba94-b6169cb1ed17
+  rect:
+    serializedVersion: 2
+    x: 204
+    y: 158
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []

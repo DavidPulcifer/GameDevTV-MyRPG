@@ -9,8 +9,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2202912865051483310, guid: f88341ed81b600d4fb4780e8d87520ad,
         type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.r
-      value: 1
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.1745283
       objectReference: {fileID: 0}
     - target: {fileID: 2202912865051483310, guid: f88341ed81b600d4fb4780e8d87520ad,
         type: 3}
@@ -19,8 +19,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2202912865051483310, guid: f88341ed81b600d4fb4780e8d87520ad,
         type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.b
-      value: 0.1745283
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2202912865051483310, guid: f88341ed81b600d4fb4780e8d87520ad,
         type: 3}
@@ -30,7 +30,17 @@ PrefabInstance:
     - target: {fileID: 3975961344138889332, guid: f88341ed81b600d4fb4780e8d87520ad,
         type: 3}
       propertyPath: m_Name
-      value: ArrowProjectile Red
+      value: Arrow Projectile Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 6257387258174836135, guid: f88341ed81b600d4fb4780e8d87520ad,
+        type: 3}
+      propertyPath: isHoming
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083595520444291479, guid: f88341ed81b600d4fb4780e8d87520ad,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8083595520444291479, guid: f88341ed81b600d4fb4780e8d87520ad,
         type: 3}
@@ -49,6 +59,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8083595520444291479, guid: f88341ed81b600d4fb4780e8d87520ad,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8083595520444291479, guid: f88341ed81b600d4fb4780e8d87520ad,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -60,16 +75,6 @@ PrefabInstance:
     - target: {fileID: 8083595520444291479, guid: f88341ed81b600d4fb4780e8d87520ad,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8083595520444291479, guid: f88341ed81b600d4fb4780e8d87520ad,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8083595520444291479, guid: f88341ed81b600d4fb4780e8d87520ad,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8083595520444291479, guid: f88341ed81b600d4fb4780e8d87520ad,

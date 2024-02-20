@@ -1,5 +1,136 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8867883044765558058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 2e769413-ac94-48fe-a124-1921491b068a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You must choose how you will end the world.
+  children:
+  - 71beb197-af88-4d0a-9411-87bc7b0c7dd1
+  - 02b9b830-93fb-419c-9f6b-846058a81166
+  rect:
+    serializedVersion: 2
+    x: 1185
+    y: 154
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-8731983019699393222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: a943c3cb-7e20-4a5d-9708-96cbc02f7c78
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yes, the time for your end!
+  children:
+  - 7cc0e921-a5a6-445f-93af-ee1d01dd5d11
+  rect:
+    serializedVersion: 2
+    x: 725
+    y: 266
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-7719337841822064594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: c673f919-8cf3-43da-8ded-2a6ef97a0373
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I choose neither
+  children:
+  - fae56a8b-6096-458e-ae7d-7b2822487781
+  rect:
+    serializedVersion: 2
+    x: 2532
+    y: 619
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-7550834576601476120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: e0f2441a-dee3-4b4b-83e2-e75ec93b071a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: The feeling isn't mutual
+  children:
+  - fcdc8b88-5a6d-4dad-9121-256ef8792942
+  rect:
+    serializedVersion: 2
+    x: 265
+    y: 105
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-6833263675581956438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 71beb197-af88-4d0a-9411-87bc7b0c7dd1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What do you mean? I can choose to save it!
+  children:
+  - 417b2e33-5ed6-483a-8c0d-64fb36dc0e3a
+  rect:
+    serializedVersion: 2
+    x: 1426
+    y: 154
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
 --- !u!114 &-5899956478386513644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,12 +144,248 @@ MonoBehaviour:
   m_Name: b278a2a2-d2a1-4b58-91eb-cd04f1444da0
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 
+  text: 'Hello Traveler, It''s good to meet you. '
+  children:
+  - e0f2441a-dee3-4b4b-83e2-e75ec93b071a
+  - c929975d-b0f4-43f4-bc29-5bcb50e08509
+  rect:
+    serializedVersion: 2
+    x: 16
+    y: 156
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-5266768735234523410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7488ad9f-6cc0-4043-8b72-8b0a99a3f463
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Yes, I know the profecy well...
+  children:
+  - 7fab77fe-c418-45d3-ab24-417a28cad4ac
+  rect:
+    serializedVersion: 2
+    x: 253
+    y: 508
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-3823432532260624654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: b9d6a6bc-8403-489b-bd4c-28038b1e5585
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: NOOOOOOOOOOOO!!!!!!!!!!
   children: []
   rect:
     serializedVersion: 2
-    x: 0
-    y: 0
+    x: 3723
+    y: 618
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-3337466876797739120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: ee1bf1bd-21b2-4d19-b226-fd278b89e5e3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I won't fall for your tricks, you will die!
+  children:
+  - 9ddd9500-6d65-4cb1-a309-e1c436d14977
+  rect:
+    serializedVersion: 2
+    x: 2531
+    y: 396
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-3327132219740545469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: fae56a8b-6096-458e-ae7d-7b2822487781
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: WHAT!?
+  children:
+  - 634f80ad-24f0-4f03-b7eb-ccc173f1e0ff
+  rect:
+    serializedVersion: 2
+    x: 2782
+    y: 619
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2824741822147206772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7cc0e921-a5a6-445f-93af-ee1d01dd5d11
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: But first you must make the choice.
+  children:
+  - 2e769413-ac94-48fe-a124-1921491b068a
+  rect:
+    serializedVersion: 2
+    x: 944
+    y: 265
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-2418401274182420640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 3b41203a-c4e8-49a5-85a5-d5fb3ecf5b5b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: If you kill me, you save the world. And the very next instant the world will
+    end, along with all of those villagers down there.
+  children:
+  - 501cbc6e-69ee-4638-80cc-8db953b3db42
+  rect:
+    serializedVersion: 2
+    x: 1806
+    y: 507
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-1563061332811019741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7fab77fe-c418-45d3-ab24-417a28cad4ac
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: '"To lie, or speak true"'
+  children:
+  - 57e43e03-e11e-4b68-8d0e-36be72186f3b
+  rect:
+    serializedVersion: 2
+    x: 474
+    y: 507
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-444422528492292988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 417b2e33-5ed6-483a-8c0d-64fb36dc0e3a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Yes, and the world will end just the same.
+  children:
+  - 50def71d-a817-41af-bcb2-c0f861f575a2
+  rect:
+    serializedVersion: 2
+    x: 1673
+    y: 154
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &-211186499571638604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 50def71d-a817-41af-bcb2-c0f861f575a2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: But the Book of Knowledge...
+  children:
+  - 7488ad9f-6cc0-4043-8b72-8b0a99a3f463
+  rect:
+    serializedVersion: 2
+    x: 21
+    y: 507
     width: 200
     height: 100
   onEnterAction: []
@@ -39,4 +406,511 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: -5899956478386513644}
+  - {fileID: 1153129148239764678}
+  - {fileID: 5840245067703684743}
+  - {fileID: 3922805103750059157}
+  - {fileID: -8867883044765558058}
+  - {fileID: -6833263675581956438}
+  - {fileID: -444422528492292988}
+  - {fileID: -211186499571638604}
+  - {fileID: -5266768735234523410}
+  - {fileID: -1563061332811019741}
+  - {fileID: -7550834576601476120}
+  - {fileID: 3475187136175928530}
+  - {fileID: -8731983019699393222}
+  - {fileID: -2824741822147206772}
+  - {fileID: 6419068540597807864}
+  - {fileID: 8064850127800584260}
+  - {fileID: 5793962018713515925}
+  - {fileID: 4171082393840616563}
+  - {fileID: 1319451884684054929}
+  - {fileID: 3445470901455816462}
+  - {fileID: -2418401274182420640}
+  - {fileID: 2946801243024000006}
+  - {fileID: 5236115655124356942}
+  - {fileID: 2344327049235698043}
+  - {fileID: -3337466876797739120}
+  - {fileID: -7719337841822064594}
+  - {fileID: 8072522640413117598}
+  - {fileID: 1835009540258889771}
+  - {fileID: -3327132219740545469}
+  - {fileID: 2190925885938490925}
+  - {fileID: 1909764105829068795}
+  - {fileID: -3823432532260624654}
+  - {fileID: 7747132928067123242}
   newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1153129148239764678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: fcdc8b88-5a6d-4dad-9121-256ef8792942
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: (Laughs) The time has come.
+  children:
+  - 77ada929-2341-47da-ba39-39d274de5637
+  - a943c3cb-7e20-4a5d-9708-96cbc02f7c78
+  rect:
+    serializedVersion: 2
+    x: 508
+    y: 154
+    width: 200
+    height: 100
+  onEnterAction:
+  - Laugh
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &1319451884684054929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 5f488f59-a4a4-4a5d-9bf5-0a84e021b214
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You see, Traveler, this world only exists because you are here.
+  children:
+  - 8ced349e-f41b-4af0-97e0-0751f5d1a8f5
+  rect:
+    serializedVersion: 2
+    x: 1355
+    y: 507
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &1835009540258889771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6fc7f45f-05aa-47f7-84a4-dce6a2a5c53d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You have made the right choice.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2782
+    y: 507
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - JoinDemon
+  condition:
+    and: []
+--- !u!114 &1909764105829068795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: d85fd82d-ac9e-4ef5-9045-3234f1c63da5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: You lose!
+  children:
+  - b9d6a6bc-8403-489b-bd4c-28038b1e5585
+  rect:
+    serializedVersion: 2
+    x: 3493
+    y: 619
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2190925885938490925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 634f80ad-24f0-4f03-b7eb-ccc173f1e0ff
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: If I don't make either choice, and never talk to you again, you'll stand
+    here doing nothing, looking like an idiot
+  children:
+  - bb2b5cab-975c-4172-ac11-40070f906a52
+  rect:
+    serializedVersion: 2
+    x: 3032
+    y: 619
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2344327049235698043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 655a7ff6-859d-45e7-9577-4532596d7da2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I guess I have no choice but to join you
+  children:
+  - 6fc7f45f-05aa-47f7-84a4-dce6a2a5c53d
+  rect:
+    serializedVersion: 2
+    x: 2532
+    y: 507
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2946801243024000006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 501cbc6e-69ee-4638-80cc-8db953b3db42
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: A destroyed world can be remade. If you join me, we can destroy this world
+    and make a better one. If it's important to you we can spare your friends.
+  children:
+  - 7f421449-a00a-43e1-bec3-955674bdfe12
+  rect:
+    serializedVersion: 2
+    x: 2033
+    y: 507
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3445470901455816462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 8ced349e-f41b-4af0-97e0-0751f5d1a8f5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: It was created when you arrived, and it will end when you leave.
+  children:
+  - 3b41203a-c4e8-49a5-85a5-d5fb3ecf5b5b
+  rect:
+    serializedVersion: 2
+    x: 1576
+    y: 507
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3475187136175928530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: c929975d-b0f4-43f4-bc29-5bcb50e08509
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Pleasure to meet you too
+  children:
+  - fcdc8b88-5a6d-4dad-9121-256ef8792942
+  rect:
+    serializedVersion: 2
+    x: 264
+    y: 207
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &3922805103750059157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: edbfc3f6-aa9e-4fac-ab86-cc18dad41b8b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: To make the choice.
+  children:
+  - 2e769413-ac94-48fe-a124-1921491b068a
+  rect:
+    serializedVersion: 2
+    x: 944
+    y: 154
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &4171082393840616563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 35a75386-2352-4944-8faf-833c89e0d343
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: There is a difference between destroying the world and ending it.
+  children:
+  - 5f488f59-a4a4-4a5d-9bf5-0a84e021b214
+  rect:
+    serializedVersion: 2
+    x: 1136
+    y: 507
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5236115655124356942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 7f421449-a00a-43e1-bec3-955674bdfe12
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: So, what do you choose? Save the world and end it, or help me destroy it
+    and remake it?
+  children:
+  - 655a7ff6-859d-45e7-9577-4532596d7da2
+  - ee1bf1bd-21b2-4d19-b226-fd278b89e5e3
+  - c673f919-8cf3-43da-8ded-2a6ef97a0373
+  rect:
+    serializedVersion: 2
+    x: 2283
+    y: 507
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5793962018713515925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 80b74fe6-fb86-4bca-9e52-937fc693647b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: '"To save the world, or help destroy it."'
+  children:
+  - 35a75386-2352-4944-8faf-833c89e0d343
+  rect:
+    serializedVersion: 2
+    x: 917
+    y: 508
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &5840245067703684743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 77ada929-2341-47da-ba39-39d274de5637
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: For what?
+  children:
+  - edbfc3f6-aa9e-4fac-ab86-cc18dad41b8b
+  rect:
+    serializedVersion: 2
+    x: 725
+    y: 153
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &6419068540597807864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 02b9b830-93fb-419c-9f6b-846058a81166
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I will destroy you!
+  children:
+  - 417b2e33-5ed6-483a-8c0d-64fb36dc0e3a
+  rect:
+    serializedVersion: 2
+    x: 1428
+    y: 259
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &7747132928067123242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: bb2b5cab-975c-4172-ac11-40070f906a52
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: And the world will stay exactly as it is, forever.
+  children:
+  - d85fd82d-ac9e-4ef5-9045-3234f1c63da5
+  rect:
+    serializedVersion: 2
+    x: 3264
+    y: 619
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &8064850127800584260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 57e43e03-e11e-4b68-8d0e-36be72186f3b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: '"To kill, or let live"'
+  children:
+  - 80b74fe6-fb86-4bca-9e52-937fc693647b
+  rect:
+    serializedVersion: 2
+    x: 694
+    y: 508
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &8072522640413117598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 9ddd9500-6d65-4cb1-a309-e1c436d14977
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: So be it!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2781
+    y: 396
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction:
+  - attack
+  condition:
+    and: []
