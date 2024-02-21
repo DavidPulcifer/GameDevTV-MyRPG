@@ -144,10 +144,11 @@ MonoBehaviour:
   m_Name: b278a2a2-d2a1-4b58-91eb-cd04f1444da0
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hello Traveler, It''s good to meet you. '
+  text: 'Hello Traveler, It''s good to see you. '
   children:
   - e0f2441a-dee3-4b4b-83e2-e75ec93b071a
   - c929975d-b0f4-43f4-bc29-5bcb50e08509
+  - 7f421449-a00a-43e1-bec3-955674bdfe12
   rect:
     serializedVersion: 2
     x: 16
@@ -300,14 +301,14 @@ MonoBehaviour:
   m_Name: 3b41203a-c4e8-49a5-85a5-d5fb3ecf5b5b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: If you kill me, you save the world. And the very next instant the world will
-    end, along with all of those villagers down there.
+  text: If you kill me, you save the world and win the game. And that is The End,
+    which is the end of this world along with all of those villagers down there.
   children:
   - 501cbc6e-69ee-4638-80cc-8db953b3db42
   rect:
     serializedVersion: 2
     x: 1806
-    y: 507
+    y: 506
     width: 200
     height: 100
   onEnterAction: []
@@ -480,7 +481,7 @@ MonoBehaviour:
   m_Name: 5f488f59-a4a4-4a5d-9bf5-0a84e021b214
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: You see, Traveler, this world only exists because you are here.
+  text: You see, Traveler, this world is a game that only exists because of you.
   children:
   - 8ced349e-f41b-4af0-97e0-0751f5d1a8f5
   rect:
@@ -511,7 +512,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 2782
-    y: 507
+    y: 506
     width: 200
     height: 100
   onEnterAction: []
@@ -532,7 +533,7 @@ MonoBehaviour:
   m_Name: d85fd82d-ac9e-4ef5-9045-3234f1c63da5
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: You lose!
+  text: I may not win, but you certainly lose!
   children:
   - b9d6a6bc-8403-489b-bd4c-28038b1e5585
   rect:
@@ -558,8 +559,8 @@ MonoBehaviour:
   m_Name: 634f80ad-24f0-4f03-b7eb-ccc173f1e0ff
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: If I don't make either choice, and never talk to you again, you'll stand
-    here doing nothing, looking like an idiot
+  text: If I don't make either choice, and leave this conversation, you'll stand
+    here doing nothing
   children:
   - bb2b5cab-975c-4172-ac11-40070f906a52
   rect:
@@ -611,17 +612,18 @@ MonoBehaviour:
   m_Name: 501cbc6e-69ee-4638-80cc-8db953b3db42
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: A destroyed world can be remade. If you join me, we can destroy this world
-    and make a better one. If it's important to you we can spare your friends.
+  text: 'On the other hand. If you join me, the game can continue to the next chjapter.
+    The world will be destroyed, but we can remake it into a better one. '
   children:
   - 7f421449-a00a-43e1-bec3-955674bdfe12
   rect:
     serializedVersion: 2
-    x: 2033
-    y: 507
+    x: 2040
+    y: 506
     width: 200
     height: 100
-  onEnterAction: []
+  onEnterAction:
+  - GivenChoice
   onExitAction: []
   condition:
     and: []
@@ -638,7 +640,7 @@ MonoBehaviour:
   m_Name: 8ced349e-f41b-4af0-97e0-0751f5d1a8f5
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: It was created when you arrived, and it will end when you leave.
+  text: It was created when you arrived, and it will end when you finsih the story.
   children:
   - 3b41203a-c4e8-49a5-85a5-d5fb3ecf5b5b
   rect:
@@ -742,8 +744,7 @@ MonoBehaviour:
   m_Name: 7f421449-a00a-43e1-bec3-955674bdfe12
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: So, what do you choose? Save the world and end it, or help me destroy it
-    and remake it?
+  text: So, what do you choose?
   children:
   - 655a7ff6-859d-45e7-9577-4532596d7da2
   - ee1bf1bd-21b2-4d19-b226-fd278b89e5e3
@@ -751,13 +752,18 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 2283
-    y: 507
+    y: 506
     width: 200
     height: 100
   onEnterAction: []
   onExitAction: []
   condition:
-    and: []
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GivenChoice
+        negate: 0
 --- !u!114 &5793962018713515925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -849,7 +855,7 @@ MonoBehaviour:
   m_Name: bb2b5cab-975c-4172-ac11-40070f906a52
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: And the world will stay exactly as it is, forever.
+  text: The game never ends, and the world will stay exactly as it is, forever.
   children:
   - d85fd82d-ac9e-4ef5-9045-3234f1c63da5
   rect:

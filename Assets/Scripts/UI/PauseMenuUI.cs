@@ -39,6 +39,12 @@ namespace RPG.UI
             savingWrapper.Save();
             savingWrapper.LoadMenu();
         }
+
+        public void QuitWithoutSave()
+        {
+            SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
+            savingWrapper.LoadMenu();
+        }
     }
 }
 
