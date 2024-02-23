@@ -26,4 +26,4 @@ MonoBehaviour:
   rewards:
   - number: 0
     item: {fileID: 0}
-    experience: 100
+    experience: 200

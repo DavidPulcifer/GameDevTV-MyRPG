@@ -153,7 +153,8 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction: []
+  onExitAction:
+  - AskJoinResistance
   condition:
     and:
     - or:
@@ -335,8 +336,8 @@ MonoBehaviour:
   - fa2610df-bc63-4f4c-8386-2a5be0bd1945
   rect:
     serializedVersion: 2
-    x: 1146
-    y: 221
+    x: 1145
+    y: 223
     width: 200
     height: 100
   onEnterAction: []
@@ -576,7 +577,8 @@ MonoBehaviour:
   m_Name: 09cd7912-3c42-4be1-b370-9784a135b382
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Now let's get down to business
+  text: First let's get you equipped, here is a sword. It's heavy, so you'll need
+    to be strong to use it, but it hits equally hard.
   children:
   - 4bd0e568-2526-400b-a5ac-ee7cf98bf3d8
   rect:

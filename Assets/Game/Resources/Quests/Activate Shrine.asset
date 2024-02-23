@@ -35,5 +35,5 @@ MonoBehaviour:
           negate: 0
   rewards:
   - number: 1
-    item: {fileID: 11400000, guid: 14b239f928a3ca843809dd99e6635bd7, type: 2}
+    item: {fileID: 11400000, guid: dea3eb5b0dfc32249b73e16a716dc6a0, type: 2}
     experience: 100

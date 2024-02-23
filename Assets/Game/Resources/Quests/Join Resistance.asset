@@ -10,11 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed40d2c9b1a9f2741b6dcaa94ae14d39, type: 3}
-  m_Name: Mother hubbards bunions
+  m_Name: Join Resistance
   m_EditorClassIdentifier: 
   objectives:
-  - reference: 2
-    description: Visit the pharmacy
+  - reference: joinResistance
+    description: Join the Resistance and Agree to fight
+    usesCondition: 0
+    completionCondition:
+      and:
+      - or:
+        - predicate: HasDialogueFlag
+          parameters:
+          - JoinResistance
+          negate: 0
   rewards:
   - number: 1
     item: {fileID: 11400000, guid: 1d6621eda567c8948bb78729e87589cb, type: 2}
+    experience: 100

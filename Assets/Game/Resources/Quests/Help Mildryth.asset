@@ -23,4 +23,7 @@ MonoBehaviour:
           parameters:
           - TellMildrythZmorodok
           negate: 0
-  rewards: []
+  rewards:
+  - number: 1
+    item: {fileID: 11400000, guid: 3f81b042861b9334684b73c2fb9894ce, type: 2}
+    experience: 100

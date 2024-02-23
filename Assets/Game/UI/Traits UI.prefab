@@ -467,6 +467,11 @@ PrefabInstance:
       propertyPath: m_text
       value: Toughness
       objectReference: {fileID: 0}
+    - target: {fileID: 6282913634157024558, guid: 6b9fe1d6d055673429a2188585fbd1bc,
+        type: 3}
+      propertyPath: trait
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7722006895236460679, guid: 6b9fe1d6d055673429a2188585fbd1bc,
         type: 3}
       propertyPath: m_Pivot.x
@@ -715,6 +720,11 @@ PrefabInstance:
       propertyPath: m_text
       value: Charmingness
       objectReference: {fileID: 0}
+    - target: {fileID: 6282913634157024558, guid: 6b9fe1d6d055673429a2188585fbd1bc,
+        type: 3}
+      propertyPath: trait
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7722006895236460679, guid: 6b9fe1d6d055673429a2188585fbd1bc,
         type: 3}
       propertyPath: m_Pivot.x
@@ -838,6 +848,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Fastness
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282913634157024558, guid: 6b9fe1d6d055673429a2188585fbd1bc,
+        type: 3}
+      propertyPath: trait
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7722006895236460679, guid: 6b9fe1d6d055673429a2188585fbd1bc,
         type: 3}
@@ -1093,6 +1108,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Smartness
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282913634157024558, guid: 6b9fe1d6d055673429a2188585fbd1bc,
+        type: 3}
+      propertyPath: trait
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7722006895236460679, guid: 6b9fe1d6d055673429a2188585fbd1bc,
         type: 3}

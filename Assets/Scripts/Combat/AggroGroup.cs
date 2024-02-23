@@ -1,3 +1,4 @@
+using RPG.Dialogue;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,10 +20,11 @@ namespace RPG.Combat
             foreach (Fighter fighter in fighters)
             {
                 CombatTarget target = fighter.GetComponent<CombatTarget>();
-                if (target != null)
-                {
-                    target.enabled = shouldActivate;
-                }
+                AIConversant aiConversant = fighter.GetComponent<AIConversant>();
+
+                if (target != null) target.enabled = shouldActivate;
+                if (aiConversant != null) aiConversant.enabled = !shouldActivate;
+
                 fighter.enabled = shouldActivate;
             }
         }

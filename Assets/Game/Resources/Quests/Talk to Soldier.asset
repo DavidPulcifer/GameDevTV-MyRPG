@@ -23,4 +23,7 @@ MonoBehaviour:
           parameters:
           - HelmetOff
           negate: 0
-  rewards: []
+  rewards:
+  - number: 0
+    item: {fileID: 0}
+    experience: 200

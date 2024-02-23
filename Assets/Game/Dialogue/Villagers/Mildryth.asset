@@ -155,12 +155,12 @@ MonoBehaviour:
   m_Name: 5222e157-36ab-4a0e-b4c4-91349702cd3c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Thank you!
+  text: Thank you! Please take this amulet, you might need it.
   children: []
   rect:
     serializedVersion: 2
     x: 1354
-    y: 218
+    y: 217
     width: 200
     height: 100
   onEnterAction: []

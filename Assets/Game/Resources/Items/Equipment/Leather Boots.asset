@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3445ab0439f360843acdd92815681aed, type: 3}
-  m_Name: Cloth Hat
+  m_Name: Leather Boots
   m_EditorClassIdentifier: 
-  itemID: f320903c-35e8-4c59-a3b4-8159613c4501
-  displayName: Cloth Hat
-  description: Equipment - Head - Add 2% to max health
-  icon: {fileID: 21300000, guid: c1b61b3a91732a747a8496fc75a13fe2, type: 3}
+  itemID: 2ef60a00-62c0-4838-a4fa-5753bf4dbf9f
+  displayName: Leather Boots
+  description: Equipment - Feet - Add 5% to max health
+  icon: {fileID: 21300000, guid: 5d7acfd871700564f8a88c99e5a1e3fe, type: 3}
   pickup: {fileID: 1942281582758595775, guid: 910d68ce276f1ee498ec4bbfd46e4e51, type: 3}
   stackable: 0
-  price: 20
+  price: 50
   category: 1
-  allowedEquipLocation: 0
+  allowedEquipLocation: 4
   equipCondition:
     and: []
   additiveModifiers: []
   percentageModifiers:
   - stat: 0
-    value: 2
+    value: 5
