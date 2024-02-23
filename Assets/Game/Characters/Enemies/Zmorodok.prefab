@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30fd96fe1cd6f0a45acced9fc6875c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenAttacks: 4
+  timeBetweenAttacks: 3
   rightHandTransform: {fileID: 2583167965865245554}
   leftHandTransform: {fileID: 2578286853163457362}
   defaultWeapon: {fileID: 11400000, guid: 4cde8ffc33424cd4ea9a8e4b6ef7a2ca, type: 2}

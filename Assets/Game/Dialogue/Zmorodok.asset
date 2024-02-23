@@ -17,6 +17,7 @@ MonoBehaviour:
   children:
   - 71beb197-af88-4d0a-9411-87bc7b0c7dd1
   - 02b9b830-93fb-419c-9f6b-846058a81166
+  - 6be1421f-59ff-4df3-854d-10e66a82a071
   rect:
     serializedVersion: 2
     x: 1185
@@ -130,7 +131,12 @@ MonoBehaviour:
   onEnterAction: []
   onExitAction: []
   condition:
-    and: []
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GeneralDialogue
+        negate: 0
 --- !u!114 &-5899956478386513644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,10 +363,11 @@ MonoBehaviour:
   text: Yes, and the world will end just the same.
   children:
   - 50def71d-a817-41af-bcb2-c0f861f575a2
+  - 6be1421f-59ff-4df3-854d-10e66a82a071
   rect:
     serializedVersion: 2
-    x: 1673
-    y: 154
+    x: 1764
+    y: 164
     width: 200
     height: 100
   onEnterAction: []
@@ -392,7 +399,12 @@ MonoBehaviour:
   onEnterAction: []
   onExitAction: []
   condition:
-    and: []
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GeneralDialogue
+        negate: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,6 +451,9 @@ MonoBehaviour:
   - {fileID: 1909764105829068795}
   - {fileID: -3823432532260624654}
   - {fileID: 7747132928067123242}
+  - {fileID: 3707949232388029486}
+  - {fileID: 2240069374430733926}
+  - {fileID: 6921985093689823971}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &1153129148239764678
 MonoBehaviour:
@@ -486,7 +501,7 @@ MonoBehaviour:
   - 8ced349e-f41b-4af0-97e0-0751f5d1a8f5
   rect:
     serializedVersion: 2
-    x: 1355
+    x: 1352
     y: 507
     width: 200
     height: 100
@@ -559,14 +574,39 @@ MonoBehaviour:
   m_Name: 634f80ad-24f0-4f03-b7eb-ccc173f1e0ff
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: If I don't make either choice, and leave this conversation, you'll stand
-    here doing nothing
+  text: If I don't make either choice the game never ends
   children:
   - bb2b5cab-975c-4172-ac11-40070f906a52
   rect:
     serializedVersion: 2
     x: 3032
     y: 619
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
+--- !u!114 &2240069374430733926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 64a76e78-5f31-48c7-97ce-5413d3101f3b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: There is a profecy about you.
+  children:
+  - bf822fb1-cf28-4d31-91ef-4d1f84d62a71
+  rect:
+    serializedVersion: 2
+    x: 1679
+    y: 41
     width: 200
     height: 100
   onEnterAction: []
@@ -679,6 +719,37 @@ MonoBehaviour:
   onExitAction: []
   condition:
     and: []
+--- !u!114 &3707949232388029486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 6be1421f-59ff-4df3-854d-10e66a82a071
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What do you mean?
+  children:
+  - 64a76e78-5f31-48c7-97ce-5413d3101f3b
+  rect:
+    serializedVersion: 2
+    x: 1430
+    y: 41
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GeneralDialogue
+        negate: 1
 --- !u!114 &3922805103750059157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,7 +789,8 @@ MonoBehaviour:
   m_Name: 35a75386-2352-4944-8faf-833c89e0d343
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: There is a difference between destroying the world and ending it.
+  text: Before you choose you must know there is a difference between destroying
+    the world and ending it.
   children:
   - 5f488f59-a4a4-4a5d-9bf5-0a84e021b214
   rect:
@@ -842,6 +914,32 @@ MonoBehaviour:
   onExitAction: []
   condition:
     and: []
+--- !u!114 &6921985093689823971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: bf822fb1-cf28-4d31-91ef-4d1f84d62a71
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You are here to make a choice. Those choices are...
+  children:
+  - 7fab77fe-c418-45d3-ab24-417a28cad4ac
+  rect:
+    serializedVersion: 2
+    x: 1930
+    y: 41
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and: []
 --- !u!114 &7747132928067123242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,7 +953,7 @@ MonoBehaviour:
   m_Name: bb2b5cab-975c-4172-ac11-40070f906a52
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: The game never ends, and the world will stay exactly as it is, forever.
+  text: And the world will stay exactly as it is, forever.
   children:
   - d85fd82d-ac9e-4ef5-9045-3234f1c63da5
   rect:

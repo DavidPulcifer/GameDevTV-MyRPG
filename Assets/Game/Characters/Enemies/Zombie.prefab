@@ -172,7 +172,7 @@ PrefabInstance:
     - target: {fileID: 114695691863666892, guid: 3bdfc06e16b681748a064b5014525e26,
         type: 3}
       propertyPath: respawnDelay
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114695691863666892, guid: 3bdfc06e16b681748a064b5014525e26,
         type: 3}
@@ -457,4 +457,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scatterDistance: 1
-  dropLibrary: {fileID: 11400000, guid: 02e29293c0ab3be47bbc032a776fdf21, type: 2}
+  dropLibrary: {fileID: 11400000, guid: ffd2623f8937f7b448643de39365a040, type: 2}

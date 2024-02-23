@@ -48,8 +48,7 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction:
-  - SummonDemon
+  onExitAction: []
   condition:
     and: []
 --- !u!114 &-6981271242906850112
@@ -604,7 +603,7 @@ MonoBehaviour:
   m_Name: 2abaeaa4-34ab-4ade-bc1c-3e3867703cee
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Do you have proof of this?
+  text: Do you have proof of- Wait, what's that sound?
   children: []
   rect:
     serializedVersion: 2
@@ -615,6 +614,7 @@ MonoBehaviour:
   onEnterAction: []
   onExitAction:
   - SummonDemon
+  - GeneralDialogue
   condition:
     and: []
 --- !u!114 &7311663788899347437

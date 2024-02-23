@@ -1,3 +1,4 @@
+using GameDevTV.Saving;
 using GameDevTV.Utils;
 using System;
 using System.Collections;
@@ -7,7 +8,7 @@ using UnityEngine;
 
 namespace RPG.Dialogue
 {
-    public class PlayerConversant : MonoBehaviour, IPredicateEvaluator
+    public class PlayerConversant : MonoBehaviour, IPredicateEvaluator, ISaveable
     {
         public string playerName;
         [SerializeField] List<string> dialogueFlags = new List<string>();
@@ -199,6 +200,16 @@ namespace RPG.Dialogue
 
             }
             return null;
+        }
+
+        public object CaptureState()
+        {
+            return dialogueFlags;
+        }
+
+        public void RestoreState(object state)
+        {
+            dialogueFlags = state as List<string>;
         }
     }
 

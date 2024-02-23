@@ -167,6 +167,7 @@ namespace RPG.Combat
             {
                 float defense = targetBaseStats.GetStat(Stat.Defense);
                 damage /= 1 + defense / damage;
+                if (damage < 1) damage = 1;
             }
 
             if(currentWeapon.value != null)

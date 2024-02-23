@@ -296,6 +296,7 @@ MonoBehaviour:
   maxNavPathLength: 40
   rayCastRadius: 1
   numberOfAbilities: 6
+  isDraggingUI: 0
 --- !u!114 &257632484374846086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,6 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Merr der Oboe
+  dialogueFlags: []
 --- !u!114 &3637339463453032676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,6 +484,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 990b3b17a326e574ab39009b810fde7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8891727096603326450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939921017035819185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b57e132f8612384aaf06c560a74c226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8386207860617674959

@@ -35,6 +35,11 @@ namespace RPG.Attributes
             return GetComponent<BaseStats>().GetStat(Stat.Mana);
         }
 
+        public float GetManaFraction()
+        {
+            return GetMana() / GetMaxMana();
+        }
+
         public float GetRegenRate()
         {
             return GetComponent<BaseStats>().GetStat(Stat.ManaRegenRate);

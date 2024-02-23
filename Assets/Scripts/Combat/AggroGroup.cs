@@ -21,7 +21,7 @@ namespace RPG.Combat
             {
                 CombatTarget target = fighter.GetComponent<CombatTarget>();
                 AIConversant aiConversant = fighter.GetComponent<AIConversant>();
-
+                                
                 if (target != null) target.enabled = shouldActivate;
                 if (aiConversant != null) aiConversant.enabled = !shouldActivate;
 

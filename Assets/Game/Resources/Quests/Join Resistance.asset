@@ -15,7 +15,7 @@ MonoBehaviour:
   objectives:
   - reference: joinResistance
     description: Join the Resistance and Agree to fight
-    usesCondition: 0
+    usesCondition: 1
     completionCondition:
       and:
       - or:

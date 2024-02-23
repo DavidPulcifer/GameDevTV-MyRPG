@@ -9,13 +9,23 @@ namespace RPG.Combat
     {
         [SerializeField] AggroGroup aggroGroup;
         [SerializeField] string aggroFlag;
+        [SerializeField] float waitTime = 0.25f;
 
         PlayerConversant playerConversant;
 
         private void Awake()
         {
-            playerConversant = GameObject.FindWithTag("Player").GetComponent<PlayerConversant>();
+            playerConversant = GameObject.FindWithTag("Player").GetComponent<PlayerConversant>();            
+        }
+
+        private void Start()
+        {
+            Invoke("CheckForAggroActivation", waitTime);
+        }
+
+        void CheckForAggroActivation()
+        {
             aggroGroup.Activate(playerConversant.HasDialogueFlag(aggroFlag));
-        }        
+        }
     }
 }

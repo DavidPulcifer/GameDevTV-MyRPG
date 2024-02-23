@@ -1,3 +1,4 @@
+using GameDevTV.Saving;
 using GameDevTV.Utils;
 using RPG.Stats;
 using System.Collections;
@@ -6,7 +7,7 @@ using UnityEngine;
 
 namespace RPG.Dialogue
 {
-    public class PlayerReputation : MonoBehaviour, IPredicateEvaluator
+    public class PlayerReputation : MonoBehaviour, IPredicateEvaluator, ISaveable
     {
         Dictionary<string, int> factionReputation;
         TraitStore traitStore;
@@ -93,6 +94,34 @@ namespace RPG.Dialogue
             }
 
             return null;
+        }
+
+        [System.Serializable]
+        struct ReputationRecord
+        {
+            public string faction;
+            public int reputation;
+        }
+
+        public object CaptureState()
+        {            
+            return factionReputation;
+        }
+
+        public void RestoreState(object state)
+        {
+            factionReputation = (Dictionary<string, int>)state;
+            //factionReputation = new Dictionary<string, int>();
+            
+
+            //var serializedReputations = (Dictionary<string, int>)state;
+
+            //foreach (var pair in serializedReputations)
+            //{
+            //    factionReputation[pair.Key] = pair.Value;
+            //    Debug.Log(pair.Key);
+            //    Debug.Log(pair.Value);
+            //}
         }
     }
 

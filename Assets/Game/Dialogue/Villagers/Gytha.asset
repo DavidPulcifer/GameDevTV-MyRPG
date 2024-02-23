@@ -186,9 +186,9 @@ MonoBehaviour:
     y: 52
     width: 200
     height: 100
-  onEnterAction: []
-  onExitAction:
+  onEnterAction:
   - MeetGytha
+  onExitAction: []
   condition:
     and: []
 --- !u!114 &-2779376381444862208
