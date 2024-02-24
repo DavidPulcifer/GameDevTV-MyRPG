@@ -220,7 +220,7 @@ namespace RPG.Dialogue.Editor
                 Vector3 endPosition = new Vector2(childNode.GetRect().xMin, childNode.GetRect().center.y);
                 Vector3 controlPointOffset = endPosition - startPosition;
                 controlPointOffset.y = 0;
-                controlPointOffset.x = Mathf.Min(150, controlPointOffset.x*0.8f);
+                controlPointOffset.x = Mathf.Min(150, Mathf.Abs(controlPointOffset.x * 0.8f)); 
                 Handles.DrawBezier(
                     startPosition, endPosition, 
                     startPosition + controlPointOffset, endPosition - controlPointOffset, 

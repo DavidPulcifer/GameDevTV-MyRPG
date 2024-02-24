@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 1850844918864961143}
   - component: {fileID: 6580568287237467821}
   - component: {fileID: 299298998483972156}
+  - component: {fileID: 173512728488522766}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -462,6 +463,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationState: Locomotion
+--- !u!114 &173512728488522766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4900566663845078440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e094a5f67376cb748a5aef90ede95900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 
 --- !u!1 &7352382660198468594
 GameObject:
   m_ObjectHideFlags: 0

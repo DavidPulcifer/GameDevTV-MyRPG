@@ -3,10 +3,11 @@ using UnityEngine;
 using UnityEngine.AI;
 using GameDevTV.Saving;
 using RPG.Attributes;
+using Newtonsoft.Json.Linq;
 
 namespace RPG.Movement
 {
-    public class Mover : MonoBehaviour, IAction, ISaveable
+    public class Mover : MonoBehaviour, IAction, ISaveable, IJsonSaveable
     {
         [SerializeField] float maxSpeed = 6f;
         [SerializeField] float runSpeedFraction = 1f;
@@ -103,5 +104,19 @@ namespace RPG.Movement
             transform.eulerAngles = data.rotation.ToVector();
             GetComponent<NavMeshAgent>().enabled = true;
         }
+
+        public JToken CaptureAsJToken()
+        {
+            return transform.position.ToToken();
+        }
+
+        public void RestoreFromJToken(JToken state)
+        {
+            navMeshAgent.enabled = false;
+            transform.position = state.ToVector3();
+            navMeshAgent.enabled = true;
+            GetComponent<ActionScheduler>().CancelCurrentAction();
+        }
+
     }
 }

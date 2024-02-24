@@ -1,5 +1,6 @@
 using GameDevTV.Saving;
 using GameDevTV.Utils;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using UnityEngine;
 
 namespace RPG.Stats
 {
-    public class TraitStore : MonoBehaviour, IModifierProvider, ISaveable, IPredicateEvaluator
+    public class TraitStore : MonoBehaviour, IModifierProvider, ISaveable, IPredicateEvaluator, IJsonSaveable
     {
         [SerializeField] TraitBonus[] bonusConfig;
 
@@ -152,6 +153,34 @@ namespace RPG.Stats
             }
             return null;
         }
+
+        public JToken CaptureAsJToken()
+        {
+            JObject state = new JObject();
+            IDictionary<string, JToken> stateDict = state;
+            foreach (KeyValuePair<Trait, int> pair in assignedPoints)
+            {
+                stateDict[pair.Key.ToString()] = JToken.FromObject(pair.Value);
+            }
+            return state;
+        }
+
+        public void RestoreFromJToken(JToken state)
+        {
+            if (state is JObject stateObject)
+            {
+                assignedPoints.Clear();
+                IDictionary<string, JToken> stateDict = stateObject;
+                foreach (KeyValuePair<string, JToken> pair in stateDict)
+                {
+                    if (Enum.TryParse(pair.Key, true, out Trait trait))
+                    {
+                        assignedPoints[trait] = pair.Value.ToObject<int>();
+                    }
+                }
+            }
+        }
+
     }
 
 }

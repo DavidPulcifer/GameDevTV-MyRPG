@@ -6,10 +6,11 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
+using Newtonsoft.Json.Linq;
 
 namespace RPG.Attributes
 {
-    public class Health : MonoBehaviour, ISaveable
+    public class Health : MonoBehaviour, ISaveable, IJsonSaveable
     {
         [SerializeField] bool respawn = false;
         [Min(-1)]
@@ -177,6 +178,16 @@ namespace RPG.Attributes
             UpdateState();            
         }
 
+        public JToken CaptureAsJToken()
+        {
+            return JToken.FromObject(healthPoints.value);
+        }
+
+        public void RestoreFromJToken(JToken state)
+        {
+            healthPoints.value = state.ToObject<float>();
+            UpdateState();
+        }
     }
 }
 

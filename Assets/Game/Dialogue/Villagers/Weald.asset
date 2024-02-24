@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 100dac82-c8c9-4b00-95b3-3e7255675762
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (grunts)
+  text: <skip>
   children:
   - b98d321b-37c8-4906-8f48-a71e11e28a30
   - 665f5278-8fbd-4a83-9771-56163e205826

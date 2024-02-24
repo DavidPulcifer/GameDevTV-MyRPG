@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 70945742-1ad3-44e5-a097-34dd5e167c30
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (Humming quietly)
+  text: <skip>
   children:
   - bc939d42-ff3a-44b6-a413-720184fe0481
   - 308428bf-212e-4b71-8c98-12d8ac497b7a

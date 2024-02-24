@@ -106,8 +106,7 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction:
-  - 
+  onExitAction: []
   condition:
     and: []
 --- !u!114 &-5497731694289065717

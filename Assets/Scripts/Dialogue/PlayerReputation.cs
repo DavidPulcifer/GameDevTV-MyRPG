@@ -1,5 +1,6 @@
 using GameDevTV.Saving;
 using GameDevTV.Utils;
+using Newtonsoft.Json.Linq;
 using RPG.Stats;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using UnityEngine;
 
 namespace RPG.Dialogue
 {
-    public class PlayerReputation : MonoBehaviour, IPredicateEvaluator, ISaveable
+    public class PlayerReputation : MonoBehaviour, IPredicateEvaluator, ISaveable, IJsonSaveable
     {
         Dictionary<string, int> factionReputation;
         TraitStore traitStore;
@@ -110,18 +111,17 @@ namespace RPG.Dialogue
 
         public void RestoreState(object state)
         {
-            factionReputation = (Dictionary<string, int>)state;
-            //factionReputation = new Dictionary<string, int>();
-            
+            factionReputation = (Dictionary<string, int>)state;            
+        }
 
-            //var serializedReputations = (Dictionary<string, int>)state;
+        public JToken CaptureAsJToken()
+        {
+            return JToken.FromObject(factionReputation);
+        }
 
-            //foreach (var pair in serializedReputations)
-            //{
-            //    factionReputation[pair.Key] = pair.Value;
-            //    Debug.Log(pair.Key);
-            //    Debug.Log(pair.Value);
-            //}
+        public void RestoreFromJToken(JToken state)
+        {
+            factionReputation = state.ToObject<Dictionary<string, int>>();
         }
     }
 

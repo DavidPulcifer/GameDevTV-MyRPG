@@ -1,4 +1,5 @@
 ﻿using GameDevTV.Saving;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using UnityEngine;
 
 namespace RPG.Stats
 {
-    public class Experience : MonoBehaviour, ISaveable
+    public class Experience : MonoBehaviour, ISaveable, IJsonSaveable
     {
         [SerializeField] float experiencePoints = 0;
 
@@ -39,6 +40,16 @@ namespace RPG.Stats
         public void RestoreState(object state)
         {
             experiencePoints = (float)state;
+        }
+
+        public JToken CaptureAsJToken()
+        {
+            return JToken.FromObject(experiencePoints);
+        }
+
+        public void RestoreFromJToken(JToken state)
+        {
+            experiencePoints = state.ToObject<float>();
         }
     }
 }

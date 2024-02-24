@@ -1,6 +1,7 @@
 using GameDevTV.Inventories;
 using GameDevTV.Saving;
 using GameDevTV.Utils;
+using Newtonsoft.Json.Linq;
 using RPG.Stats;
 using System;
 using System.Collections;
@@ -9,7 +10,7 @@ using UnityEngine;
 
 namespace RPG.Quests
 {
-    public class QuestList : MonoBehaviour, ISaveable, IPredicateEvaluator
+    public class QuestList : MonoBehaviour, ISaveable, IPredicateEvaluator, IJsonSaveable
     {
         List<QuestStatus> statuses = new List<QuestStatus>();
 
@@ -130,5 +131,30 @@ namespace RPG.Quests
 
             return null;            
         }
+
+        public JToken CaptureAsJToken()
+        {
+            JArray state = new JArray();
+            IList<JToken> stateList = state;
+            foreach (QuestStatus status in statuses)
+            {
+                stateList.Add(status.CaptureAsJToken());
+            }
+            return state;
+        }
+
+        public void RestoreFromJToken(JToken state)
+        {
+            if (state is JArray stateArray)
+            {
+                statuses.Clear();
+                IList<JToken> stateList = stateArray;
+                foreach (JToken token in stateList)
+                {
+                    statuses.Add(new QuestStatus(token));
+                }
+            }
+        }
+
     }
 }

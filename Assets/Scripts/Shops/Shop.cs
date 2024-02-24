@@ -1,5 +1,6 @@
 using GameDevTV.Inventories;
 using GameDevTV.Saving;
+using Newtonsoft.Json.Linq;
 using RPG.Control;
 using RPG.Inventories;
 using RPG.Movement;
@@ -10,7 +11,7 @@ using UnityEngine;
 
 namespace RPG.Shops
 {
-    public class Shop : MonoBehaviour, IRaycastable, ISaveable
+    public class Shop : MonoBehaviour, IRaycastable, ISaveable, IJsonSaveable
     {
         [SerializeField] string shopName;
         [Range(0, 100)]
@@ -75,7 +76,6 @@ namespace RPG.Shops
         public void SelectFilter(ItemCategory category) 
         {
             filter = category;
-            print(category);
 
             if(onChange != null)
             {
@@ -398,5 +398,34 @@ namespace RPG.Shops
                 stockSold[InventoryItem.GetFromID(pair.Key)] = pair.Value;
             }
         }
+
+        public JToken CaptureAsJToken()
+        {
+            JObject state = new JObject();
+            IDictionary<string, JToken> stateDict = state;
+            foreach (KeyValuePair<InventoryItem, int> pair in stockSold)
+            {
+                stateDict[pair.Key.GetItemID()] = JToken.FromObject(pair.Value);
+            }
+            return state;
+        }
+
+        public void RestoreFromJToken(JToken state)
+        {
+            if (state is JObject stateObject)
+            {
+                IDictionary<string, JToken> stateDict = stateObject;
+                stockSold.Clear();
+                foreach (KeyValuePair<string, JToken> pair in stateDict)
+                {
+                    InventoryItem item = InventoryItem.GetFromID(pair.Key);
+                    if (item)
+                    {
+                        stockSold[item] = pair.Value.ToObject<int>();
+                    }
+                }
+            }
+        }
+
     }
 }

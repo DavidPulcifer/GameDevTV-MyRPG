@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2615908882918109684}
   - component: {fileID: 1936192964637665465}
   - component: {fileID: 5810556469621151310}
+  - component: {fileID: 6272350310881965164}
   m_Layer: 0
   m_Name: Saving
   m_TagString: Untagged
@@ -54,5 +55,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a43f3e42f959cb24884436ecfed17810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeInTime: 0.2
+  fadeOutTime: 0.2
+  firstSceneBuildIndex: 1
+  menuSceneBuildIndex: 0
+--- !u!114 &6272350310881965164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378975720164183805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb49ef7d313b4ba44b097d18a9b8c6f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

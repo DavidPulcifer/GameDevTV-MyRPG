@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: 6af9f1c8-3d9b-4700-901c-30517460a52f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Hello! '
+  text: <skip>
   children:
   - b1bca27f-06ab-4ffc-b6ca-3d41d5a87462
   - de566431-c94c-4e9a-ad6f-15992e5b963d

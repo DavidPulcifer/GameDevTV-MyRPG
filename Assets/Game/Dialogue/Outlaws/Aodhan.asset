@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Name: dd5025cf-f53c-42df-a27d-a5f618742c99
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (Stares at you mirthfully)
+  text: <skip>
   children:
   - f1508f3a-256a-4b05-b349-f20f0585aa6d
   - e5e9c5d1-b292-456a-be25-ed9b369953ee

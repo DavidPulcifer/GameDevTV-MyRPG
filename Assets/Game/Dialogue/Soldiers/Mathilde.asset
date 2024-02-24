@@ -17,8 +17,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 468
-    y: 223
+    x: 469
+    y: 221
     width: 200
     height: 100
   onEnterAction: []
@@ -330,13 +330,13 @@ MonoBehaviour:
   m_Name: 06ae47f2-b136-4562-b06b-c2f90823785e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (Wathcing the other soldier intently)
+  text: <skip>
   children:
   - 999ff9be-58c6-4bef-8a86-0d761637fdf8
   - 1de95aa1-a68a-4aa2-ad4e-d533b9b112ed
   rect:
     serializedVersion: 2
-    x: 222
+    x: 204
     y: 126
     width: 200
     height: 100

@@ -16,22 +16,27 @@ namespace RPG.Dialogue
 
         private void Awake()
         {
+
             OnValidate();
+
         }
 
         private void OnValidate()
         {
+#if UNITY_EDITOR
             if (nodes.Count == 0)
             {
                 DialogueNode newNode = MakeNode(null);                
                 AddNode(newNode);
             }
+#endif
             nodeLookup.Clear();
             foreach (DialogueNode node in GetAllNodes())
             {
                 nodeLookup[node.name] = node;
             }
-        }        
+        }
+
 
         public IEnumerable<DialogueNode> GetAllNodes()
         {

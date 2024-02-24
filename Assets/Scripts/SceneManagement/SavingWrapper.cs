@@ -18,7 +18,7 @@ namespace RPG.SceneManagement
         public void ContinueGame()
         {
             if (!PlayerPrefs.HasKey(currentSaveKey)) return;
-            if (!GetComponent<SavingSystem>().SaveFileExists(GetCurrentSave())) return;
+            if (!GetComponent<JsonSavingSystem>().SaveFileExists(GetCurrentSave())) return;
             StartCoroutine(LoadLastScene());
         }
 
@@ -71,7 +71,7 @@ namespace RPG.SceneManagement
         {            
             Fader fader = FindObjectOfType<Fader>();
             yield return fader.FadeOut(fadeOutTime);
-            yield return GetComponent<SavingSystem>().LoadLastScene(GetCurrentSave());
+            yield return GetComponent<JsonSavingSystem>().LoadLastScene(GetCurrentSave());
             yield return fader.FadeIn(fadeInTime);
         }
 
@@ -94,22 +94,22 @@ namespace RPG.SceneManagement
 
         public void Save()
         {
-            GetComponent<SavingSystem>().Save(GetCurrentSave());
+            GetComponent<JsonSavingSystem>().Save(GetCurrentSave());
         }
 
         public void Load()
         {            
-            GetComponent<SavingSystem>().Load(GetCurrentSave());
+            GetComponent<JsonSavingSystem>().Load(GetCurrentSave());
         }
 
         public void Delete()
         {
-            GetComponent<SavingSystem>().Delete(GetCurrentSave());
+            GetComponent<JsonSavingSystem>().Delete(GetCurrentSave());
         }
 
         public IEnumerable<string> ListSaves()
         {
-            return GetComponent<SavingSystem>().ListSaves();
+            return GetComponent<JsonSavingSystem>().ListSaves();
         }
     }
 

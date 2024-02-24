@@ -1,5 +1,6 @@
 using GameDevTV.Saving;
 using GameDevTV.Utils;
+using Newtonsoft.Json.Linq;
 using RPG.Stats;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using UnityEngine;
 
 namespace RPG.Attributes
 {
-    public class Mana : MonoBehaviour, ISaveable
+    public class Mana : MonoBehaviour, ISaveable, IJsonSaveable
     {
         LazyValue<float> mana;
 
@@ -64,6 +65,17 @@ namespace RPG.Attributes
         {
             mana.value = (float)state;
         }
+
+        public JToken CaptureAsJToken()
+        {
+            return JToken.FromObject(mana.value);
+        }
+
+        public void RestoreFromJToken(JToken state)
+        {
+            mana.value = state.ToObject<float>();
+        }
+
     }
 
 }

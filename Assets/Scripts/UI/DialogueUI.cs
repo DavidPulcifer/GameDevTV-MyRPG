@@ -47,7 +47,7 @@ namespace RPG.UI
                 AIText.text = playerConversant.GetText();
                 nextButton.gameObject.SetActive(playerConversant.HasNext());
             }
-            
+            if (AIText.text == "<skip>") { playerConversant.Next(); }
         }
 
         private void BuildChoiceList()

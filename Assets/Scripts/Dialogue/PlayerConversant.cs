@@ -1,5 +1,6 @@
 using GameDevTV.Saving;
 using GameDevTV.Utils;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using UnityEngine;
 
 namespace RPG.Dialogue
 {
-    public class PlayerConversant : MonoBehaviour, IPredicateEvaluator, ISaveable
+    public class PlayerConversant : MonoBehaviour, IPredicateEvaluator, ISaveable, IJsonSaveable
     {
         public string playerName;
         [SerializeField] List<string> dialogueFlags = new List<string>();
@@ -103,8 +104,14 @@ namespace RPG.Dialogue
             }
 
             DialogueNode[] children = FilterOnCondition(currentDialogue.GetAIChildren(currentNode)).ToArray();
+            
             int randomIndex = UnityEngine.Random.Range(0, children.Count());
             TriggerExitAction();
+            if(children.Length == 0)
+            {
+                onConversationUpdated();
+                return;
+            }
             currentNode = children[randomIndex];
             TriggerEnterAction();
             onConversationUpdated();
@@ -210,6 +217,16 @@ namespace RPG.Dialogue
         public void RestoreState(object state)
         {
             dialogueFlags = state as List<string>;
+        }
+
+        public JToken CaptureAsJToken()
+        {
+            return JToken.FromObject(dialogueFlags);
+        }
+
+        public void RestoreFromJToken(JToken state)
+        {
+            dialogueFlags = state.ToObject<List<string>>();
         }
     }
 

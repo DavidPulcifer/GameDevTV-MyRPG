@@ -1,4 +1,5 @@
 ﻿using GameDevTV.Saving;
+using Newtonsoft.Json.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine.Playables;
 
 namespace RPG.Cinematics
 {
-    public class CinematicTrigger : MonoBehaviour, ISaveable
+    public class CinematicTrigger : MonoBehaviour, ISaveable, IJsonSaveable
     {
         bool hasPlayed = false;
        
@@ -29,6 +30,15 @@ namespace RPG.Cinematics
             hasPlayed = (bool)state;
         }
 
+        public JToken CaptureAsJToken()
+        {
+            return JToken.FromObject(hasPlayed);
+        }
+
+        public void RestoreFromJToken(JToken state)
+        {
+            hasPlayed = state.ToObject<bool>();
+        }
     }
 }
 

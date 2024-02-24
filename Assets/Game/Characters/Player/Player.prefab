@@ -89,6 +89,11 @@ PrefabInstance:
       propertyPath: uniqueIdentifier
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 173512728488522766, guid: 3bdfc06e16b681748a064b5014525e26,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: player
+      objectReference: {fileID: 0}
     - target: {fileID: 1749623749653543240, guid: 3bdfc06e16b681748a064b5014525e26,
         type: 3}
       propertyPath: m_Height
@@ -474,18 +479,6 @@ MonoBehaviour:
     stat: 7
     additiveBonusPerPoint: 5
     percentageBonusPerPoint: 0
---- !u!114 &9161006481186924722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3939921017035819185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 990b3b17a326e574ab39009b810fde7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8891727096603326450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +489,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b57e132f8612384aaf06c560a74c226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9161006481186924722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939921017035819185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990b3b17a326e574ab39009b810fde7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &8386207860617674959

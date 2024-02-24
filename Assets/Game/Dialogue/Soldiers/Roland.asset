@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 8882ca16-5bfc-47e9-8e1b-01e96b1d3975
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hey!
+  text: <skip>
   children:
   - ed54dd70-a6b4-4cb0-88b8-cafa95a65c8c
   - 5af9c483-cf1e-41e9-8a06-b45a223602a7

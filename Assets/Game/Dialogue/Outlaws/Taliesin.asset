@@ -377,7 +377,7 @@ MonoBehaviour:
   m_Name: 43863668-a38a-4c45-b57d-53a68735c0bb
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (Stares curiously)
+  text: <skip>
   children:
   - 222b2d65-4285-472c-acbf-383cd517a921
   - 35779145-9c92-4876-a8d9-847ab3642107
