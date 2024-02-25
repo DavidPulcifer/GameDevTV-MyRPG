@@ -21,7 +21,7 @@ MonoBehaviour:
       - or:
         - predicate: HasDialogueFlag
           parameters:
-          - PassedEadricsMessage
+          - DeliverMessage
           negate: 0
   rewards:
   - number: 50

@@ -223,7 +223,7 @@ MonoBehaviour:
       - predicate: HasGoodRep
         parameters:
         - villagers
-        negate: 1
+        negate: 0
 --- !u!114 &-2758107790005224858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +313,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 353
-    y: 353
+    y: 350
     width: 200
     height: 100
   onEnterAction: []

@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: fccc7ec4-db02-420d-85d0-9d953385ad1d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I don't know, but I know you aren't looking for Outlaws
+  text: I don't know, but I suspect you aren't looking for Outlaws
   children:
   - a8685bcc-0079-4d8e-9173-08317edb96f9
   rect:
@@ -324,6 +324,7 @@ MonoBehaviour:
   - {fileID: 7481940313824824799}
   - {fileID: 5849563276053628381}
   - {fileID: -3290110185084339772}
+  - {fileID: 6029201661588470405}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &716965088228342297
 MonoBehaviour:
@@ -616,6 +617,42 @@ MonoBehaviour:
   - GeneralDialogue
   condition:
     and: []
+--- !u!114 &6029201661588470405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c3afd3759d37341955a37b156f48e2, type: 3}
+  m_Name: 8d66dd3c-d968-478d-8ee4-303cd0619801
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I don't know, but you need to stop occupying this town
+  children:
+  - a8685bcc-0079-4d8e-9173-08317edb96f9
+  rect:
+    serializedVersion: 2
+    x: 661
+    y: 445
+    width: 200
+    height: 100
+  onEnterAction: []
+  onExitAction: []
+  condition:
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - GeneralNoOutlaws
+        negate: 1
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - LearnChoice
+        negate: 1
 --- !u!114 &7311663788899347437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,6 +727,7 @@ MonoBehaviour:
   children:
   - 1a409698-55ee-4be6-9eb8-ec9a8b0e13b2
   - fccc7ec4-db02-420d-85d0-9d953385ad1d
+  - 8d66dd3c-d968-478d-8ee4-303cd0619801
   rect:
     serializedVersion: 2
     x: 415
@@ -704,11 +742,6 @@ MonoBehaviour:
       - predicate: HasDialogueFlag
         parameters:
         - HearTraveler
-        negate: 0
-    - or:
-      - predicate: HasDialogueFlag
-        parameters:
-        - GeneralNoOutlaws
         negate: 0
 --- !u!114 &7848974234470611301
 MonoBehaviour:

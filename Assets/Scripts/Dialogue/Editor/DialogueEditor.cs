@@ -85,7 +85,10 @@ namespace RPG.Dialogue.Editor
                 Texture2D backgroundTex = Resources.Load("background") as Texture2D;
                 Rect texCoords = new Rect(0, 0, canvasSize/backgroundSize, canvasSize / backgroundSize);
 
-                GUI.DrawTextureWithTexCoords(canvas, backgroundTex, texCoords);
+                if(backgroundTex != null)
+                {
+                    GUI.DrawTextureWithTexCoords(canvas, backgroundTex, texCoords);
+                }
 
                 foreach (DialogueNode node in selectedDialogue.GetAllNodes())
                 {

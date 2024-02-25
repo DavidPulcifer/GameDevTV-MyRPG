@@ -21,7 +21,12 @@ MonoBehaviour:
       - or:
         - predicate: HasDialogueFlag
           parameters:
-          - Read Book of Knowledge
+          - HearTraveler
+          negate: 0
+      - or:
+        - predicate: HasDialogueFlag
+          parameters:
+          - LearnChoice
           negate: 0
   rewards:
   - number: 0

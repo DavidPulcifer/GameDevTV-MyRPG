@@ -116,12 +116,27 @@ namespace RPG.Dialogue
 
         public JToken CaptureAsJToken()
         {
-            return JToken.FromObject(factionReputation);
+            JObject state = new JObject();
+            IDictionary<string, JToken> stateDict = state;
+            foreach (KeyValuePair<string, int> pair in factionReputation)
+            {
+                stateDict[pair.Key.ToString()] = JToken.FromObject(pair.Value);
+            }
+            return state;
         }
 
         public void RestoreFromJToken(JToken state)
         {
-            factionReputation = state.ToObject<Dictionary<string, int>>();
+            if (state is JObject stateObject)
+            {
+                factionReputation.Clear();
+                IDictionary<string, JToken> stateDict = stateObject;
+                foreach (KeyValuePair<string, JToken> pair in stateDict)
+                {
+                    factionReputation[pair.Key] = pair.Value.ToObject<int>();
+                   
+                }
+            }
         }
     }
 

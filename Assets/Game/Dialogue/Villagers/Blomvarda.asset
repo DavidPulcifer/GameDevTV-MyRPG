@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 0d49cad7-a34b-4c7f-9b05-897ef0fb257f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Solgeisl, won't speak to me!
+  text: Solgeisl, won't speak to me! She is the big yellow flower over there.
   children:
   - ec3a4646-7026-4bbd-b98d-8f153a40d23a
   rect:

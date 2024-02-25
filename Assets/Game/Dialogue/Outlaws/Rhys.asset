@@ -253,7 +253,8 @@ MonoBehaviour:
     width: 200
     height: 100
   onEnterAction: []
-  onExitAction: []
+  onExitAction:
+  - MeetRhys
   condition:
     and: []
 --- !u!114 &5587400557185166187
@@ -323,7 +324,7 @@ MonoBehaviour:
   m_Name: f35c5c95-d15b-416c-bd1b-4fb23c8da120
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: I'm here to rid this vilage of its outlaw problem!
+  text: I'm here to rid this village of its outlaw problem!
   children:
   - 0457e763-7b67-4c3d-a279-61c6a1820167
   rect:

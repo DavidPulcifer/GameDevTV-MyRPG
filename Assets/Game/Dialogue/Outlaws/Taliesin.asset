@@ -328,7 +328,7 @@ MonoBehaviour:
     - or:
       - predicate: HasDialogueFlag
         parameters:
-        - GowdinClue
+        - GodwinClue
         negate: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -422,7 +422,7 @@ MonoBehaviour:
     - or:
       - predicate: HasDialogueFlag
         parameters:
-        - GeneralTarget
+        - GeneralLookYou
         negate: 0
     - or:
       - predicate: HasDialogueFlag

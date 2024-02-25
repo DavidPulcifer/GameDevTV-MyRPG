@@ -221,12 +221,26 @@ namespace RPG.Dialogue
 
         public JToken CaptureAsJToken()
         {
-            return JToken.FromObject(dialogueFlags);
+            JArray state = new JArray();
+            IList<JToken> stateList = state;
+            foreach (string flag in dialogueFlags)
+            {
+                stateList.Add(flag);
+            }
+            return state;
         }
 
         public void RestoreFromJToken(JToken state)
         {
-            dialogueFlags = state.ToObject<List<string>>();
+            if (state is JArray stateArray)
+            {
+                dialogueFlags.Clear();
+                IList<JToken> stateList = stateArray;
+                foreach (JToken token in stateList)
+                {
+                    dialogueFlags.Add(token.ToObject<string>());
+                }
+            }
         }
     }
 
