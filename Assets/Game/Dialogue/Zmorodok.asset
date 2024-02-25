@@ -20,8 +20,8 @@ MonoBehaviour:
   - 6be1421f-59ff-4df3-854d-10e66a82a071
   rect:
     serializedVersion: 2
-    x: 1185
-    y: 154
+    x: 1186
+    y: 153
     width: 200
     height: 100
   onEnterAction: []
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 7488ad9f-6cc0-4043-8b72-8b0a99a3f463
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Yes, I know the profecy well...
+  text: Yes, I know the prophecy well...
   children:
   - 7fab77fe-c418-45d3-ab24-417a28cad4ac
   rect:
@@ -212,7 +212,8 @@ MonoBehaviour:
     y: 618
     width: 200
     height: 100
-  onEnterAction: []
+  onEnterAction:
+  - RefuseChoice
   onExitAction: []
   condition:
     and: []
@@ -501,8 +502,8 @@ MonoBehaviour:
   - 8ced349e-f41b-4af0-97e0-0751f5d1a8f5
   rect:
     serializedVersion: 2
-    x: 1352
-    y: 507
+    x: 1353
+    y: 506
     width: 200
     height: 100
   onEnterAction: []
@@ -600,7 +601,7 @@ MonoBehaviour:
   m_Name: 64a76e78-5f31-48c7-97ce-5413d3101f3b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: There is a profecy about you.
+  text: There is a prophecy about you.
   children:
   - bf822fb1-cf28-4d31-91ef-4d1f84d62a71
   rect:
@@ -632,7 +633,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 2532
-    y: 507
+    y: 506
     width: 200
     height: 100
   onEnterAction: []
@@ -652,7 +653,7 @@ MonoBehaviour:
   m_Name: 501cbc6e-69ee-4638-80cc-8db953b3db42
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'On the other hand. If you join me, the game can continue to the next chjapter.
+  text: 'On the other hand. If you join me, the game can continue to the next chapter.
     The world will be destroyed, but we can remake it into a better one. '
   children:
   - 7f421449-a00a-43e1-bec3-955674bdfe12

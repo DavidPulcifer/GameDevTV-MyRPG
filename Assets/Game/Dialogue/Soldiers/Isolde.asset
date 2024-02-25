@@ -28,7 +28,7 @@ MonoBehaviour:
   m_Name: 923b15c2-3c57-42dd-a411-c4d8034c2976
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: (Stops talking with the other guard and looks atr you)
+  text: (Stops talking with the other guard and looks at you)
   children: []
   rect:
     serializedVersion: 2

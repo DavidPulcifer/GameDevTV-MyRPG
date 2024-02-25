@@ -114,7 +114,12 @@ MonoBehaviour:
   onEnterAction: []
   onExitAction: []
   condition:
-    and: []
+    and:
+    - or:
+      - predicate: HasDialogueFlag
+        parameters:
+        - HearGeneral
+        negate: 1
 --- !u!114 &-2263180065385448733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,7 +296,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 2649
-    y: 121
+    y: 120
     width: 200
     height: 100
   onEnterAction: []
@@ -488,8 +493,8 @@ MonoBehaviour:
   - c52fee40-8755-45d3-bd60-d8dd1fe3b26a
   rect:
     serializedVersion: 2
-    x: 402
-    y: 214
+    x: 401
+    y: 213
     width: 200
     height: 100
   onEnterAction: []
